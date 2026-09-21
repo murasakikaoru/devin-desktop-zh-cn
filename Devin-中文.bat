@@ -22,6 +22,7 @@ if not exist "%DEVIN_EXE%" (
 	pause
 	exit /b 1
 )
+set "DEVIN_EXE_PS=%DEVIN_EXE:'=''%"
 echo [devin-zh] Devin: %DEVIN_EXE%
 
 rem ---- 定位 Python 完整路径（pythonw 优先，跳过 WindowsApps 商店占位）----
@@ -36,6 +37,7 @@ if not defined PYEXE (
 )
 
 rem ---- 检查运行文件齐全 ----
+set "PYEXE_PS=%PYEXE:'=''%"
 if not exist "%~dp0inject.py" (
 	echo [devin-zh] 缺少 inject.py，请保持汉化包目录完整
 	pause
@@ -49,7 +51,7 @@ rem ---- 检查 Devin 运行状态：不带调试端口运行时需先关闭 ----
 set "NEED_LAUNCH=1"
 tasklist /fi "imagename eq Devin.exe" 2>nul | findstr /i "Devin.exe" >nul
 if not errorlevel 1 (
-	powershell -NoProfile -Command "exit ((Get-NetTCPConnection -LocalPort 9222 -State Listen -ErrorAction SilentlyContinue) -eq $null)" >nul 2>nul
+	powershell -NoProfile -Command "try { $v = Invoke-RestMethod -Uri 'http://127.0.0.1:9222/json/version' -TimeoutSec 2; if (-not $v.webSocketDebuggerUrl) { exit 1 }; $l = Invoke-RestMethod -Uri 'http://127.0.0.1:9222/json/list' -TimeoutSec 2; if ($l | Where-Object { $_.url -match 'workbench|vscode-webview|file:///|devin\.ai' }) { exit 0 } else { exit 1 } } catch { exit 1 }" >nul 2>nul
 	if errorlevel 1 (
 		echo [devin-zh] 检测到 Devin 正在运行，但未开启调试端口，汉化注入需要重启 Devin。
 		choice /c YN /n /m "关闭当前 Devin 并以汉化模式重启？[Y=重启 / N=退出] "
@@ -59,7 +61,7 @@ if not errorlevel 1 (
 			exit /b 0
 		)
 		echo [devin-zh] 正在关闭 Devin…
-		taskkill /f /im Devin.exe >nul 2>nul
+		powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { $_.Name -eq 'Devin.exe' -and $_.ExecutablePath -eq '%DEVIN_EXE_PS%' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }" >nul 2>nul
 		%SystemRoot%\System32\timeout.exe /t 3 /nobreak >nul
 	) else (
 		echo [devin-zh] Devin 已在调试模式运行，直接挂接注入器。
@@ -68,15 +70,15 @@ if not errorlevel 1 (
 )
 
 rem ---- 清理旧注入器实例，避免重复 ----
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'inject\.py.*--port 9222' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }" >nul 2>nul
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'inject\.py' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }" >nul 2>nul
 
 rem ---- 隐藏启动注入器（任何 Python 均无窗口，且脱离本控制台） ----
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process -WindowStyle Hidden -FilePath '%PYEXE%' -ArgumentList 'inject.py','--port','9222' -WorkingDirectory '%~dp0'"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process -WindowStyle Hidden -FilePath '%PYEXE_PS%' -ArgumentList 'inject.py','--port','9222' -WorkingDirectory '%~dp0'"
 
 if defined NEED_LAUNCH (
 	%SystemRoot%\System32\timeout.exe /t 1 /nobreak >nul
 	rem 通过 WMI 创建 Devin 进程: 完全脱离本控制台，关闭本窗口不影响 Devin
-	powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine='\"%DEVIN_EXE%\" --remote-debugging-port=9222'} | Out-Null"
+	powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine='\"%DEVIN_EXE_PS%\" --remote-debugging-port=9222'} | Out-Null"
 )
 
 echo [devin-zh] 完成。Devin 界面将显示简体中文。本窗口可安全关闭。

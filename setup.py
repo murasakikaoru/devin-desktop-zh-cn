@@ -7,6 +7,7 @@
 """
 import json
 import os
+import shutil
 import subprocess
 import sys
 
@@ -24,6 +25,12 @@ def ensure_locale():
         try:
             cfg = json.load(open(ARGV, encoding='utf-8'))
         except Exception:
+            # 文件损坏时先备份再覆写, 避免静默丢失原有配置
+            try:
+                shutil.copy2(ARGV, ARGV + '.bak')
+                print('[devin-zh] argv.json 解析失败，已备份为 argv.json.bak')
+            except Exception:
+                pass
             cfg = {}
     if not isinstance(cfg, dict):
         cfg = {}

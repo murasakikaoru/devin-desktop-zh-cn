@@ -48,7 +48,11 @@
 	]);
 
 	function translateCore(core) {
-		if (DICT[core] !== undefined) return DICT[core];
+		// 必须用 hasOwn: DICT['constructor']/['toString'] 会命中 Object.prototype
+		// 拿到函数, 会被当成"译文"写进页面
+		if (Object.hasOwn(DICT, core)) return DICT[core];
+		// 所有正则都锚定在英文字母/数字上, 纯中文/标点文本不可能命中, 省掉全表扫描
+		if (!/[A-Za-z0-9]/.test(core)) return core;
 		for (const [re, rep] of REGEX) {
 			if (re.test(core)) return core.replace(re, rep);
 		}
@@ -60,20 +64,20 @@
 		const lead = text.match(/^\s*/)[0];
 		const trail = text.match(/\s*$/)[0];
 		const core = text.trim();
-		if (core.length < 2 && !DICT[core]) return text;
+		if (core.length < 2 && !Object.hasOwn(DICT, core)) return text;
 		if (SKIP_EXACT.has(core)) return text;
 		const t = translateCore(core);
 		return t === core ? text : lead + t + trail;
 	}
 
-	function shouldSkipNode(node) {
-		const el = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
-		if (!el) return true;
-		return Boolean(el.closest(TEXT_EXCLUDE));
-	}
-
-	function translateTextNode(node) {
-		if (shouldSkipNode(node)) return;
+	// cache: 同一次 scan 内按 parentElement 记忆 closest() 结果——大量文本节点
+	// 共享同一父元素, 避免每个文本节点都跑一遍 ~30 选择器的 closest() 祖先链查询
+	function translateTextNode(node, cache) {
+		const el = node.parentElement;
+		if (!el) return;
+		let skip = cache.get(el);
+		if (skip === undefined) { skip = Boolean(el.closest(TEXT_EXCLUDE)); cache.set(el, skip); }
+		if (skip) return;
 		const v = node.nodeValue;
 		const t = translateText(v);
 		if (t !== v) node.nodeValue = t;
@@ -91,17 +95,23 @@
 
 	function scan(root) {
 		if (!root) return;
-		if (root.nodeType === Node.TEXT_NODE) { translateTextNode(root); return; }
-		const el = root.nodeType === Node.ELEMENT_NODE || root.nodeType === Node.DOCUMENT_NODE ? root : document.body;
-		if (!el || !el.querySelectorAll) return;
+		if (root.nodeType === Node.TEXT_NODE) { translateTextNode(root, new Map()); return; }
+		// 注释/其他节点没有可扫内容——不能兜底成 document.body, 否则 Suspense 注释
+		// 节点每出现一次就触发一次全页扫描
+		if (root.nodeType !== Node.ELEMENT_NODE && root.nodeType !== Node.DOCUMENT_NODE
+			&& root.nodeType !== Node.DOCUMENT_FRAGMENT_NODE) return;
+		const el = root;
+		if (!el.querySelectorAll) return;
 		if (el.nodeType === Node.ELEMENT_NODE) translateAttrs(el);
 		for (const e of el.querySelectorAll(ATTRS.map(a => '[' + a + ']').join(','))) translateAttrs(e);
+		const cache = new Map();
 		const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
-		let n; while ((n = walker.nextNode())) translateTextNode(n);
+		let n; while ((n = walker.nextNode())) translateTextNode(n, cache);
 	}
 
 	// Shadow DOM 兜底: 定期扫描所有 open shadowRoot
 	function collectRoots(node, out) {
+		if (!node) return out;
 		out.push(node);
 		const els = node.querySelectorAll ? node.querySelectorAll('*') : [];
 		for (const e of els) if (e.shadowRoot) collectRoots(e.shadowRoot, out);
@@ -125,7 +135,15 @@
 	}
 	function enqueue(root) {
 		// 翻译进行中也要入队(不能丢变更), 等本轮扫完再补扫
-		pending.add(root || document.body);
+		root = root || document.body;
+		if (!root) return;
+		const t = root.nodeType;
+		if (t !== Node.ELEMENT_NODE && t !== Node.TEXT_NODE
+			&& t !== Node.DOCUMENT_NODE && t !== Node.DOCUMENT_FRAGMENT_NODE) return;
+		// 已有整页级 root 在排队时, 子节点入队纯属重复扫描
+		if (root !== document.documentElement && root !== document.body
+			&& (pending.has(document.documentElement) || pending.has(document.body))) return;
+		pending.add(root);
 		if (!translating && !rafId) rafId = requestAnimationFrame(flush);
 	}
 
@@ -147,7 +165,12 @@
 	setTimeout(() => enqueue(document.documentElement), 2500);
 
 	// 初次全量 + 周期性扫描 shadowRoot(低频,兜底 iframe 外的 shadow DOM)
-	function fullScan() { for (const r of collectRoots(document.body || document.documentElement, [])) scan(r); }
+	function fullScan() {
+		if (document.hidden) return;  // 后台不可见时全扫纯属浪费
+		const base = document.body || document.documentElement;
+		if (!base) return;  // document_start 极早期可能两者都不存在
+		for (const r of collectRoots(base, [])) scan(r);
+	}
 	fullScan();
 	setInterval(fullScan, 30000);
 

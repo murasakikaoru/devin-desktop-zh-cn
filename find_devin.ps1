@@ -15,15 +15,15 @@ $uninstallRoots = @(
     'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
     'HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
 )
-Get-ItemProperty $uninstallRoots | Where-Object { $_.DisplayName -match 'Devin' } | ForEach-Object {
-    if ($_.DisplayIcon -match 'Devin\.exe') { $candidates += $_.DisplayIcon }
+Get-ItemProperty $uninstallRoots | Where-Object { $_.DisplayName -match '\bDevin\b' } | ForEach-Object {
+    if ($_.DisplayIcon -match '\\Devin\.exe') { $candidates += $_.DisplayIcon }
     if ($_.InstallLocation) { $candidates += (Join-Path $_.InstallLocation.TrimEnd('\') 'Devin.exe') }
 }
 
 # Running Devin processes reveal their real path
 $candidates += (Get-CimInstance Win32_Process -Filter "Name='Devin.exe'" |
     ForEach-Object { $_.ExecutablePath } |
-    Where-Object { $_ -match 'Devin\.exe$' })
+    Where-Object { $_ -match '\\Devin\.exe$' })
 
 # Start Menu shortcuts (user + all-users)
 $wsh = New-Object -ComObject WScript.Shell
@@ -33,7 +33,7 @@ $menuRoots = @(
 )
 Get-ChildItem $menuRoots -Recurse -Filter '*evin*.lnk' | ForEach-Object {
     $t = $wsh.CreateShortcut($_.FullName).TargetPath
-    if ($t -match 'Devin\.exe$') { $candidates += $t }
+    if ($t -match '\\Devin\.exe$') { $candidates += $t }
 }
 
 # PATH

@@ -9,12 +9,14 @@
 日志: %TEMP%\\devin-zh-injector.log
 """
 import base64
+import hashlib
 import json
 import os
 import socket
 import struct
 import sys
 import time
+import urllib.parse
 import urllib.request
 
 PORT = 9222
@@ -22,6 +24,21 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DICT_PATH = os.path.join(HERE, 'dict.json')
 TRANSLATOR_PATH = os.path.join(HERE, 'translator.js')
 LOG = os.path.join(os.environ.get('TEMP', HERE), 'devin-zh-injector.log')
+LOG_MAX = 1024 * 1024
+WS_GUID = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
+
+
+def trim_log():
+    """日志超过 LOG_MAX 时只保留后半段, 避免无限增长。"""
+    try:
+        if os.path.getsize(LOG) > LOG_MAX:
+            with open(LOG, 'rb') as f:
+                f.seek(-(LOG_MAX // 2), os.SEEK_END)
+                tail = f.read()
+            with open(LOG, 'wb') as f:
+                f.write(b'... [truncated]\n' + tail)
+    except Exception:
+        pass
 
 
 def log(*a):
@@ -52,8 +69,20 @@ class WS:
             if not chunk:
                 raise ConnectionError('ws handshake failed')
             resp += chunk
-        if b'101' not in resp.split(b'\r\n', 1)[0]:
-            raise ConnectionError('ws handshake rejected: ' + resp.split(b'\r\n', 1)[0].decode())
+        status = resp.split(b'\r\n', 1)[0].split(b' ', 2)
+        if len(status) < 2 or status[1] != b'101':
+            raise ConnectionError('ws handshake rejected: ' + resp.split(b'\r\n', 1)[0].decode('latin1'))
+        hdrs = {}
+        for h in resp.split(b'\r\n')[1:]:
+            if b':' in h:
+                k, v = h.split(b':', 1)
+                hdrs[k.strip().lower()] = v.strip()
+        expect = base64.b64encode(hashlib.sha1((key + WS_GUID).encode()).digest())
+        if hdrs.get(b'sec-websocket-accept') != expect:
+            raise ConnectionError('ws bad Sec-WebSocket-Accept')
+        # 握手完成后再恢复阻塞: create_connection 的 timeout 会留在 socket 上,
+        # 若不恢复, CDP 空闲期 recv 每 10s 抛 socket.timeout -> 误判断连 -> 重连风暴
+        self.sock.settimeout(None)
         self.buf = b''
 
     def send(self, text):
@@ -136,10 +165,23 @@ class CDP:
 
 
 def load_payload():
-    d = json.load(open(DICT_PATH, encoding='utf-8'))
+    try:
+        d = json.load(open(DICT_PATH, encoding='utf-8'))
+    except Exception as e:
+        log('dict.json load failed:', e)
+        d = {}
+    if not isinstance(d, dict):
+        log('dict.json root is not an object, payload disabled')
+        d = {}
+    dd = d.get('dict', d)
+    if not isinstance(dd, dict):
+        dd = {}
+    rx = d.get('regex', [])
+    if not isinstance(rx, list):
+        rx = []
     tjs = open(TRANSLATOR_PATH, encoding='utf-8').read()
-    return ('window.__ZH_DICT__=' + json.dumps(d.get('dict', d if isinstance(d, dict) else {}), ensure_ascii=False) + ';'
-            + 'window.__ZH_REGEX__=' + json.dumps(d.get('regex', []), ensure_ascii=False) + ';\n' + tjs)
+    return ('window.__ZH_DICT__=' + json.dumps(dd, ensure_ascii=False) + ';'
+            + 'window.__ZH_REGEX__=' + json.dumps(rx, ensure_ascii=False) + ';\n' + tjs)
 
 
 def http_json(url, timeout=3):
@@ -151,29 +193,42 @@ def run(port):
     payload = load_payload()
     log('payload ready,', len(payload), 'bytes')
     injected = set()
+    first_fail = None
     while True:
+        cdp = None
         try:
             ver = http_json(f'http://127.0.0.1:{port}/json/version')
             cdp = CDP(ver['webSocketDebuggerUrl'])
             cdp.send_cmd('Target.setAutoAttach', {
                 'autoAttach': True, 'waitForDebuggerOnStart': False, 'flatten': True})
             log('connected, autoAttach on')
+            first_fail = None
             while True:
                 raw = cdp.ws.recv()
                 try:
                     msg = json.loads(raw)
                 except Exception:
                     continue
-                if msg.get('method') != 'Target.attachedToTarget':
+                method = msg.get('method')
+                if method == 'Target.detachedFromTarget':
+                    injected.discard(msg.get('params', {}).get('sessionId'))
+                    continue
+                if method != 'Target.attachedToTarget':
                     continue
                 p = msg.get('params', {})
                 sid = p.get('sessionId')
                 tinfo = p.get('targetInfo', {})
                 ttype, turl = tinfo.get('type', ''), tinfo.get('url', '')
-                if ttype not in ('page', 'iframe', 'webview', 'other') or sid in injected:
+                if ttype not in ('page', 'iframe', 'webview') or sid in injected:
                     continue
                 if 'devtools' in turl:
                     continue
+                # http(s) target: 只放行 Devin 自有域名(Agent 界面来自 app.devin.ai),
+                # 其余远程内容(如应用内网页预览/第三方页面)不注入, 避免误翻用户页面
+                if turl.startswith(('http://', 'https://')):
+                    host = urllib.parse.urlparse(turl).hostname or ''
+                    if host != 'devin.ai' and not host.endswith('.devin.ai'):
+                        continue
                 injected.add(sid)
                 # 未来导航自动注入 + 立即对当前文档注入
                 cdp.send_cmd('Page.enable', session_id=sid)
@@ -185,7 +240,17 @@ def run(port):
         except Exception as e:
             log('conn lost:', e, '- retry in 2s')
             injected.clear()
+            # Devin 关闭后端口长期不可达: 僵尸进程每 2s 重试到天荒地老没意义,
+            # 连续失败 10 分钟视为 Devin 已退出, 自动收场(下次走 bat 会重启注入器)
+            if first_fail is None:
+                first_fail = time.time()
+            elif time.time() - first_fail > 600:
+                log('debug port unreachable for 10min, exit')
+                return
             time.sleep(2)
+        finally:
+            if cdp is not None:
+                cdp.ws.close()
 
 
 if __name__ == '__main__':
@@ -197,6 +262,7 @@ if __name__ == '__main__':
         DICT_PATH = args[args.index('--dict') + 1]
     if '--translator' in args:
         TRANSLATOR_PATH = args[args.index('--translator') + 1]
+    trim_log()
     log('=== injector start, port', port)
     try:
         run(port)
