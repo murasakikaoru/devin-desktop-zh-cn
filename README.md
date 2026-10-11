@@ -103,6 +103,10 @@ devin-desktop-zh-cn/
 - 注入器仅连接本机 `127.0.0.1` 调试端口（端口仅在 bat 带参启动时开放）
 - 词库内容全部来自 Devin 界面文案的提取与翻译
 
+## 相关项目
+
+- [Devin Orb](https://github.com/murasakikaoru/devin-orb) — Windows 悬浮球小组件，一眼查看 Devin 用量（[中文文档](https://github.com/murasakikaoru/devin-orb/blob/main/README.zh-CN.md)）
+
 ## 许可
 
 MIT License — 见 [LICENSE](LICENSE)
