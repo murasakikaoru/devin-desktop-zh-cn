@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><body>
+<!-- 模拟 Devin 用量行: label + 百分比 + 倒计时, 每秒像 React 一样写入 nodeValue -->
+<div id="usage"><span class="lbl">Daily quota usage</span><span id="pct">2% used</span><span id="rst">Resets Sep 22 GMT+8 16:00</span></div>
+<div id="out">tick: 0</div>
+<script>
+let n = 2;
+setInterval(() => {
+  n++;
+  // React commitTextUpdate 等价物: 直接写 text node 的 nodeValue
+  document.getElementById('pct').firstChild.nodeValue = n + '% used';
+  document.getElementById('rst').firstChild.nodeValue = 'Resets Sep 22 GMT+8 16:' + String(n).padStart(2,'0');
+  document.getElementById('out').firstChild.nodeValue = 'tick: ' + n;
+}, 1000);
+</script>
+</body></html>

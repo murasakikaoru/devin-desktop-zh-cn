@@ -1,91 +1,109 @@
-# Devin Desktop 简体中文汉化（不改安装文件）
+# Devin Desktop 简体中文汉化（devin-desktop-zh-cn）
 
-## 使用方法
+给 **Devin Desktop**（Cognition 的 AI 编程助手桌面端，VS Code / Windsurf 血统）做简体中文界面汉化。**不修改安装目录下任何文件**，通过「语言包 + CDP 运行时注入」两层方案实现，官方升级不受影响。
 
-**双击 `Devin-中文.bat`** —— 一键完成全部步骤：
+- 词库：**2888 条精确匹配 + 587 条正则规则**（动态文案）
+- 已适配版本：Devin Desktop **3.10.48**（2026-09-29 构建，VS Code 内核 1.126.0）
+- 覆盖：Agent 面板、会话界面控件、评审、自动化、安全、Devin 设置全分区（计划信息/用量/扩展/Agents/编辑器/快捷键等）、模型选择器、命令面板等
 
-1. 首次运行自动准备环境（`setup.py`，幂等）：
-   - `~/.devin/argv.json` 写入 `"locale": "zh-cn"`
-   - 若未安装语言包，调用 `Devin.exe --install-extension` 自动安装 vsix
-2. 检测 Devin 运行状态——若已在运行但未开调试端口，提示关闭后以汉化模式重启（Electron 单实例机制下直接启动会丢调试参数）
-3. 清理旧注入器后**完全隐藏**启动 `inject.py`（PowerShell `Start-Process -WindowStyle Hidden`，无任何常驻窗口，日志在 `%TEMP%\devin-zh-injector.log`）
-4. 以 `--remote-debugging-port=9222` 启动 Devin
+## 快速开始
 
-注入器发现 Devin 的页面/webview target 后自动注入翻译层；React 动态渲染内容由 MutationObserver 实时补翻。
+### 环境要求
 
-> 直接正常启动 Devin 也完全没问题——只是 Agent 窗口保持英文，核心界面仍是中文（语言包生效）。
+- Windows 10/11
+- **Python 3**（`pythonw`/`python`/`py` 任一可用，需在 PATH 中）
+- Devin Desktop 已安装（**任意盘符/目录**，启动器自动探测）
 
-## 环境要求与可移植性
+### 使用
 
-- **Windows + Python 3**（pythonw / python / py 启动器均可，需加入 PATH）
-- **Devin Desktop**（`find_devin.ps1` 自动探测：常见安装目录 → 卸载注册表 → 运行中进程 → 开始菜单快捷方式 → PATH，覆盖 D/E 盘等任意安装位置；全失败时提示手动粘贴路径）
-- 本目录**可放在任意路径**运行，无任何硬编码路径；不修改安装目录下任何文件
+1. 双击 **`Devin-中文.bat`**
+2. 脚本自动完成：写 `locale` → 安装语言包（首次）→ 清理旧注入器 → 隐藏启动注入器 → 以调试端口启动 Devin
+3. 界面即显示中文，全程无常驻窗口（注入器完全隐藏运行，日志在 `%TEMP%\devin-zh-injector.log`）
+
+> 若 Devin 已在运行但没带调试端口，启动器会提示确认后自动重启它——Electron 单实例机制下直接启动会丢失调试参数。
+>
+> **多安装共存**（如 `Program Files` 系统版 + `AppData` 用户版）：自动选最高版本；要强制指定某一份，先 `set DEVIN_EXE=D:\path\Devin.exe` 再运行 bat。
+>
+> 汉化后**关掉 bat 窗口不会影响 Devin**：Devin 由系统服务创建（WMI `Win32_Process.Create`），与 bat 控制台完全脱离。
+
+### 卸载
+
+- 直接正常启动 Devin（不经 bat）→ Agent 界面恢复英文，内核界面仍是中文
+- 完全还原：删除 `%USERPROFILE%\.devin\argv.json` 中的 `"locale"` 键，扩展面板卸载 `devin-language-pack-zh-hans`，删除本目录
+
+## 工作原理
+
+### 为什么不能改文件
+
+Devin 在 `product.json` 里维护了核心文件的**完整性校验**（`checksums`），改任何一个都会弹「安装似乎损坏」。所以本项目全程不碰安装文件，只在运行时注入。
+
+### 两层覆盖
+
+| 层 | 方案 | 覆盖 |
+|---|---|---|
+| ① VS Code 内核 | 自制语言包 `devin-language-pack-zh-hans`（argv.json `locale: zh-cn` 激活） | 菜单、编辑器、设置、通知等 21000+ 条 |
+| ② Agent 界面 | `inject.py` 连 CDP（`--remote-debugging-port`）→ 注入 `translator.js` | React webapp 全部界面文案 |
+
+`translator.js` 在页面内运行：词典精确匹配 + 正则处理动态文案 + 属性翻译（title/aria-label/placeholder）+ `MutationObserver` 实时补翻 React 后续渲染 + 可见性变化与延迟兜底重扫。
+
+### 用量区实时刷新
+
+Devin 官方没有设置页用量的周期刷新（仅启动/鉴权变化/打开计划面板/点刷新图标时更新）。translator.js 通过 chat-client 暴露给 React 树的 api 桥每 30 秒及窗口重新可见时触发官方 `devin.updatePlanInfo` 命令，用量区（每日/每周配额、额外余额、状态栏徽章）保持实时更新。
+
+## 翻译范围
+
+### 保留英文
+
+`Agent`、`Editor`、模型名（SWE-2、Claude 等）、产品名（DeepWiki、Codemap、Lifeguard、Cascade、Devin）、Thinking Effort、subagents、技术术语、平台名。
+
+### 不翻译的区域
+
+以下属于**数据**而非界面，即使命中词典也保持原文：
+
+- **Agent 对话区**：`[data-transcript-row-key]` 整行排除（消息、工具卡、审批、计划、shell 输出等模型生成内容）
+- **Markdown/流式渲染**：`[class*="prose"]`、`[data-streamdown]`、`acp-markdown`、`[data-slate-editor]`
+- **扩展商店**：`.extensions-viewlet`、`.extension-editor`（扩展名/描述是远程数据）
+- **市场卡片**：MCP/插件市场条目（远程数据）
+- **代码与终端**：`.monaco-editor`、`.view-lines`、`.xterm` 等
+- **数据列表**：`.monaco-list-row` 等（文件名、搜索结果、提交信息）
 
 ## 目录结构
 
 ```
-Devin-ZH/
-├── Devin-中文.bat                          # 一键启动器（自动探测 Devin/Python）
-├── find_devin.ps1                          # Devin.exe 多层定位（注册表/进程/快捷方式）
-├── setup.py                                # 首次运行：写 locale + 装语言包（幂等）
-├── inject.py                               # CDP 注入器（内置 WS 客户端，零依赖）
-├── translator.js                           # 注入页面的翻译引擎 v0.1.3
-├── dict.json                               # 编译产物：2888 精确 + 583 正则
-├── devin-language-pack-zh-hans-1.0.0.vsix  # 语言包（setup.py 自动安装）
-├── pack/                                   # 语言包源文件（vsix 打包用）
-├── src/                                    # 维护用源码
-│   ├── build_dict.py                       # 合并 webapp-zh-*.json -> ../dict.json
-│   ├── extract_webapp.py                   # 从 Agent bundle 提取英文词典
-│   ├── extract_settings.py                 # 提取设置页字符串
-│   ├── verify_cdp.py                       # CDP 验证脚本
-│   ├── probe_settings.js / probe_dom.js    # 设置页/DOM 探针
-│   ├── webapp-zh-1..6.json                 # 人工翻译源文件（en -> zh），6 为 Devin 设置页
-│   ├── webapp-en.json                      # 提取的完整英文词典（11222 条）
-│   ├── webapp-visible-en.txt               # 可见字符串清单（3370 条）
-│   ├── untranslated.txt                    # 剩余未翻（有意保留的英文）
-│   ├── zh1/2/3.json                        # NLS 语言包翻译源（883 条 Devin 字符串）
-│   ├── missing-strings.json / missing-flat.txt  # NLS 缺失分析
-│   └── main.i18n.backup.json               # kiro 语言包备份
-└── test/
-    ├── test-page.html                      # 端到端验证测试页
-    └── test-chrome.ps1                     # 测试 Chrome 启动脚本
+devin-desktop-zh-cn/
+├── Devin-中文.bat                           # 一键启动器（自动探测 Devin/Python）
+├── find_devin.ps1                           # Devin.exe 多层定位（注册表/进程/快捷方式，多安装共存选最新）
+├── setup.py                                 # 首次准备：写 locale + 装语言包（幂等）
+├── inject.py                                # CDP 注入器（内置 WebSocket，零依赖）
+├── translator.js                            # 页面翻译引擎 v0.1.5
+├── dict.json                                # 编译产物词库
+├── devin-language-pack-zh-hans-1.0.0.vsix   # 自制语言包
+├── pack/                                    # 语言包源文件（vsix 打包用）
+├── tools/                                   # 维护工具链
+│   ├── build_dict.py                        #   合并翻译源 -> dict.json
+│   ├── extract_webapp.py / extract_settings.py  # 从 bundle 提取英文字符串
+│   ├── scan_tables.py / scan_props.py / scan_literals.py  # 版本适配扫描器
+│   ├── check_coverage.py                    #   词库覆盖率检查
+│   ├── probe_*.js / verify_cdp.py           #   DOM/CDP 探针
+│   ├── webapp-zh-*.json / zh*.json          #   人工翻译源文件
+│   └── webapp-visible-en.txt                #   可见字符串清单
+├── docs/
+│   └── TECH.md                              # 技术细节与维护指南
+└── test/                                    # 端到端测试页
 ```
 
-## 两层覆盖
+## 补翻译 / 维护
 
-| 层 | 方案 | 覆盖 |
-|---|---|---|
-| 核心 workbench + Devin NLS | 语言包扩展（`devin-zh.devin-language-pack-zh-hans`） | 菜单、编辑器、设置、Devin 命令等 21000+ 条 |
-| Agent 窗口（React webapp） | CDP 运行时注入 `translator.js` | 输入框、按钮、状态、Devin 设置页（计划/用量/扩展/Agents/配置/自定义项/编辑器/快捷键/高级 全分区）等 3400+ 条 |
+- **发现漏翻**：把 `"English": "中文"` 加进 `tools/webapp-zh-*.json`，`cd tools && python build_dict.py` 重新生成 `dict.json`，重启注入器生效
+- **Devin 升级后**：语言包不受影响；Agent 界面新字符串用 `tools/scan_props.py` 对比新旧 bundle，`tools/check_coverage.py` 查漏
+- 注入器参数：`python inject.py --port 9222`（改端口需同步 bat 中启动参数）
 
-## 保留英文
+## 隐私说明
 
-Agent、Editor、模型名（SWE-1.7、GPT-6 Astra、Opus 等）、产品名（DeepWiki、Codemap、Lifeguard、Cascade、Devin）、Thinking Effort、环境变量示例、平台名、远程数据（第三方 Agent/插件名称与描述）。
+- 本项目不修改 Devin 安装目录下任何文件，不含遥测，不联网上传任何数据
+- 注入器仅连接本机 `127.0.0.1` 调试端口（端口仅在 bat 带参启动时开放）
+- 词库内容全部来自 Devin 界面文案的提取与翻译
 
-## 不翻译的区域
+## 许可
 
-以下区域即使文本命中词典也保持原文，属于"数据"而非界面：
-
-- **整个 Agent 对话界面**：`[data-transcript-row-key]` —— 会话流中的每一行（消息、工具卡、审批、计划、shell 输出、PR/分支信息等）整行不翻；`[data-message-author]`、各 `transcript-*-message` / `transcript-plan-content` 等 testid 作为行外兜底
-- **Markdown/流式渲染**：`[class*="prose"]`、`[data-streamdown]`、`acp-markdown`、`[data-markdown]`、`[data-slate-editor]`
-- **扩展商店**：`.extensions-viewlet`（侧栏列表）、`.extension-editor`（详情页）——扩展名/描述是远程数据
-- **插件/MCP 市场卡片**：`[class*="grid-cols-["] > [class*="cursor-pointer"]`、`[id^="mcp-installation-"]` —— 名称/描述是远程数据
-- **数据列表**：`.monaco-tl-row` / `.monaco-list-row` / `.monaco-hover` —— 文件名、搜索结果、提交信息、断点等
-
-另外 `build_dict.py` 中数字型占位符（`{{count}}`、`{{seconds}}` 等）生成 `(\d[\d.,]*)` 而非 `(.+?)`，避免 `{{count}}s` 误吞一切 s 结尾的词（如 "Permissions"→"Permission 秒"）。
-
-会话区域之外的 UI（输入框、按钮、状态栏、设置页）仍会翻译。
-
-## 更新日志
-
-- **v0.1.3**：修复 MutationObserver 在翻译进行中丢弃 DOM 变更导致的"页面首开显示英文、切换后才翻译"问题；增加 visibilitychange 兜底重扫与注入后延迟补扫；移除 `{{model}} via {{modelProvider}}` 过宽正则（误翻远程 agent 描述）；新增 Devin 设置页全量翻译。启动器：注入器改为完全无窗口启动；检测 Devin 未开调试端口运行时自动提示重启；自动清理重复注入器
-- **v0.1.2**：整行排除 `[data-transcript-row-key]`；数字型占位符修复"秒"后缀误翻；市场卡片排除
-- **v0.1.1**：消息正文/Markdown/扩展商店/列表行排除
-- **v0.1.0**：初版
-
-## 维护
-
-- **补翻译**：在 `src/webapp-zh-*.json` 加条目 → `cd src && python build_dict.py` → 重启注入器生效
-- **Devin 更新后**：语言包不受影响；Agent 新字符串用 `extract_webapp.py` 重新提取后走同样流程
-- **注入器参数**：`python inject.py --port 9222`（改端口需同步改 bat 中 Devin 的启动参数）
-- 注入器不修改 `%LOCALAPPDATA%\Programs\Devin` 下任何文件
+MIT License — 见 [LICENSE](LICENSE)

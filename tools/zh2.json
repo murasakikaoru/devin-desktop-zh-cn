@@ -1,0 +1,366 @@
+{
+"vs/workbench/api/browser/viewsExtensionPoint": {
+	"views.container.auxiliaryactivitybar": "向辅助活动栏贡献视图容器"
+},
+"vs/workbench/browser/actions/layoutActions": {
+	"auxiliaryActivityBar": "辅助活动栏",
+	"compositePart.showSideBarLabel": "显示主侧边栏",
+	"moveSecondSidebarLeft": "将辅助侧边栏移到左侧",
+	"moveSecondSidebarRight": "将辅助侧边栏移到右侧"
+},
+"vs/workbench/browser/actions/quickAccessActions": {
+	"quickOpenSessions": "快速打开会话",
+	"windsurf.agentManager": "Agent 管理器"
+},
+"vs/workbench/browser/agentWindowLabels": {
+	"agentWindowDevinCloudWorkspace": "Devin 云端文件",
+	"agentWindowDevinCloudWorkspaceNamed": "Devin 云端文件 ({0})",
+	"agentWindowMultiRootWorkspace": "{0}（工作区）"
+},
+"vs/workbench/browser/parts/auxiliaryactivitybar/auxiliaryactivitybarPart": {
+	"auxiliary activity bar position": "辅助活动栏位置",
+	"bottom": "底部",
+	"default": "默认",
+	"hide": "隐藏",
+	"hideAuxiliaryActivityBar": "隐藏辅助活动栏",
+	"hideMenu": "隐藏菜单",
+	"menu": "菜单",
+	"miBottomAuxiliaryActivityBar": "底部(&&B)",
+	"miDefaultAuxiliaryActivityBar": "默认(&&D)",
+	"miHideAuxiliaryActivityBar": "隐藏(&&H)",
+	"miTopAuxiliaryActivityBar": "顶部(&&T)",
+	"positionAuxiliaryActivituBar": "辅助活动栏位置",
+	"positionAuxiliaryActivityBarBottom": "将辅助活动栏移到底部",
+	"positionAuxiliaryActivityBarDefault": "将辅助活动栏移到侧边",
+	"positionAuxiliaryActivityBarTop": "将辅助活动栏移到顶部",
+	"top": "顶部"
+},
+"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarActions": {
+	"hide second side bar": "隐藏 Agent 侧边栏",
+	"show second side bar": "显示 Agent 侧边栏"
+},
+"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarPart": {
+	"auxiliary activity bar position": "辅助活动栏位置",
+	"toggleAuxiliaryActivityBar": "切换辅助活动栏可见性"
+},
+"vs/workbench/browser/parts/editor/agentWindowDirectoryPicker": {
+	"windsurfWelcome.browseFolder2": "浏览…",
+	"windsurfWelcome.pickDirectory": "选择目录",
+	"windsurfWelcome.remoteFoldersSkipped": "无法在此 Agent 窗口中打开的文件夹已被跳过。",
+	"windsurfWelcome.selectFolder": "选择文件夹"
+},
+"vs/workbench/browser/parts/editor/breadcrumbsControl": {
+	"plans": "计划"
+},
+"vs/workbench/browser/parts/editor/breadcrumbsPicker": {
+	"openCascadeConversation": "打开 Cascade 对话",
+	"openTerminalInWorktree": "在集成终端中打开 Worktree",
+	"openWorktreeNewWindow": "在新窗口中打开 Worktree"
+},
+"vs/workbench/browser/parts/editor/editor.contribution": {
+	"copySessionId": "复制会话 ID",
+	"copySessionUrl": "复制会话链接",
+	"downloadDevinResource": "下载",
+	"openSessionOnWeb": "在网页中打开会话",
+	"putDevinToSleep": "让 Devin 休眠",
+	"renameSession": "重命名会话…"
+},
+"vs/workbench/browser/parts/editor/editorActions": {
+	"openWindsurfAgentWindow": "新建 Agent 窗口",
+	"windsurf.agentManager": "Agent 管理器"
+},
+"vs/workbench/browser/parts/editor/editorCommands": {
+	"addFileToSpace": "搜索要添加到此 Space 的文件"
+},
+"vs/workbench/browser/parts/editor/editorDropTarget": {
+	"dropIntoAgentPrompt": "按住 __{0}__ 可将文件拖入 Agent"
+},
+"vs/workbench/browser/parts/editor/editorGroupWindsurfWelcome": {
+	"windsurfWelcome.loggedOut": "已登出",
+	"windsurfWelcome.settings": "设置"
+},
+"vs/workbench/browser/parts/editor/editorStatus": {
+	"addToGitignore": "添加到 .gitignore",
+	"addToGitignoreError": "添加文件到 .gitignore 失败：{0}",
+	"alreadyInGitignore": "文件已在 .gitignore 中",
+	"cannotReadGitignore": "无法读取 .gitignore",
+	"noGitignoreFile": "工作区中不存在 .gitignore 文件"
+},
+"vs/workbench/browser/parts/editor/workbenchEditorGroupChrome": {
+	"ariaLabelGroupActions": "空编辑器组操作"
+},
+"vs/workbench/browser/parts/globalCompositeBar": {
+	"noAccounts": "你尚未登录任何账户",
+	"signIn": "登录",
+	"windsurf settings": "Devin 设置"
+},
+"vs/workbench/browser/parts/leftHeader/leftHeaderPart": {
+	"toggleSecondarySideBar": "切换 Agent 侧边栏",
+	"toggleSideBar": "切换主侧边栏"
+},
+"vs/workbench/browser/parts/paneCompositePart": {
+	"pane.resetLink": "重置视图"
+},
+"vs/workbench/browser/parts/titlebar/agentEditorSwitch": {
+	"focusEditorWindowTooltip": "聚焦 Editor 窗口",
+	"openAgentWindowTooltip": "打开 Agent 窗口",
+	"switchToAgent": "切换到 Agent",
+	"switchToEditor": "切换到 Editor"
+},
+"vs/workbench/browser/parts/titlebar/agentSearchButton": {
+	"searchAgents": "搜索 Agent",
+	"searchAgentsWithKb": "搜索 Agent ({0})"
+},
+"vs/workbench/browser/parts/titlebar/commandCenterControl": {
+	"label.agentMode": "搜索会话…"
+},
+"vs/workbench/browser/parts/titlebar/titlebarPart": {
+	"ariaLabelTitleActivityActions": "标题栏活动操作",
+	"download update_1": "有可用更新",
+	"DownloadingUpdate": "正在下载更新",
+	"installingUpdate": "正在安装更新",
+	"installUpdate...": "安装更新",
+	"navigateBack": "后退",
+	"navigateForward": "前进",
+	"quickOpen": "快速打开",
+	"restartToUpdate": "重启以更新"
+},
+"vs/workbench/browser/windsurfSaveFile": {
+	"windsurfSaveFileTitle": "保存"
+},
+"vs/workbench/browser/workbench.contribution": {
+	"auxiliaryActivityBarLocation": "控制辅助活动栏相对于辅助侧边栏的位置。",
+	"devin.agentWindow.location": "Agent 命令中心的打开位置。",
+	"devin.agentWindow.location.currentWindow": "当前窗口在 Agent 命令中心和编辑器之间切换。",
+	"devin.agentWindow.location.separateWindow": "Agent 命令中心拥有独立窗口，切换时在两个窗口之间移动焦点。",
+	"devin.desktopShell.enabled": "将 Devin Agent 窗口渲染为挂载的 Devin Web 应用。在启用该功能的账户中默认开启，否则无效。Editor 模式不受影响。关闭可使用原生 Agent 窗口布局。需要重新加载窗口。",
+	"devin.editor.agentInboxVisible": "启用后，Agent 收件箱欢迎视图将替代默认的编辑器欢迎页。切换到 Devin Agent 窗口模式时自动启用。",
+	"devin.editor.managedSpaces": "启用后，Agent Space 窗口管理器会为每个 Space 跟踪、保存并恢复编辑器状态。禁用后仅确保活动会话处于打开状态。",
+	"devin.spaces.shareContext": "启用后，发送到 Space 的第一条消息会自动附带该 Space 中所有其他会话的摘要作为 Agent 的上下文。",
+	"windsurf.editor.agentInboxVisible": "启用后，Agent 收件箱欢迎视图将替代默认的编辑器欢迎页。切换到 Devin Agent 窗口模式时自动启用。",
+	"windsurf.editor.agentInboxVisible.deprecated": "已弃用：请改用 'devin.editor.agentInboxVisible'。",
+	"windsurf.editor.managedSpaces": "启用后，Agent Space 窗口管理器会为每个 Space 跟踪、保存并恢复编辑器状态。禁用后仅确保活动会话处于打开状态。",
+	"windsurf.editor.managedSpaces.deprecated": "已弃用：请改用 'devin.editor.managedSpaces'。",
+	"windsurf.spaces.shareContext": "启用后，发送到 Space 的第一条消息会自动附带该 Space 中所有其他会话的摘要作为 Agent 的上下文。",
+	"windsurf.spaces.shareContext.deprecated": "已弃用：请改用 'devin.spaces.shareContext'。",
+	"workbench.auxiliaryActivityBar.location.bottom": "在辅助侧边栏底部显示辅助活动栏。",
+	"workbench.auxiliaryActivityBar.location.default": "在辅助侧边栏侧边显示辅助活动栏。",
+	"workbench.auxiliaryActivityBar.location.hide": "在辅助侧边栏中隐藏辅助活动栏。",
+	"workbench.auxiliaryActivityBar.location.top": "在辅助侧边栏顶部显示辅助活动栏。"
+},
+"vs/workbench/common/contextkeys": {
+	"activeCascadeEditorHasExternalUrl": "活动编辑器是否为具有外部会话 URL 的 Cascade 编辑器",
+	"activeEditorGroupAutoLocked": "活动编辑器组是否被永久自动锁定",
+	"agentInboxVisible": "Agent 收件箱（所有会话视图）当前是否可见",
+	"agentWorkspaceConversionInFlight": "此窗口当前是否正在转换为合成的 Agent 工作区",
+	"cascadeEditorCanRenameSession": "Cascade 编辑器标签页的会话是否可重命名",
+	"cascadeEditorHasExternalUrl": "Cascade 编辑器标签页是否具有外部会话 URL",
+	"cascadeEditorHasSessionId": "Cascade 编辑器标签页是否具有可解析的会话 ID",
+	"cascadeEditorIsDevinCloudAndAwake": "Cascade 编辑器标签页是否为当前处于唤醒状态的 Devin Cloud 会话（具有外部 URL 且未休眠）",
+	"leftSidePartVisible": "左侧部件（侧边栏或辅助栏）是否可见",
+	"pullRequestEditorTab": "编辑器标签页是否为集成的 Pull Request 标签页"
+},
+"vs/workbench/common/theme": {
+	"editorGroupDepthShadow": "侧边栏、面板和辅助侧边栏投射到编辑器区域边缘的阴影颜色。设置为 transparent 可获得扁平布局。"
+},
+"vs/workbench/contrib/agentsVoice/browser/agentsVoiceSessionsPicker": {
+	"voiceSessions.placeholder": "选择用于语音输入的会话",
+	"voiceSessions.setTarget": "设为语音目标"
+},
+"vs/workbench/contrib/agentsVoice/browser/agentsVoiceWidget": {
+	"agentsVoice.clickMicToTalk": "点击麦克风开始说话",
+	"agentsVoice.collapseSessions": "折叠会话列表",
+	"agentsVoice.configureKeybinding": "配置快捷键",
+	"agentsVoice.disconnect": "断开连接",
+	"agentsVoice.feedbackError": "提交失败",
+	"agentsVoice.holdToTalk": "按住 {0} 说话",
+	"agentsVoice.listening": "正在聆听",
+	"agentsVoice.minimize": "最小化",
+	"agentsVoice.pushToTalk": "按键说话",
+	"agentsVoice.pushToTalkKey": "按键说话 ({0})",
+	"agentsVoice.pushToTalkSpace": "按键说话（空格）",
+	"agentsVoice.sendFeedback": "发送反馈",
+	"agentsVoice.sessions": "会话"
+},
+"vs/workbench/contrib/agentsVoice/browser/agentsVoiceWidgetBinding": {
+	"agentsVoice.chat": "聊天",
+	"agentsVoice.otherSessions": "其他",
+	"agentsVoice.untitledSession": "未命名会话"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/confirmationComponent": {
+	"agentsVoice.approve": "批准",
+	"agentsVoice.deny": "拒绝",
+	"agentsVoice.openInVSCode": "在 VS Code 中打开"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/feedbackDialog": {
+	"agentsVoice.cancel": "取消",
+	"agentsVoice.feedbackConsent": "提交即表示你同意反馈中附带你的会话日志和转录历史。",
+	"agentsVoice.feedbackError": "提交反馈失败",
+	"agentsVoice.feedbackPlaceholder": "我们可以改进什么？",
+	"agentsVoice.feedbackThanks": "感谢你的反馈！",
+	"agentsVoice.sendFeedback": "发送反馈",
+	"agentsVoice.submit": "提交",
+	"agentsVoice.submitting": "正在提交…"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/headerComponent": {
+	"agentsVoice.clickMicToTalk": "点击麦克风开始说话",
+	"agentsVoice.configureKeybinding": "配置快捷键",
+	"agentsVoice.disconnect": "断开连接",
+	"agentsVoice.holdToTalk": "按住 {0} 说话",
+	"agentsVoice.minimize": "最小化",
+	"agentsVoice.openMiniView": "打开迷你视图",
+	"agentsVoice.pushToTalkSpace": "按键说话（空格）",
+	"agentsVoice.sendFeedback": "发送反馈"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/onboardingComponent": {
+	"agentsVoice.changeHotkeySuffix": "以便在任意应用中使用。",
+	"agentsVoice.changePttKey": "更改按键说话键位",
+	"agentsVoice.configureHotkey": "配置快捷键",
+	"agentsVoice.connecting": "正在连接…",
+	"agentsVoice.feedbackDesc": "使用反馈图标帮助我们改进你的体验。",
+	"agentsVoice.getStarted": "开始使用",
+	"agentsVoice.miniViewSuffix": "以便在 VS Code 不在前台时进行多任务处理。",
+	"agentsVoice.openMiniView": "打开迷你视图",
+	"agentsVoice.pttDesc": "按键说话",
+	"agentsVoice.pttHoldDesc": "——说话时按住按键，说完松开。",
+	"agentsVoice.welcomeDesc": "与可同时控制多个编码 Agent 的助手对话。工作完成或需要输入时会收到通知。",
+	"agentsVoice.welcomeTitle": "欢迎使用语音聊天"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/sessionListComponent": {
+	"agentsVoice.approve": "批准",
+	"agentsVoice.deny": "拒绝",
+	"agentsVoice.newSession": "新建会话",
+	"agentsVoice.noActiveSessions": "没有活动会话",
+	"agentsVoice.openInVSCode": "在 VS Code 中打开",
+	"agentsVoice.sendTo": "发送到",
+	"agentsVoice.sendToActive": "发送到（活动）",
+	"agentsVoice.stop": "停止",
+	"agentsVoice.stopSessionAction": "停止会话"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/statusRowsComponent": {
+	"agentsVoice.done": "已完成",
+	"agentsVoice.jumpToSession": "跳转到会话",
+	"agentsVoice.needsInput": "需要输入",
+	"agentsVoice.noActiveSessions": "没有活动会话",
+	"agentsVoice.working": "工作中"
+},
+"vs/workbench/contrib/agentsVoice/browser/components/voiceBarComponent": {
+	"agentsVoice.listening": "正在聆听",
+	"agentsVoice.speaking": "正在说话…",
+	"agentsVoice.stopSpeech": "停止朗读"
+},
+"vs/workbench/contrib/announcements/browser/announcements.contribution": {
+	"announcement.ariaLabel": "公告：{0}",
+	"announcement.seeChangelog": "查看更新日志"
+},
+"vs/workbench/contrib/architectureWarning/electron-browser/architectureWarning.contribution": {
+	"architectureMismatchWarning": "架构不匹配",
+	"wrongArchitecture": "架构错误——请下载原生 ARM64 版本",
+	"wrongArchitectureAria": "你正在运行 {0} 的模拟 x64 版本。下载原生 ARM64 版本可获得更好性能。",
+	"wrongArchitectureTooltip": "你正在运行 {0} 的模拟版本，性能可能下降。点击下载原生 ARM64 版本。"
+},
+"vs/workbench/contrib/browserView/electron-browser/features/browserEditorChatFeatures": {
+	"workbench.browser.agentHostChatToolsEnabled": "启用后，集成浏览器工具将作为客户端提供的工具暴露给会话窗口中的 Agent Host 会话。需要 {0} 和 {1}。"
+},
+"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionHandler": {
+	"agentHost.elicit.url.instruction": "打开此 URL？",
+	"agentHost.responseDetails.credit": "{0} 点数",
+	"agentHost.responseDetails.credits": "{0} 点数"
+},
+"vs/workbench/contrib/chat/browser/agentSessions/agentHost/stateToProgressAdapter": {
+	"ahp.running": "正在运行 {0}…"
+},
+"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsActions": {
+	"agentSessions.open": "打开 Agent 会话…",
+	"archiveAll.label": "归档所有工作区 Agent 会话",
+	"archiveAllSessions.archive": "归档",
+	"archiveSection": "全部归档",
+	"archiveSectionSessions.archive": "全部归档",
+	"unarchiveSection": "全部取消归档",
+	"unarchiveSectionSessions.unarchive": "全部取消归档"
+},
+"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsPicker": {
+	"archiveSession": "归档",
+	"unarchiveSession": "取消归档"
+},
+"vs/workbench/contrib/chat/browser/agentSessions/localAgentDisabledInputTipContribution": {
+	"chat.localAgentDisabled.continueInAgentHostCopilot.action": "在 Agent Host 中继续",
+	"chat.localAgentDisabled.continueInAgentHostCopilot.description": "你可以将本地框架的历史记录带入 Agent Host 的新聊天中。若想继续使用本地框架并隐藏此通知，请将 \"chat.editor.localAgent.enabled\" 设为 true。",
+	"chat.localAgentDisabled.continueInAgentHostCopilot.message": "继续使用 Agent Host。"
+},
+"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditor": {
+	"selectHarness": "选择自定义目标",
+	"selectTargetDirectory": "为新自定义文件选择目录"
+},
+"vs/workbench/contrib/chat/browser/aiCustomization/mcpListWidget": {
+	"installed": "已安装"
+},
+"vs/workbench/contrib/chat/browser/aiCustomization/pluginListWidget": {
+	"byPublisher": "由 {0} 提供"
+},
+"vs/workbench/contrib/chat/browser/attachments/chatAttachmentWidgets": {
+	"chat.imageAttachmentPreviewFeaturesDisabled": "你的组织已禁用视觉功能。"
+},
+"vs/workbench/contrib/chat/browser/chat.shared.contribution": {
+	"chat.agentHost.clientTools": "要在 Agent Host 会话中作为客户端提供工具暴露的工具引用名。",
+	"chat.customizations.harnessSelector.enabled": "控制是否在聊天自定义编辑器侧边栏中显示框架选择器。禁用后，编辑器始终显示所有自定义项而不做筛选。",
+	"chat.defaultConfiguration.approvals.autoApprove": "跳过审批——所有工具调用都会被自动批准。",
+	"chat.generalPurposeAgent.enabled": "控制内置的通用 Agent 是否可作为子代理使用。",
+	"chat.persistentProgress.enabled": "始终在聊天中显示进度。",
+	"chat.sendElementsToChat.attachImages": "控制是否将所选元素的截图添加到聊天中。"
+},
+"vs/workbench/contrib/chat/browser/chatSlashCommands": {
+	"clear": "开始新聊天并归档当前聊天"
+},
+"vs/workbench/contrib/chat/browser/pluginInstallService": {
+	"localSourceNotSupported": "不支持本地文件路径。请输入 GitHub 仓库（owner/repo）或 git 克隆 URL。"
+},
+"vs/workbench/contrib/chat/browser/promptSyntax/chatModeActions": {
+	"configure-agents.short": "自定义 Agent",
+	"configure.agent.prompts.placeholder": "选择要打开的自定义 Agent，并配置其在 Agent 选择器中的可见性",
+	"select-agent": "配置自定义 Agent…"
+},
+"vs/workbench/contrib/chat/browser/widget/input/chatModelPicker": {
+	"chat.modelPicker.adminDescription": "联系管理员",
+	"chat.modelPicker.adminHover": "此模型不可用。请联系管理员启用。",
+	"chat.modelPicker.adminLink": "[联系管理员]({0})",
+	"chat.modelPicker.ariaLabel": "选择模型，{0}",
+	"chat.modelPicker.auto": "自动",
+	"chat.modelPicker.checkUpdateHover": "此模型需要更新版本的 VS Code。[更新 VS Code](command:update.checkForUpdate) 后可使用。",
+	"chat.modelPicker.downloadUpdateHover": "此模型需要更新版本的 VS Code。[下载更新](command:update.downloadUpdate) 后可使用。",
+	"chat.modelPicker.restartUpdateHover": "此模型需要更新版本的 VS Code。[重启以更新](command:update.restartToUpdate) 后可使用。",
+	"chat.modelPicker.tokensAriaLabel": "上下文大小：{0}",
+	"chat.modelPicker.updateDescription": "更新 VS Code",
+	"chat.modelPicker.upgradeHover": "[升级到 GitHub Copilot Pro](command:workbench.action.chat.upgradePlan \" \") 以使用最佳模型。",
+	"chat.modelPicker.upgradeHoverProPlus": "[升级到 GitHub Copilot Pro+](command:workbench.action.chat.upgradePlan \" \") 以使用最佳模型。",
+	"chat.modelPicker.upgradeLink": "[升级](command:workbench.action.chat.upgradePlan \" \")",
+	"models.configurable": "可配置",
+	"models.cost": "费用：{0}"
+},
+"vs/workbench/contrib/chat/browser/widgetHosts/viewPane/chatViewPane": {
+	"voiceMode.clickMicHint": "点击麦克风开始说话"
+},
+"vs/workbench/contrib/codeEditor/browser/emptyTextEditorHint/emptyTextEditorHint": {
+	"defaultHintAriaLabelWindsurf": "执行 {0} 启动 Devin。开始输入可关闭此提示。",
+	"emptyTextEditorHintWindsurf": "[[{0}]] 启动 Devin。开始输入可关闭此提示。"
+},
+"vs/workbench/contrib/deepwiki/browser/deepwiki.contribution": {
+	"deepwiki.attachContext.title": "将 DeepWiki 附加为上下文",
+	"deepwiki.moreActions": "更多操作",
+	"deepwiki.navigateBackward": "导航到历史中的上一篇文章",
+	"deepwiki.navigateForward": "导航到历史中的下一篇文章",
+	"deepwiki.openSymbol": "查看 Wiki",
+	"deepwiki.openSymbol.title": "在 DeepWiki 中打开符号",
+	"deepwiki.resetSeenStates.title": "重置 DeepWiki 已读状态"
+},
+"vs/workbench/contrib/deepwiki/browser/deepwikiActivity": {
+	"deepwikiNewBadge": "有新的 DeepWiki 功能可用"
+},
+"vs/workbench/contrib/deepwiki/browser/deepwikiHoverParticipant": {
+	"deepwiki.emptySummary": "摘要为空",
+	"deepwiki.loadingSummary": "正在加载 DeepWiki 摘要…",
+	"deepwiki.noSummary": "暂无摘要",
+	"deepwiki.seeWiki": "阅读更多",
+	"deepwiki.summaryError": "加载摘要出错"
+}
+}

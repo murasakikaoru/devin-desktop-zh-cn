@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 提取产物（可由 tools/ 脚本重新生成，不入库）
+tools/webapp-en*.json
+tools/settings-strings*.json
+tools/lit-*.txt
+tools/p31-*.txt
+tools/p48-*.txt
+tools/props-*.txt
+tools/missing-*.txt
+tools/missing-strings.json
+tools/untranslated.txt
+tools/main.i18n.backup.json
+
+# 打包/发布产物
+*.zip
+devin_zh_cn_*/
+
+# 日志与临时文件
+*.log
+nul
+Thumbs.db
+.DS_Store

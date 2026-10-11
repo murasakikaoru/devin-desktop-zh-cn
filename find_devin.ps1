@@ -40,4 +40,11 @@ Get-ChildItem $menuRoots -Recurse -Filter '*evin*.lnk' | ForEach-Object {
 $cmd = Get-Command Devin.exe
 if ($cmd) { $candidates += $cmd.Source }
 
-$candidates | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Select-Object -First 1
+# Multiple installs may coexist (per-user + system-wide). Pick the newest version
+# so an upgraded copy wins over a stale one.
+$found = $candidates | Where-Object { $_ -and (Test-Path -LiteralPath $_) } | Select-Object -Unique
+if (-not $found) { return }
+$best = $found | Sort-Object -Descending {
+    try { [version]((Get-Item -LiteralPath $_).VersionInfo.ProductVersion) } catch { [version]'0.0' }
+} | Select-Object -First 1
+$best

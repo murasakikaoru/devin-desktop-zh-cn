@@ -19,11 +19,46 @@ VSIX = os.path.join(HERE, 'devin-language-pack-zh-hans-1.0.0.vsix')
 PACK_MARK = 'devin-language-pack-zh-hans'
 
 
+def _strip_jsonc(text):
+    """剥离 JSONC 注释（// 行注释、/* */ 块注释），保留字符串字面量原样。
+    Devin/VS Code 的 argv.json 允许注释，裸 json.load 会失败。"""
+    out = []
+    i, n = 0, len(text)
+    in_str = False
+    while i < n:
+        c = text[i]
+        if in_str:
+            out.append(c)
+            if c == '\\':
+                if i + 1 < n:
+                    out.append(text[i + 1])
+                    i += 2
+                    continue
+            elif c == '"':
+                in_str = False
+            i += 1
+            continue
+        if c == '"':
+            in_str = True
+            out.append(c)
+            i += 1
+        elif c == '/' and i + 1 < n and text[i + 1] == '/':
+            while i < n and text[i] not in '\r\n':
+                i += 1
+        elif c == '/' and i + 1 < n and text[i + 1] == '*':
+            end = text.find('*/', i + 2)
+            i = n if end < 0 else end + 2
+        else:
+            out.append(c)
+            i += 1
+    return ''.join(out)
+
+
 def ensure_locale():
     cfg = {}
     if os.path.exists(ARGV):
         try:
-            cfg = json.load(open(ARGV, encoding='utf-8'))
+            cfg = json.loads(_strip_jsonc(open(ARGV, encoding='utf-8-sig').read()))
         except Exception:
             # 文件损坏时先备份再覆写, 避免静默丢失原有配置
             try:

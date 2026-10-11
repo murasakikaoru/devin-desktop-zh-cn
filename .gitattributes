@@ -1,0 +1,3 @@
+# bat/cmd 必须始终 CRLF 检出 —— LF 换行会让 cmd 对多行 if() 块解析错乱（秒退 bug）
+*.bat text eol=crlf
+*.cmd text eol=crlf

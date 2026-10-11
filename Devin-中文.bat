@@ -5,8 +5,8 @@ rem 本脚本可放在任意路径运行（%~dp0 自动定位脚本目录）
 cd /d "%~dp0"
 
 rem ---- 定位 Devin.exe: find_devin.ps1 多层探测（任意安装盘符均可）----
-set "DEVIN_EXE="
-for /f "usebackq delims=" %%I in (`powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0find_devin.ps1"`) do if not defined DEVIN_EXE set "DEVIN_EXE=%%I"
+rem DEVIN_EXE 可在运行前预设以强制指定安装位置，默认由 find_devin.ps1 选最新版本
+if not defined DEVIN_EXE for /f "usebackq delims=" %%I in (`powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0find_devin.ps1"`) do set "DEVIN_EXE=%%I"
 if not defined DEVIN_EXE (
 	echo [devin-zh] 未能自动定位 Devin.exe
 	set /p "DEVIN_EXE=请粘贴 Devin.exe 完整路径后回车: "

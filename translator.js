@@ -4,7 +4,7 @@
 	'use strict';
 	if (window.__devinZhLoaded) return;
 	window.__devinZhLoaded = true;
-	const VERSION = '0.1.3';
+	const VERSION = '0.1.5';
 	window.__devinZhVersion = VERSION;
 
 	const DICT = window.__ZH_DICT__ || {};
@@ -156,9 +156,9 @@
 		childList: true, subtree: true, characterData: true
 	});
 
-	// 页面/标签页重新可见时兜底全扫(修复首开页面漏翻)
+	// 页面/标签页重新可见时兜底全扫(修复首开页面漏翻) + 补一次用量刷新
 	document.addEventListener('visibilitychange', () => {
-		if (!document.hidden) enqueue(document.documentElement);
+		if (!document.hidden) { enqueue(document.documentElement); zhRefreshUsage(); }
 	});
 	// 注入后延迟补扫: 覆盖正在异步挂载的 React 树
 	setTimeout(() => enqueue(document.documentElement), 800);
@@ -173,6 +173,47 @@
 	}
 	fullScan();
 	setInterval(fullScan, 30000);
+
+	// --- 设置-用量实时刷新 -------------------------------------------------
+	// Devin 官方只在启动/鉴权变化/打开状态栏面板/点刷新图标时才重取用量
+	// (getUserStatus), 设置页计划信息区因此长期显示旧值。此处经 chat-client
+	// 暴露给 React 树的 api 桥周期触发同一条 devin.updatePlanInfo 命令,
+	// 使设置-用量与状态栏徽章保持最新。找不到 api 时静默跳过。
+	let zhApi = null;
+	const zhIsApi = v => v && typeof v === 'object'
+		&& typeof v.executeCommand === 'function' && !!v.windsurfSettingsPage;
+	function zhFindApi() {
+		if (zhIsApi(zhApi)) return zhApi;
+		const els = document.querySelectorAll('.chat-client-root *');
+		for (let i = 0; i < els.length && i < 80; i++) {
+			const k = Object.keys(els[i]).find(x => x.startsWith('__reactFiber$'));
+			if (!k) continue;
+			let f = els[i][k], hops = 0;
+			while (f && hops++ < 150) {
+				const v = f.memoizedProps && f.memoizedProps.value;
+				if (zhIsApi(v)) return zhApi = v;
+				if (v && zhIsApi(v.api)) return zhApi = v.api;
+				for (let d = f.dependencies; d; d = d.next) {
+					for (let c = d.firstContext; c; c = c.next) {
+						const cv = c.memoizedValue;
+						if (zhIsApi(cv)) return zhApi = cv;
+						if (cv && zhIsApi(cv.api)) return zhApi = cv.api;
+					}
+				}
+				f = f.return;
+			}
+		}
+		return null;
+	}
+	function zhRefreshUsage() {
+		try {
+			const a = zhFindApi();
+			if (a) Promise.resolve(a.executeCommand('devin.updatePlanInfo'))
+				.catch(() => { zhApi = null; });
+		} catch (e) { zhApi = null; }
+	}
+	setInterval(() => { if (!document.hidden) zhRefreshUsage(); }, 30000);
+	setTimeout(zhRefreshUsage, 5000);
 
 	console.log('[devin-zh] loaded v' + VERSION);
 })();

@@ -1,0 +1,317 @@
+{
+"vs/base/common/constants/appMetadata": {
+	"app.description": "由 Codeium 打造的一流 AI 驱动 IDE。"
+},
+"vs/editor/common/config/editorOptions": {
+	"suggest.maxVisibleSuggestions.dep": "此设置已弃用。建议小组件现在可以调整大小。"
+},
+"vs/editor/common/editorContextKeys": {
+	"editorHasMultilineSelection": "编辑器是否有多行选区"
+},
+"vs/editor/contrib/gotoError/browser/gotoError": {
+	"windsurfExplainProblem.label": "解释并修复问题"
+},
+"vs/editor/contrib/hover/browser/markerHoverParticipant": {
+	"windsurf explain and fix problem": "解释并修复"
+},
+"vs/editor/contrib/inlineCompletions/browser/controller/inlineCompletionContextKeys": {
+	"disableDebounce": "是否应禁用内联建议的防抖",
+	"windsurf.richGhostTextShown": "当前是否正在显示 Devin 富文本幽灵提示",
+	"windsurf.sideHintShown": "当前是否正在显示 Devin 侧边提示",
+	"windsurf.tabActionShown": "当前是否正在显示 Devin Tab 操作提示"
+},
+"vs/editor/contrib/quickAccess/browser/gotoSymbolQuickAccess": {
+	"unknown": "未知 ({0})"
+},
+"vs/editor/contrib/suggest/browser/suggestController": {
+	"inDebugRepl": "焦点在调试控制台中时为 true，否则为 false。"
+},
+"vs/editor/contrib/suggest/browser/suggestWidgetRenderer": {
+	"acceptSuggestion": "接受建议"
+},
+"vs/platform/agentHost/browser/agentHost.config.contribution": {
+	"chat.agentHost.enabled": "启用后，部分 Agent 将在独立的 Agent Host 进程中运行。"
+},
+"vs/platform/agentHost/common/agentHost.config.contribution": {
+	"chat.agentHost.enabled": "启用后，部分 Agent 将在独立的 Agent Host 进程中运行。",
+	"chat.agents.copilotCli.hideExtensionHost": "启用后，在 Agents 窗口选择器中隐藏 Extension Host Copilot CLI 项。",
+	"chat.editor.copilotCli.hideExtensionHost": "启用后，在 Editor 窗口的聊天选择器中隐藏 Extension Host Copilot CLI 项。",
+	"chat.editor.defaultProvider": "控制新建 Editor 聊天会话默认使用的提供方。",
+	"chat.editor.defaultProvider.copilotAh": "使用 Agent Host Copilot CLI",
+	"chat.editor.defaultProvider.copilotEh": "使用 Extension Host Copilot CLI",
+	"chat.editor.defaultProvider.local": "使用内置的 VS Code 本地聊天框架",
+	"chat.editor.localAgent.enabled": "启用后，在聊天选择器中显示 VS Code 本地聊天框架。",
+	"chatAgentHostConfigurationTitle": "聊天 Agent Host"
+},
+"vs/platform/agentHost/common/agentHostCustomizationConfig": {
+	"agentHost.config.enableCustomTerminalTool.description": "启用后，Copilot SDK 会话将使用 Agent Host 的终端工具覆盖，而非 SDK 的默认终端行为。",
+	"agentHost.config.enableCustomTerminalTool.title": "使用 Agent Host 终端工具",
+	"agentHost.config.opus48Prompt.description": "启用后，运行 Claude Opus 4.8 模型的 Copilot SDK 会话会在默认系统消息之上应用针对 Opus 4.8 调优的系统提示词覆盖。",
+	"agentHost.config.opus48Prompt.title": "Opus 4.8 Agent 提示词",
+	"agentHost.config.rubberDuck.description": "启用后，编码 Agent 会使用 Rubber Duck 评审子代理，通过互补模型审查代码变更。",
+	"agentHost.config.rubberDuck.title": "Rubber Duck Agent"
+},
+"vs/platform/agentHost/node/agentSideEffects": {
+	"agentHostRename.renamed": "已重命名：{0}"
+},
+"vs/platform/agentHost/node/claude/claudeToolDisplay": {
+	"claude.toolComplete.generic": "已使用 \"{0}\""
+},
+"vs/platform/agentHost/node/claude/customizations/claudeSdkCustomizationBundler": {
+	"claude.discovered.displayName": "发现于 Claude"
+},
+"vs/platform/agentHost/node/copilot/copilotAgent": {
+	"agentHost.sessionConfig.branch": "分支",
+	"agentHost.sessionConfig.branchDescription": "作为工作起点的基础分支",
+	"agentHost.sessionConfig.isolation": "隔离",
+	"agentHost.sessionConfig.isolation.folder": "文件夹",
+	"agentHost.sessionConfig.isolation.folderDescription": "直接在该文件夹中工作",
+	"agentHost.sessionConfig.isolation.worktree": "Worktree",
+	"agentHost.sessionConfig.isolation.worktreeDescription": "创建 Git worktree 进行隔离",
+	"agentHost.sessionConfig.isolationDescription": "Agent 应在何处做出更改",
+	"copilot.modelContextTier.default": "默认",
+	"copilot.modelContextTier.description": "选择此模型使用的上下文窗口大小。",
+	"copilot.modelContextTier.longerSessions": "更长会话",
+	"copilot.modelContextTier.longerSessionsNoCompaction": "更长会话（无压缩）",
+	"copilot.modelContextTier.title": "上下文大小",
+	"copilotAgent.worktreeCreated": "已为分支 {0} 创建隔离 worktree"
+},
+"vs/platform/agentHost/node/copilot/copilotAgentSession": {
+	"agentHost.planReview.viewPlanLink": "查看完整计划",
+	"copilotSlashCommand.unsupportedRuntimeResult": "/{0} 命令返回了不支持的结果。"
+},
+"vs/platform/agentHost/node/copilot/copilotSlashCommandCompletionProvider": {
+	"copilotSlashCommand.compact.description": "通过压缩对话历史释放上下文空间",
+	"copilotSlashCommand.env.description": "显示已加载的环境详情",
+	"copilotSlashCommand.plan.description": "在编码前制定实施计划",
+	"copilotSlashCommand.research.description": "使用搜索和网络来源对主题进行深入研究",
+	"copilotSlashCommand.review.description": "运行代码评审 Agent 分析变更",
+	"copilotSlashCommand.rubberDuck.description": "获取对当前方案的独立评审意见",
+	"copilotSlashCommand.securityReview.description": "分析已暂存和未暂存变更中的安全漏洞"
+},
+"vs/platform/agentHost/node/copilot/copilotSystemNotification": {
+	"agentHost.copilot.systemNotification.shellIdCompleted": "Shell `{0}` 已完成"
+},
+"vs/platform/agentHost/node/copilot/copilotToolDisplay": {
+	"toolComplete.generic": "已使用 \"{0}\"",
+	"toolInvoke.generic": "正在使用 \"{0}\""
+},
+"vs/platform/browserView/electron-main/browserViewMainService": {
+	"browser.contextMenu.copyLinkUrl": "复制链接"
+},
+"vs/platform/menubar/electron-main/menubar": {
+	"confirmRestartUpdate.cancel": "取消",
+	"confirmRestartUpdate.yes": "是"
+},
+"vs/platform/native/electron-main/nativeHostMainService": {
+	"devinCliExists": "{0} 处已存在文件，可能已经安装过了？",
+	"devinCliMissing": "找不到 Devin CLI 二进制文件，此版本的 {0} 可能未捆绑它。",
+	"devinCliRemoveLegacyFailed": "无法替换 {0} 处现有的 Devin CLI。请关闭所有正在运行的 `{1}` 进程后重试。",
+	"noSymlinksCreated": "无法安装 shell 命令 '{0}'。",
+	"noSymlinksUninstalled": "无法卸载 shell 命令 '{0}'。",
+	"targetMissing": "找不到 shell 脚本 '{0}'"
+},
+"vs/platform/telemetry/common/telemetryService": {
+	"telemetry.windsurfCodeSnippet": "要管理 {0} 如何存储代码片段遥测数据，请访问你的 [Devin 个人资料设置]({1})。"
+},
+"vs/platform/theme/common/colors/editorColors": {
+	"diffEditor.windsurfRemovedTextBackground": "Devin 内联补全中被删除文本的背景色。"
+},
+"vs/platform/theme/common/colors/windsurfCustomColors": {
+	"listHoverBackgroundSubtle": "list.hoverBackground 的弱化版本，一种感知主题的悬停颜色，通常比中性半透明灰色多一点色彩。",
+	"starkButtonBackground": "醒目按钮使用的背景色。",
+	"starkButtonForeground": "醒目按钮使用的前景色。",
+	"starkButtonHoverBackground": "醒目按钮悬停时使用的背景色。",
+	"windsurfBlack": "用于自定义 UI 元素的 Devin 黑色。",
+	"windsurfSea": "用于自定义 UI 元素的 Devin 海蓝色。",
+	"windsurfSeaShade": "用于自定义 UI 元素的 Devin 深海色。",
+	"windsurfSeaTint": "用于自定义 UI 元素的 Devin 浅海色。",
+	"windsurfSessionStatusBlue": "蓝色会话状态颜色。",
+	"windsurfSessionStatusGreen": "绿色会话状态颜色。",
+	"windsurfSessionStatusOrange": "橙色会话状态颜色。",
+	"windsurfSessionStatusPurple": "紫色会话状态颜色。",
+	"windsurfSessionStatusRed": "红色会话状态颜色。"
+},
+"vs/platform/theme/common/colors/windsurfDiffColors": {
+	"diffEditorInsertedCustom": "插入文本的背景色。该颜色不能是不透明的，以免遮盖底层装饰。",
+	"diffEditorInsertedFallback": "插入文本的回退背景色。该颜色不能是不透明的，以免遮盖底层装饰。",
+	"diffEditorRemovedCustom": "删除文本的背景色。该颜色不能是不透明的，以免遮盖底层装饰。",
+	"diffEditorRemovedFallback": "删除文本的回退背景色。该颜色不能是不透明的，以免遮盖底层装饰。"
+},
+"vs/platform/update/electron-main/updateService.linux": {
+	"close": "关闭",
+	"linux_update_available_detail": "有新版 Devin 可用（{0}）。\n\n如果你最初通过系统包管理器（如 apt）安装 Devin，可以通过标准系统更新流程获取新版本。\n\n如果你最初使用 tarball 安装 Devin，可以按照下方说明手动下载新的 tarball。",
+	"linux_update_available_message": "有可用更新",
+	"update_instructions": "更新说明…"
+},
+"vs/platform/webview/common/embeddedWebappContextMenu": {
+	"embeddedWebapp.contextMenu.copyImageUrl": "复制图片链接",
+	"embeddedWebapp.contextMenu.copyLink": "复制链接",
+	"embeddedWebapp.contextMenu.copyLinkUrl": "复制链接地址",
+	"embeddedWebapp.contextMenu.openLinkInExternalBrowser": "在外部浏览器中打开链接"
+},
+"vs/platform/windows/electron-main/windowImpl": {
+	"appGoneDetailLogsExported": "日志已导出。{0}",
+	"exportCrashLogs": "导出日志(&&E)…",
+	"exportCrashLogsButton": "导出",
+	"exportCrashLogsError": "无法导出日志",
+	"exportCrashLogsTitle": "导出崩溃日志",
+	"ok": "确定(&&O)",
+	"zipArchive": "ZIP 压缩包"
+},
+"vs/platform/windsurfAuth/common/windsurfAuth": {
+	"windsurfAccount": "Devin 账户",
+	"windsurfUsage": "Devin 用量"
+},
+"vs/platform/windsurfChatClient/common/chatClientPreview": {
+	"incompatibleChatClientPreview": "此聊天客户端预览需要不同的 Desktop API，请使用兼容的完整 Desktop 构建。",
+	"invalidChatClientPreviewId": "无效的聊天客户端预览 ID。",
+	"invalidChatClientPreviewLink": "无效的聊天客户端预览链接。",
+	"invalidChatClientPreviewManifest": "无效的聊天客户端预览清单。"
+},
+"vs/platform/windsurfChatClient/electron-main/chatClientPreviewDownload": {
+	"chatClientPreviewBundleHash": "聊天客户端预览包的校验和或长度不正确。",
+	"chatClientPreviewIncomplete": "聊天客户端预览下载不完整。",
+	"chatClientPreviewManifestHash": "聊天客户端预览清单的校验和与其 ID 不匹配。",
+	"chatClientPreviewManifestJson": "聊天客户端预览清单不是有效的 UTF-8 JSON。",
+	"chatClientPreviewTimeout": "聊天客户端预览下载超时。",
+	"chatClientPreviewTooLarge": "聊天客户端预览下载超出大小限制。",
+	"invalidChatClientPreviewResponse": "预览服务器返回了无效响应，不允许重定向。"
+},
+"vs/platform/windsurfChatClient/electron-main/chatClientPreviewMainService": {
+	"cancelChatClientPreview": "取消",
+	"chatClientPreviewCacheFull": "最多可有八个窗口运行聊天客户端预览。请先将另一个窗口恢复正常。",
+	"chatClientPreviewClosedWindow": "目标窗口已不可用。",
+	"chatClientPreviewFailed": "无法加载聊天客户端预览。",
+	"chatClientPreviewLinkMismatch": "预览链接与请求的资源不匹配。",
+	"chatClientPreviewNoWindow": "请先打开一个 Desktop workbench 窗口再加载聊天客户端预览。",
+	"chatClientPreviewOk": "确定",
+	"chatClientPreviewUnavailable": "聊天客户端预览仅在不受限的 Devin Desktop Insiders 中可用。",
+	"chatClientPreviewWindowChanged": "加载预览期间目标窗口发生了变化。",
+	"confirmChatClientPreview": "加载此聊天客户端预览？",
+	"confirmChatClientPreviewDetail": "{0}\n仓库：{1}\nPR：#{2}\n提交：{3}\n创建时间：{4}\n包 ID：{5}\n\n这将使用你的聊天客户端权限和已认证的 Desktop 访问运行预览代码。只加载你信任的代码。此窗口及其浮动窗口将重新加载，其他窗口不受影响。\n\n要恢复正常，请完全退出 Desktop 并重新打开。",
+	"loadChatClientPreview": "加载预览"
+},
+"vs/platform/windsurfSvg/browser/windsurfCodicons": {
+	"acpAgentIcon": "ACP Agent 图标",
+	"acpConnectorIcon": "{0} 的 ACP Agent 图标",
+	"deepwikiIcon": "DeepWiki 图标",
+	"devinLogoIcon": "Devin 标志图标",
+	"windsurfLogoIcon": "Devin 标志图标",
+	"windsurfSlackIcon": "Slack 图标"
+},
+"vs/sessions/browser/layoutActions": {
+	"agentSecondarySidebarToggleClosedIcon": "会话辅助侧边栏关闭时的图标。",
+	"agentSecondarySidebarToggleOpenIcon": "会话辅助侧边栏打开时的图标。",
+	"openAndCloseSidePanel": "打开/显示和关闭/隐藏侧面板（编辑器区域和辅助栏）",
+	"sidePanelHidden": "侧面板已隐藏",
+	"sidePanelVisible": "侧面板已显示",
+	"toggleSecondarySidebar": "切换侧面板"
+},
+"vs/sessions/browser/parts/chatCompositeBar": {
+	"closeChat": "关闭"
+},
+"vs/sessions/browser/parts/sessionHeader": {
+	"agentSessions.newSession": "新建会话"
+},
+"vs/sessions/common/contextkeys": {
+	"activeSessionHasGitRepository": "活动会话是否有关联的 git 仓库",
+	"activeSessionHasGitSyncActionRunning": "活动会话当前是否有正在运行的 git 同步操作",
+	"activeSessionProviderId": "活动会话的提供方 ID",
+	"activeSessionType": "活动会话的会话类型",
+	"activeSessionUsesCombinedConfigPicker": "活动会话的提供方是否提供组合的模式与模型配置选择器（在手机布局中替代独立选择器）",
+	"activeSessionWorkspaceIsVirtual": "活动会话的工作区是否为虚拟工作区",
+	"chatSessionProviderId": "上下文菜单覆盖层中会话的提供方 ID",
+	"chatSessionSupportsDelete": "上下文菜单覆盖层中的会话是否可删除",
+	"chatSessionSupportsRename": "上下文菜单覆盖层中的会话是否可重命名",
+	"chatSessionType": "上下文菜单覆盖层中会话的会话类型",
+	"isActiveSessionArchived": "活动会话是否已归档（标记为完成）"
+},
+"vs/sessions/contrib/agentFeedback/browser/agentFeedbackEditorWidgetContribution": {
+	"acceptComment": "接受",
+	"convertComment": "接受"
+},
+"vs/sessions/contrib/changes/browser/changesActions": {
+	"agentSessions.viewChanges": "查看所有变更",
+	"sessions.changes.title": "会话变更"
+},
+"vs/sessions/contrib/changes/browser/changesView": {
+	"sessions.changes.title": "会话变更"
+},
+"vs/sessions/contrib/changes/browser/checksWidget": {
+	"ci.fixChecks": "修复检查"
+},
+"vs/sessions/contrib/chat/browser/chat.contribution": {
+	"chat.newEdits.label": "新建聊天"
+},
+"vs/sessions/contrib/chat/browser/newChatWidget": {
+	"trustFolderMessage": "Agent 会话将能够在此文件夹中读取文件、运行命令并做出更改。"
+},
+"vs/sessions/contrib/editor/browser/editor.contribution": {
+	"pullEditorLeft": "显示辅助侧边栏",
+	"pushEditorRight": "将编辑器移至右侧"
+},
+"vs/sessions/contrib/providers/copilotChatSessions/browser/branchPicker": {
+	"branchPicker.ariaLabel": "分支选择器",
+	"branchPicker.filter": "筛选分支…",
+	"branchPicker.triggerAriaLabel": "选择分支，{0}"
+},
+"vs/sessions/contrib/providers/copilotChatSessions/browser/copilotChatSessionsActions": {
+	"isolationPicker": "隔离模式"
+},
+"vs/sessions/contrib/providers/copilotChatSessions/browser/isolationPicker": {
+	"isolationMode.folder": "文件夹",
+	"isolationMode.worktree": "Worktree",
+	"isolationPicker.ariaLabel": "隔离模式",
+	"isolationPicker.triggerAriaLabel": "选择隔离模式，{0}"
+},
+"vs/sessions/contrib/sessions/browser/customizationsToolbar.contribution": {
+	"customizationAction": "{0}",
+	"sessions.customizations.sidebarMode": "控制 Agents 侧边栏中“自定义”区的展示方式以及点击条目时的行为。",
+	"sessions.customizations.sidebarMode.section": "每个自定义类别显示一个条目。点击类别会深链到自定义编辑器中对应类别的分区。",
+	"sessions.customizations.sidebarMode.single": "显示单个“自定义”条目，而不是每个类别一个。点击它会打开自定义欢迎页。",
+	"sessions.customizations.sidebarMode.welcome": "每个自定义类别显示一个条目。点击类别会打开自定义欢迎页。"
+},
+"vs/sessions/contrib/sessions/browser/sessionHoverContent": {
+	"agentSessions.newSession": "新建会话"
+},
+"vs/sessions/contrib/sessions/browser/sessionsActions": {
+	"untitledSession": "新建会话"
+},
+"vs/sessions/contrib/sessions/browser/sessionsTitleBarWidget": {
+	"newSession": "新建会话"
+},
+"vs/sessions/contrib/sessions/browser/views/sessionsList": {
+	"lastSevenDays": "最近 7 天",
+	"today": "今天",
+	"yesterday": "昨天"
+},
+"vs/sessions/contrib/sessions/browser/views/sessionsView": {
+	"newCompact": "新建",
+	"newSessionButtonAriaLabel": "新建会话 ({0})",
+	"newSessionButtonAriaLabelWithoutKeybinding": "新建会话",
+	"newSessionButtonTitle": "新建会话 ({0})",
+	"newSessionButtonTitleWithoutKeybinding": "新建会话"
+},
+"vs/sessions/contrib/tunnelHost/electron-browser/toggleRemoteConnectionsActionViewItem": {
+	"tunnelHost.hover.connecting": "正在建立隧道连接…",
+	"tunnelHost.hover.enabled": "远程会话访问已启用",
+	"tunnelHost.hover.idle": "允许远程会话访问",
+	"tunnelHost.hover.sharing": "已通过隧道 '{0}' 启用远程会话访问",
+	"tunnelHost.hover.showOutput": "显示输出",
+	"tunnelHost.toast": "远程会话访问现已启用"
+},
+"vs/sessions/contrib/tunnelHost/electron-browser/tunnelHost.contribution": {
+	"showTunnelHostOutput": "显示远程连接输出",
+	"tunnelHost.category": "远程连接",
+	"tunnelHost.enableMicrosoftAuth": "为 Agent Host 隧道启用 Microsoft 账户认证。禁用后仅使用 GitHub 认证。",
+	"tunnelHost.error": "切换远程连接失败：{0}"
+},
+"vs/sessions/contrib/tunnelHost/electron-browser/tunnelHostService": {
+	"tunnelHost.noAuth": "没有可用的认证令牌。请登录后重试。",
+	"tunnelHost.outputChannel": "远程连接"
+},
+"vs/sessions/services/sessions/common/sessionsManagement": {
+	"activeSessionSupportsMultiChat": "活动会话是否支持多个聊天"
+}
+}

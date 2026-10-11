@@ -1,0 +1,550 @@
+{
+"vs/workbench/contrib/devinCloudFiles/browser/devinCloudFiles.contribution": {
+	"devinCloudFiles.showDevinVmFiles": "显示 Devin VM 文件",
+	"devinCloudFiles.showLocalFiles": "显示本地文件"
+},
+"vs/workbench/contrib/devinCloudFiles/browser/devinCloudFilesStatusView": {
+	"devinCloudFiles.asleep": "会话机器处于休眠状态，因此资源管理器显示你的本地文件夹。",
+	"devinCloudFiles.connecting": "在会话机器的文件到达之前，资源管理器显示你的本地文件夹。",
+	"devinCloudFiles.failed": "会话机器的文件不可用，因此资源管理器显示你的本地文件夹。",
+	"devinCloudFiles.localPreferred": "你选择显示本地文件夹，而不是 Devin VM 上的文件。",
+	"devinCloudFiles.waking": "会话机器正在启动。在其文件到达之前，资源管理器显示你的本地文件夹。",
+	"devinCloudFilesStatusView": "Devin 云端文件"
+},
+"vs/workbench/contrib/extensions/browser/extensions.contribution": {
+	"off": "关",
+	"on": "开",
+	"windsurf.marketplaceExtensionGalleryServiceURL": "更改市场搜索结果的基础 URL。",
+	"windsurf.marketplaceGalleryItemURL": "更改每个扩展页面的基础 URL。"
+},
+"vs/workbench/contrib/extensions/browser/extensionsActions": {
+	"Devin for Web": "{0} 网页版"
+},
+"vs/workbench/contrib/extensions/browser/extensionsViewlet": {
+	"dismissButton": "忽略",
+	"dismissImport": "忽略此导入建议",
+	"extensionImportError": "导入扩展失败：{0}",
+	"extensionsImportedFromSource": "已成功从 {1} 导入 {0} 个扩展",
+	"importExtensionFromSource": "从 {0} 导入 1 个扩展",
+	"importExtensionsFromSource": "从 {1} 导入 {0} 个扩展",
+	"importExtensionsFromSourceTitle": "点击从 {0} 导入扩展",
+	"preview": "预览",
+	"previewExtensions": "预览扩展"
+},
+"vs/workbench/contrib/extensions/browser/extensionsWorkbenchService": {
+	"not compatible": "此扩展与 Devin 不兼容。"
+},
+"vs/workbench/contrib/files/browser/fileActions.contribution": {
+	"newAgentSessionEditor": "新建会话"
+},
+"vs/workbench/contrib/issue/browser/baseIssueReporterService": {
+	"windsurfHandlesIssues": "Devin 在 GitHub 之外处理反馈。",
+	"windsurfHandlesIssuesDescription": "感谢你帮助我们改进 Devin！点击下方按钮打开 Devin 的问题/反馈上报器。",
+	"windsurfOpenIssueReporter": "打开 Devin 问题反馈器"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguard.contribution": {
+	"lifeguard.beta": "Lifeguard（Beta）",
+	"lifeguardIcon": "Lifeguard 图标",
+	"miViewLifeguard": "Lifeguard(&&L)",
+	"openLifeguardHistory": "历史记录",
+	"openLifeguardRules": "规则",
+	"openLifeguardSettings": "设置"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguardBugCard": {
+	"lifeguard.accepted": "已接受",
+	"lifeguard.acceptFix": "接受修复",
+	"lifeguard.cascadeFix": "使用 Cascade 修复",
+	"lifeguard.dismiss": "忽略",
+	"lifeguard.dismissed": "已忽略",
+	"lifeguard.dismissFeedback": "为什么应忽略此 Bug？（可选）",
+	"lifeguard.dismissFeedbackPlaceholder": "例如：这是预期行为",
+	"lifeguard.dismissFooter.fixMyself": "我自己修复",
+	"lifeguard.dismissFooter.notABug": "不是 Bug",
+	"lifeguard.dismissFooter.remember": "不再提示",
+	"lifeguard.untitledBug": "未命名 Bug"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguardIcon": {
+	"lifeguard.bugsFound": "发现 {0} 个 bug",
+	"lifeguard.notification.issuesFound": "Lifeguard：发现 {0} 个问题",
+	"lifeguard.notification.view": "查看"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguardPane": {
+	"lifeguard.autoSelectRepo": "自动（跟随编辑器）",
+	"lifeguard.cancel": "取消",
+	"lifeguard.cancel.tooltip": "取消当前正在运行的检查",
+	"lifeguard.checkLastCommit": "检查上一次提交",
+	"lifeguard.compareWithRefAction": "与指定 Ref 对比检查…",
+	"lifeguard.current": "（当前）",
+	"lifeguard.detail.analyzed": "已分析 ",
+	"lifeguard.detail.analyzedChangesOnTopOf": "已分析基于以下内容的未提交变更：",
+	"lifeguard.detail.vsRef": " 对比 ref ",
+	"lifeguard.disabled.message": "你的账户未启用 Lifeguard。请升级计划或联系管理员。",
+	"lifeguard.disabled.title": "Lifeguard 不可用",
+	"lifeguard.emptyText": "按 {0} 或点击上方“检查变更”来检查 bug。",
+	"lifeguard.emptyTitle": "在推送前捕获 bug",
+	"lifeguard.enterBaseRef": "输入用于对比的基准 ref",
+	"lifeguard.error.message": "出现问题。请重新加载窗口后重试。",
+	"lifeguard.error.reload": "重新加载窗口",
+	"lifeguard.error.title": "初始化 Lifeguard 失败",
+	"lifeguard.header.fileChanged": "{0} 个文件已变更",
+	"lifeguard.header.filesChanged": "{0} 个文件已变更",
+	"lifeguard.header.runTime": "运行 {0}",
+	"lifeguard.hover.deletion": "{0} 处删除(-)",
+	"lifeguard.hover.deletions": "{0} 处删除(-)",
+	"lifeguard.hover.fileChanged": "{0} 个文件已变更",
+	"lifeguard.hover.filesChanged": "{0} 个文件已变更",
+	"lifeguard.hover.insertion": "{0} 处插入(+)",
+	"lifeguard.hover.insertions": "{0} 处插入(+)",
+	"lifeguard.initializing": "正在初始化 Lifeguard…",
+	"lifeguard.loading.commit": "正在检查提交：{0}",
+	"lifeguard.loading.commitGeneric": "正在检查提交…",
+	"lifeguard.loading.current": "正在检查当前变更…",
+	"lifeguard.loading.default": "正在检查 bug…",
+	"lifeguard.loading.ref": "正在检查与 {0} 的变更差异…",
+	"lifeguard.loading.refGeneric": "正在检查变更…",
+	"lifeguard.mode.agent": "Agent 模式——使用 AI Agent 进行更深入的分析。\n可在 Devin 设置中更改。",
+	"lifeguard.mode.default": "分析模式。\n可在 Devin 设置中更改。",
+	"lifeguard.mode.fast": "Fast 模式——快速分析。\n可在 Devin 设置中更改。",
+	"lifeguard.mode.smart": "Smart 模式——全面分析。\n可在 Devin 设置中更改。",
+	"lifeguard.noBugsFound": "未发现 bug",
+	"lifeguard.noChanges": "（无变更）",
+	"lifeguard.noChanges.tooltip": "{0} 中没有已跟踪的变更",
+	"lifeguard.noRepo": "没有仓库",
+	"lifeguard.noRepos.tooltip": "工作区中未找到 git 仓库",
+	"lifeguard.noReposText": "打开包含 git 仓库的文件夹以使用 Lifeguard。",
+	"lifeguard.noReposTitle": "未找到 git 仓库",
+	"lifeguard.openRepository": "打开仓库",
+	"lifeguard.parentRepoText": "发现了一个 Git 仓库，但未被打开。",
+	"lifeguard.parentRepoTitle": "在父文件夹中发现 Git 仓库",
+	"lifeguard.refPlaceholder": "例如：main、origin/main",
+	"lifeguard.repositories": "仓库",
+	"lifeguard.runCheck": "检查变更",
+	"lifeguard.runCheck.repoTooltip": "检查 {0} 中已跟踪的变更",
+	"lifeguard.selectRepo": "选择仓库"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguardService": {
+	"lifeguard.allResolved": "全部已解决（{0}）",
+	"lifeguard.checkFailed": "Lifeguard：检查失败",
+	"lifeguard.compareWithRef": "与 Ref 对比",
+	"lifeguard.currentChanges": "当前变更",
+	"lifeguard.dailyRateLimitExceeded": "Lifeguard：已达每日上限，请明天再试。",
+	"lifeguard.justNow": "刚刚",
+	"lifeguard.lastCommit": "上一次提交",
+	"lifeguard.noBugs": "未发现 bug",
+	"lifeguard.noChanges": "Lifeguard：没有可检查的变更",
+	"lifeguard.noHistory": "没有可用的检查历史",
+	"lifeguard.rateLimitExceeded": "Lifeguard：请求过于频繁，请稍候。",
+	"lifeguard.resolved": "已解决 {0}/{1}",
+	"lifeguard.selectCheck": "从历史记录中选择一次检查",
+	"lifeguard.timedOut": "Lifeguard：分析超时，diff 可能过大或过复杂。",
+	"lifeguard.undo.dismiss": "忽略 Lifeguard Bug：{0}",
+	"lifeguard.undo.resolve": "解决 Lifeguard Bug：{0}"
+},
+"vs/workbench/contrib/lifeguard/browser/lifeguardToast": {
+	"lifeguard.issueFound": "发现 {0} 个问题",
+	"lifeguard.issuesFound": "发现 {0} 个问题"
+},
+"vs/workbench/contrib/lifeguard/common/lifeguard": {
+	"lifeguardEnabled": "此构建是否启用 Lifeguard 功能",
+	"lifeguardHasRepos": "是否有可供 Lifeguard 使用的 git 仓库",
+	"lifeguardHistoryAvailable": "是否有可用的 Lifeguard 检查历史"
+},
+"vs/workbench/contrib/logs/electron-browser/logsActions": {
+	"openWindsurfLogsFile": "下载 Devin 日志文件"
+},
+"vs/workbench/contrib/preferences/browser/preferencesWidgets": {
+	"windsurfSettings": "Devin 设置"
+},
+"vs/workbench/contrib/search/browser/search.contribution": {
+	"maintainFileSearchCacheDeprecated": "搜索缓存保存在永不关闭的扩展主机中，因此不再需要此设置。",
+	"search.location": "控制搜索显示为侧边栏中的视图，还是面板区域中的面板（可获得更大横向空间）。",
+	"search.location.deprecationMessage": "此设置已弃用。你可以改为将搜索图标拖到新位置。",
+	"search.maintainFileSearchCache": "启用后，searchService 进程将保持活动状态，而不是在一小时不活动后关闭。这会将文件搜索缓存保留在内存中。",
+	"search.usePCRE2": "是否在文本搜索中使用 PCRE2 正则引擎。这允许使用一些高级正则特性，如前瞻和后向引用。但并非支持所有 PCRE2 特性——仅支持 JavaScript 也支持的特性。",
+	"usePCRE2Deprecated": "已弃用。使用仅 PCRE2 支持的正则特性时将自动使用 PCRE2。",
+	"useRipgrep": "此设置已弃用，现在回退到 \"search.usePCRE2\"。",
+	"useRipgrepDeprecated": "已弃用。如需高级正则特性支持，请考虑 \"search.usePCRE2\"。"
+},
+"vs/workbench/contrib/terminal/browser/terminalActions": {
+	"workbench.action.terminal.maybeCopySelection": "复制选区（无警告）"
+},
+"vs/workbench/contrib/terminal/browser/terminalMenus": {
+	"sendTerminalToChat": "发送终端到聊天"
+},
+"vs/workbench/contrib/terminal/browser/terminalTabsList": {
+	"sendToChat": "发送到聊天"
+},
+"vs/workbench/contrib/terminal/common/terminalConfiguration": {
+	"terminal.integrated.showCommandHint": "控制是否在终端底部显示命令生成提示。"
+},
+"vs/workbench/contrib/terminal/common/terminalContextKey": {
+	"terminalCascadeManagedTerminalFocusContextKey": "由 Cascade 管理的终端是否处于焦点状态。",
+	"terminalCascadeTerminalFocusContextKey": "Cascade 面板中的终端是否处于焦点状态。"
+},
+"vs/workbench/contrib/terminalContrib/cascadeManagedFooter/browser/terminal.cascadeManagedFooter.contribution": {
+	"cascadeManagedTerminal": "此只读终端由 Cascade 管理"
+},
+"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/runInTerminalTool": {
+	"runInTerminal.bubblewrap.applyFix": "应用修复并重试",
+	"runInTerminal.bubblewrap.cancel": "取消",
+	"runInTerminal.bubblewrap.cancelled": "Bubblewrap 沙箱修复已被用户取消。",
+	"runInTerminal.bubblewrap.message": "Bubblewrap 无法创建沙箱环境。",
+	"runInTerminal.bubblewrap.repairFailed": "Bubblewrap 修复失败（退出码 {0}）。命令未执行。",
+	"runInTerminal.bubblewrap.repairUnknown": "无法确定 Bubblewrap 修复是否成功。命令未执行。",
+	"runInTerminal.bubblewrap.stillUnavailable": "修复后 Bubblewrap 仍无法创建所需的沙箱命名空间。命令未执行。",
+	"runInTerminal.bubblewrap.title": "修复 Bubblewrap 沙箱"
+},
+"vs/workbench/contrib/terminalContrib/chatAgentTools/common/terminalChatAgentToolsConfiguration": {
+	"agentSandbox.enabledSetting.allowNetworkDescription": "为 Agent 模式工具启用沙箱，并允许所有网络域。",
+	"agentSandbox.windowsEnabledSetting.allowNetworkDescription": "在 Windows 上为 Agent 模式工具启用沙箱，并允许所有网络域。"
+},
+"vs/workbench/contrib/terminalContrib/terminalCommandPopup/browser/terminal.terminalCommandPopupHint.contribution": {
+	"dismissHint": "忽略",
+	"emptyHintText": "{0} 生成命令。",
+	"workbench.action.terminal.hideCommandHint": "隐藏命令提示",
+	"workbench.action.terminal.showCommandHint": "显示命令提示",
+	"workbench.action.terminal.toggleCommandHint": "隐藏命令提示"
+},
+"vs/workbench/contrib/update/browser/update": {
+	"confirmRestartUpdate.cancel": "取消",
+	"confirmRestartUpdate.cancelRestart": "取消",
+	"confirmRestartUpdate.localAgentRunning": "一个本地 Agent 仍在工作。重启更新将中止它。",
+	"confirmRestartUpdate.localAgentsRunning": "{0} 个本地 Agent 仍在工作。重启更新将中止它们。",
+	"confirmRestartUpdate.restartAnyway": "仍然重启(&&R)",
+	"confirmRestartUpdate.untitledSession": "未命名会话",
+	"confirmRestartUpdate.yes": "是"
+},
+"vs/workbench/contrib/update/browser/update.contribution": {
+	"devApplyUpdateFromUrl": "[Dev] 从 URL 应用更新…",
+	"devUpdateUrlInvalid": "请输入有效的 URL",
+	"devUpdateUrlPrompt": "输入更新包的 URL（macOS 为 .zip，Windows 为 .exe，Linux 为 .tar.gz）",
+	"devUpdateUrlRequired": "URL 为必填项"
+},
+"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted": {
+	"showMore": "更多…",
+	"showMoreWindsurfShortcuts": "显示更多…",
+	"windsurfOnboarding": "新手引导",
+	"windsurfStart": "快捷方式"
+},
+"vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent": {
+	"windsurfStart.acceptCompletion.description": "按 Tab 接受自动补全",
+	"windsurfStart.acceptCompletion.title": "接受自动补全",
+	"windsurfStart.finishIDESetup.description": "完成 IDE 设置",
+	"windsurfStart.finishIDESetup.title": "完成 IDE 设置",
+	"windsurfStart.openDocumentation.description": "打开文档",
+	"windsurfStart.openDocumentation.title": "打开文档",
+	"windsurfStart.openWindsurfCommand.description": "触发命令",
+	"windsurfStart.openWindsurfCommand.title": "触发命令",
+	"windsurfStart.SignInToWindsurf.description": "登录 Devin",
+	"windsurfStart.signInToWindsurf.title": "登录 Devin"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/acpRemoteHostActions": {
+	"acpAddNewSSHHost": "添加新 SSH 主机…",
+	"acpAddNewSSHHostAction": "为远程 Agent 添加新 SSH 主机…",
+	"acpConfigureSSHHosts": "配置 SSH 主机…",
+	"acpConfigureSSHHostsAction": "为远程 Agent 配置 SSH 主机…",
+	"acpConfigureSSHHostsTitle": "打开 SSH 配置文件",
+	"acpConnectRemoteHost": "连接到远程 Agent 主机…",
+	"acpConnectRemoteHostPlaceholder": "选择已配置的 SSH 主机，或输入 user@host",
+	"acpConnectRemoteHostTitle": "连接到远程 Agent 主机",
+	"acpDisconnectRemoteHost": "断开远程 Agent 主机",
+	"acpRemoteHostInvalid": "请输入 SSH 主机别名或 user@host。",
+	"acpRemoteHostSaved": "已保存",
+	"acpRemoveRemoteHost": "移除远程 Agent 主机",
+	"acpSshConfigCreateFailed": "创建 SSH 配置文件失败：{0}",
+	"acpSshConfigListFailed": "列出 SSH 配置文件失败：{0}"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/acpSessionsQuickAccess": {
+	"acpSessionClosedPullRequest": "已关闭的 Pull Request",
+	"acpSessionDraftPullRequest": "草稿 Pull Request",
+	"acpSessionMergedPullRequest": "已合并的 Pull Request",
+	"acpSessionOpenPullRequest": "开放的 Pull Request",
+	"noAcpSessionResults": "没有匹配的会话"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/cascadeMigrationWizard.contribution": {
+	"cascadeMigrationWizardEditor": "Cascade 迁移向导",
+	"cascadeMigrationWizardNoConnector": "Devin CLI Agent 未连接。请确保其已启用并连接，然后重试。",
+	"cascadeMigrationWizardNoWorkspace": "未打开兼容的工作区文件夹。请先打开包含 Cascade 自定义内容的文件夹。",
+	"migrateOffCascade": "打开 Cascade 迁移向导"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/cascadeMigrationWizardEditor": {
+	"cascadeMigrationWizardEditorName": "Cascade 迁移向导"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/windsurfAcp.contribution": {
+	"acpSessionsQuickAccess": "搜索会话",
+	"acpSessionsQuickAccessPlaceholder": "按名称搜索会话…",
+	"clearAcpMetadataCache": "清除 ACP 元数据缓存"
+},
+"vs/workbench/contrib/windsurfAcpService/browser/windsurfAcpService": {
+	"acpMessageCache.shutdown": "正在保存 Agent 会话缓存"
+},
+"vs/workbench/contrib/windsurfAgentWindow/browser/agentSpaceNavHistory": {
+	"agentSpaceCanGoBack": "Agent 窗口是否可以后退到之前查看的会话或收件箱。",
+	"agentSpaceCanGoForward": "Agent 窗口是否可以前进到之前后退出来的会话或收件箱。",
+	"agentSpaceNavigateBack": "后退",
+	"agentSpaceNavigateForward": "前进"
+},
+"vs/workbench/contrib/windsurfAgentWindow/browser/devinCloudTerminal": {
+	"devinCloudTerminalNoSession": "无法在 Devin 的机器上打开终端：Devin Cloud 会话尚未就绪。请稍后再试。",
+	"devinCloudTerminalPick": "选择一个 Devin Cloud 会话以打开终端"
+},
+"vs/workbench/contrib/windsurfAgentWindow/browser/windsurfAgentWindowActions": {
+	"commandCenter.goToAllSessions": "前往所有会话",
+	"openAgentKanbanView": "打开 Agent 看板视图",
+	"openAgentListView": "打开 Agent 列表视图",
+	"switchFromWindsurfAgentWindowToNormalMode": "切换到 Editor 模式",
+	"switchFromWindsurfAgentWindowToNormalMode.pickWorkspace": "选择要打开的工作区",
+	"switchToWindsurfAgentModeInPlace": "将此窗口切换到 Devin Agent 模式",
+	"switchToWindsurfAgentWindowMode": "切换到 Devin Agent 窗口",
+	"toggleWindsurfAgentWindow": "切换 Agent 窗口",
+	"windsurf.agentManager": "Agent 管理器",
+	"windsurfAgentWindow.revealActiveSessionInSidebar": "在侧边栏中显示活动会话",
+	"windsurfAgentWindow.searchSessionsInSidebar": "在侧边栏中搜索会话"
+},
+"vs/workbench/contrib/windsurfAgentWindow/browser/windsurfAgentWindowFont": {
+	"devin.agentWindow.fontFamily": "控制 Agent 窗口的 UI 字体系列。为空时默认为 Inter。"
+},
+"vs/workbench/contrib/windsurfAgentWindow/electron-browser/agentWindowReveal": {
+	"revealAgentWindow": "显示 Agent 窗口",
+	"revealEditorWindow": "显示 Editor 窗口"
+},
+"vs/workbench/contrib/windsurfAgentWindow/electron-browser/agentWorkspacePrewarm": {
+	"join.agentWorkspacePrewarm": "正在清理预准备的 Agent 工作区"
+},
+"vs/workbench/contrib/windsurfAgentWindow/electron-browser/windsurfAgentWindowActions": {
+	"convertToAgentWorkspace": "将窗口转换为 Agent 工作区",
+	"newAgentWindow": "新建 Agent 窗口"
+},
+"vs/workbench/contrib/windsurfCascade/browser/windsurfCascade.contribution": {
+	"migrateMemories": "迁移记忆"
+},
+"vs/workbench/contrib/windsurfCascade/browser/windsurfCascadeMainThreadCommands": {
+	"windsurf.agentManager": "Agent 管理器"
+},
+"vs/workbench/contrib/windsurfCascadeView/browser/cascadeView.contribution": {
+	"snippetEditor": "代码片段"
+},
+"vs/workbench/contrib/windsurfCascadeView/browser/dissolveAllSpacesDev.contribution": {
+	"dissolveAllSpaces": "将所有 Space 解散为独立会话",
+	"dissolveAllSpaces.button": "解散",
+	"dissolveAllSpaces.confirm": "将所有 Space 解散为独立会话？",
+	"dissolveAllSpaces.detail": "每个包含多会话的 Space 都会被拆分，使每个会话拥有自己的 Space。这些 Space 中附加的文件会被移除（每个会话保留自己的 worktree）；手动设置的 Space 标题只保留给第一个会话。此操作无法撤销。",
+	"dissolveAllSpaces.done": "已将 {0} 个 Space 解散为独立会话。"
+},
+"vs/workbench/contrib/windsurfCascadeView/browser/loadCloudSessionByIdDev.contribution": {
+	"loadCloudSessionById": "按 ID 加载 Cloud 会话 (dev)",
+	"loadCloudSessionById.failed": "加载 Cloud 会话失败：{0}",
+	"loadCloudSessionById.prompt": "输入要加载的 Devin Cloud 会话 ID",
+	"loadCloudSessionById.title": "按 ID 加载 Cloud 会话 (dev)"
+},
+"vs/workbench/contrib/windsurfCascadeView/browser/readOnlyDiffContentProvider": {
+	"devinCloudResource": "Devin Cloud 资源"
+},
+"vs/workbench/contrib/windsurfCascadeView/browser/snippetEditorPane": {
+	"snippetEditor": "代码片段"
+},
+"vs/workbench/contrib/windsurfChatClient/electron-browser/chatClientModuleSelection.contribution": {
+	"chatClientModuleLoadFailed": "聊天客户端预览 \"{0}\" 加载失败并已丢弃。此窗口正在使用随附的聊天客户端。{1}",
+	"chatClientPreviewDownloading": "正在下载聊天客户端预览 \"{0}\"",
+	"chatClientPreviewFixtureTitle": "聊天客户端预览：{0}",
+	"chatClientPreviewLabel": "预览：{0}",
+	"chatClientPreviewTitle": "聊天客户端预览：{0}（{1}）",
+	"copyChatClientPreviewArtifact": "复制工件 ID",
+	"reloadWithChatClientFixtureModule": "使用聊天客户端 Fixture 模块重新加载",
+	"reloadWithShippedChatClientModule": "使用随附聊天客户端模块重新加载",
+	"returnToNormalChatClient": "恢复正常聊天客户端",
+	"showChatClientModule": "显示聊天客户端模块",
+	"viewChatClientPreviewSource": "查看源 Pull Request"
+},
+"vs/workbench/contrib/windsurfCodeMapViewer/browser/codeMapBookmarkDecorationService": {
+	"addBookmarkHelper": "点击添加书签"
+},
+"vs/workbench/contrib/windsurfCodeMapViewer/browser/codeMapExportAction": {
+	"exportCodeMap": "分享 Codemap"
+},
+"vs/workbench/contrib/windsurfCodeMapViewer/browser/codeMapViewer.contribution": {
+	"addCodeMapToCascade": "将 Codemap 添加到 Cascade",
+	"closeCodeMap": "主页",
+	"codeMapEditor": "Codemap 编辑器",
+	"generateCodeMap": "生成 Codemap",
+	"generateCodeMapFromCascade": "从 Cascade 生成 Codemap",
+	"generateCodeMapFromNavigationHistory": "从导航历史生成 Codemap",
+	"generatingCodeMap": "正在生成 {0} 个 Codemap",
+	"generatingCodeMaps": "正在生成 {0} 个 Codemap",
+	"isCodemapsEnabled": "检查 Codemaps 是否已启用",
+	"loadCodeMap": "加载 Codemap",
+	"openCodeMapById": "按 ID 打开 Codemap",
+	"openCodeMapChat": "打开 Codemap 聊天",
+	"openCodeMapView": "打开 Codemaps",
+	"openInPlayground": "打开轨迹仪表盘"
+},
+"vs/workbench/contrib/windsurfCustomAppIcon/browser/windsurfAppIconCustomization.contribution": {
+	"windsurf.customAppIcon": "自定义应用图标（beta）"
+},
+"vs/workbench/contrib/windsurfCustomizationsEditor/browser/customizationsEditor.contribution": {
+	"windsurfCustomizationsEditor": "自定义",
+	"windsurfDevinLocalPluginEditor": "Devin 插件"
+},
+"vs/workbench/contrib/windsurfCustomizationsEditor/browser/customizationsEditorInput": {
+	"windsurfDevinCustomizationsEditorInputName": "Devin 自定义"
+},
+"vs/workbench/contrib/windsurfCustomizationsEditor/browser/devinLocalPluginEditorInput": {
+	"windsurfDevinLocalPluginEditorInputName": "插件：{0}"
+},
+"vs/workbench/contrib/windsurfDatadogRum/browser/datadogRum.contribution": {
+	"datadogRum.copied": "Datadog 会话链接已复制。",
+	"datadogRum.copySessionLink": "复制 Datadog 会话链接",
+	"datadogRum.noSession": "此窗口中没有找到 Datadog 会话。"
+},
+"vs/workbench/contrib/windsurfDesignTokenEditor/browser/designTokenEditor.contribution": {
+	"designTokenEditor": "Design Token 编辑器",
+	"openDesignTokenEditor": "打开 Design Token 编辑器"
+},
+"vs/workbench/contrib/windsurfDesktopBridge/browser/desktopNav.contribution": {
+	"desktopNav.navigateBack": "后退",
+	"desktopNav.navigateForward": "前进",
+	"desktopNav.openSurface": "打开 Devin Surface",
+	"desktopNav.refreshSurface": "刷新页面"
+},
+"vs/workbench/contrib/windsurfDesktopBridge/browser/openCloudSession": {
+	"desktopNav.openSessionFailed": "无法在 Devin Desktop 中打开此 Devin 会话。",
+	"desktopNav.openSessionInBrowser": "在浏览器中打开"
+},
+"vs/workbench/contrib/windsurfDesktopShell/browser/desktopShell.contribution": {
+	"desktopShell.availableContext": "Devin Web 应用 Agent 窗口是否可用",
+	"desktopShell.mountFailed": "无法加载 Devin Web 应用。重新加载窗口以重试。",
+	"desktopShell.toggle": "切换 Devin Web 应用（Agent 窗口）"
+},
+"vs/workbench/contrib/windsurfDesktopShell/browser/devinWebappCommands": {
+	"devin.webapp.checkForUpdates": "检查更新",
+	"devin.webapp.downloadDiagnostics": "下载 Devin 诊断信息",
+	"devin.webapp.restartToUpdate": "重启以更新",
+	"devin.webapp.toggleAgentWindow": "切换 Agent 窗口"
+},
+"vs/workbench/contrib/windsurfDesktopViewer/browser/desktopViewer.contribution": {
+	"desktopViewerEditor": "桌面查看器",
+	"desktopViewerEditor.label": "桌面查看器编辑器"
+},
+"vs/workbench/contrib/windsurfDiffViewer/browser/spaceDiff.contribution": {
+	"spaceDiff.nativeViewAll": "变更",
+	"spaceDiffEditor.label": "Space Diff 编辑器"
+},
+"vs/workbench/contrib/windsurfDiffViewer/browser/spaceDiffEditorPane": {
+	"spaceDiff.nFiles": "{0} 个文件已变更",
+	"spaceDiff.oneFile": "1 个文件已变更"
+},
+"vs/workbench/contrib/windsurfFeedback/browser/windsurfFeedback.contribution": {
+	"joinCommunity": "加入社区",
+	"openDocs": "文档",
+	"openFeedbackPanel": "报告 Bug",
+	"openFeedbackPanelDescription": "报告 Bug。",
+	"provideFeedback": "提供反馈",
+	"WindsurfChangelog": "更新日志",
+	"WindsurfDiagnostics": "下载诊断信息"
+},
+"vs/workbench/contrib/windsurfMcpService/browser/windsurfMcp.contribution": {
+	"acpMcpRegistryMarketplacePage": "Devin MCP 注册表",
+	"acpMcpRegistryPluginPage": "Devin MCP 注册表插件",
+	"openAcpMcpOutputChannel": "打开 Devin MCP 输出通道",
+	"openAcpMcpOutputChannelDescription": "显示 MCP 输出通道日志。",
+	"openAcpMcpRegistryMarketplace": "Devin MCP 注册表",
+	"openAcpMcpRegistryMarketplaceDescription": "打开 Devin CLI MCP 注册表。",
+	"openAcpMcpRegistryPluginPage": "Devin MCP 插件页",
+	"openAcpMcpRegistryPluginPageDescription": "打开特定服务器的 Devin CLI MCP 注册表插件页。",
+	"openDevinForTerminalMcpConfigFile": "打开 Devin for Terminal MCP 配置文件",
+	"openDevinForTerminalMcpConfigFileDescription": "打开 Devin for Terminal MCP 配置文件。"
+},
+"vs/workbench/contrib/windsurfMigration/electron-browser/windsurfMigration.contribution": {
+	"resetMigration.confirm.button": "重置并重启(&&R)",
+	"resetMigration.confirm.detail": "这将删除你当前的 Devin Desktop 设置、扩展和编辑器状态，然后重启并重新运行从 Windsurf 的首次启动迁移。你的 Windsurf 数据不受影响。",
+	"resetMigration.confirm.message": "重置从 Windsurf 的迁移并重启？",
+	"resetMigration.devOnly": "重置 Windsurf 迁移仅在已安装的构建中可用。",
+	"resetMigration.unavailable": "此构建不支持重置 Windsurf 迁移。",
+	"resetMigrationFromWindsurf": "重置从 Windsurf 的迁移",
+	"windsurfMigration.welcomeDismiss": "开始使用",
+	"windsurfMigration.welcomeImageAlt": "Devin Desktop",
+	"windsurfMigration.welcomeMessage": "欢迎使用 Devin Desktop！在一个界面中管理本地和云端 Agent 集群。无需离开编辑器即可完成规划、委派、评审和交付。",
+	"windsurfMigration.welcomeSectionContent": "在一个界面中管理本地和云端 Agent 集群。无需离开编辑器即可完成规划、委派、评审和交付。",
+	"windsurfMigration.welcomeTitle": "欢迎使用 Devin Desktop"
+},
+"vs/workbench/contrib/windsurfOnboarding/browser/windsurfOnboarding.contribution": {
+	"resetOnboarding": "重置新手引导",
+	"resetOnboardingDescription": "登出当前账户并重新开始新手引导。"
+},
+"vs/workbench/contrib/windsurfPlanEditor/browser/planEditor.contribution": {
+	"devin.implementPlan": "实施计划",
+	"planEditor": "计划编辑器"
+},
+"vs/workbench/contrib/windsurfPlanViewer/browser/planViewer.contribution": {
+	"planViewerEditor": "计划查看器"
+},
+"vs/workbench/contrib/windsurfPullRequest/browser/pullRequest.contribution": {
+	"devin.openPullRequestEditor": "打开 Pull Request",
+	"devin.pullRequest.findNext": "在 Devin Review 中查找下一个",
+	"devin.pullRequest.findPrevious": "在 Devin Review 中查找上一个",
+	"devin.pullRequest.hideFind": "停止在 Devin Review 中查找",
+	"devin.pullRequest.refresh": "刷新 Devin Review",
+	"devin.pullRequest.showFind": "在 Devin Review 中查找",
+	"devin.pullRequest.toggleDevTools": "切换开发者工具（Devin Review）",
+	"openInDevinReview": "在 Devin Review 中打开",
+	"openInGitHub": "在 GitHub 中打开",
+	"pullRequest.embeddedReview.enabled": "在嵌入式 webview iframe 中渲染 Devin Review，而不是原生浏览器视图。用于本地开发；生产环境由功能发布控制。",
+	"windsurf.enterPullRequestUrl": "输入 Pull Request URL"
+},
+"vs/workbench/contrib/windsurfSettingsPage/browser/react/windsurfReactSettingsPage.contribution": {
+	"windsurfReactSettingsPage": "Devin 设置页"
+},
+"vs/workbench/contrib/windsurfSettingsPage/browser/react/windsurfReactSettingsPageInput": {
+	"windsurfReactSettingsIcon": "Devin 设置编辑器标签的图标。",
+	"windsurfReactSettingsPageInputName": "Devin 设置"
+},
+"vs/workbench/contrib/windsurfSettingsPage/browser/windsurfSettingsPageConstants": {
+	"openWindsurfSettings": "打开 Devin 设置"
+},
+"vs/workbench/contrib/windsurfShellViewer/browser/shellViewer.contribution": {
+	"shellViewerEditor": "Shell 查看器",
+	"shellViewerEditor.label": "Shell 查看器编辑器"
+},
+"vs/workbench/contrib/windsurfStatusBarSettingsService/browser/tabs/keybindingTab": {
+	"view all": "查看所有 Devin 快捷键"
+},
+"vs/workbench/contrib/windsurfStatusBarSettingsService/browser/windsurfStatusBarSettingsPanel": {
+	"hideQuickSettingsPanel": "隐藏快捷设置面板",
+	"hideQuickSettingsPanelDescription": "隐藏 Devin 快捷设置面板。",
+	"isQuickSettingsPanelVisible": "检查快捷设置面板是否可见",
+	"openBugReportPanel": "报告 Bug",
+	"openBugReportPanelDescription": "打开 Bug 报告面板以提交反馈。",
+	"openQuickSettingsPanel": "快捷设置面板",
+	"openQuickSettingsPanelDescription": "打开 Devin 快捷设置面板。"
+},
+"vs/workbench/contrib/windsurfTestRecordingViewer/browser/testRecordingViewer.contribution": {
+	"testRecordingViewerEditor": "测试录制查看器"
+},
+"vs/workbench/electron-browser/actions/installActions": {
+	"devinCliDisallowed": "请联系你的 Devin 团队管理员，以启用通过 Devin Desktop 安装 Devin CLI",
+	"devinCliInstalledUnix": "Devin CLI 安装成功。在新终端中运行 `{0}` 即可使用。",
+	"devinCliInstalledWindows": "Devin CLI 安装成功。在新终端中运行 `{0}` 即可使用。你必须完全退出并重新打开（而非仅重新加载）Devin，才能在集成终端中使用它。",
+	"devinCliInstallError": "安装 Devin CLI 失败：{0}",
+	"devinCliNotAuthed": "请先登录 Devin，再安装 Devin CLI。",
+	"devinCliNoTeamConfig": "无法获取团队设置，请稍后重试。",
+	"installDevinCli": "安装 Devin CLI"
+},
+"vs/workbench/services/devinCloudFiles/browser/devinCloudEditorError": {
+	"devinCloudFiles.editor.asleep": "此文件位于你的 Devin VM 上，该机器正处于休眠状态。",
+	"devinCloudFiles.editor.connecting": "与会话机器的连接正在建立。文件将在其文件到达后打开。",
+	"devinCloudFiles.editor.failed": "会话机器的文件不可用。",
+	"devinCloudFiles.editor.localPreferred": "此文件位于你的 Devin VM 上。资源管理器显示你的本地文件。",
+	"devinCloudFiles.editor.notConnected": "此文件位于一台 Devin VM 上。与会话机器的连接尚未建立。",
+	"devinCloudFiles.editor.otherSession": "此文件位于另一个 Devin 会话的机器上。请选择该会话以打开文件。",
+	"devinCloudFiles.editor.waking": "会话机器正在启动。文件将在其文件到达后打开。",
+	"devinCloudFiles.retryAction": "重试",
+	"devinCloudFiles.useCloudAction": "显示 Devin VM 文件",
+	"devinCloudFiles.wakeAction": "唤醒机器"
+},
+"vs/workbench/services/extensionManagement/common/extensionManagementService": {
+	"Devin for Web": "{0} 网页版"
+},
+"vs/workbench/services/userDataProfile/common/userDataProfileIcons": {
+	"settingsViewDropdownIcon": "设置下拉图标。"
+}
+}

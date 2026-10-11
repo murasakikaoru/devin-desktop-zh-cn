@@ -1,0 +1,57 @@
+kiro-language-pack
+Copyright (c) 2026 kiro-language-pack contributors
+
+This product includes software and localized string resources developed by
+third parties. Their license terms are reproduced below.
+
+================================================================================
+1. Visual Studio Code Localization Extension (vscode-loc)
+================================================================================
+
+When this project is built in "full" mode, the localized string resources for
+the Visual Studio Code / Code OSS core workbench and for the built-in
+extensions are derived from the microsoft/vscode-loc repository:
+
+    https://github.com/microsoft/vscode-loc
+
+Those strings are used, modified and redistributed under the MIT License:
+
+    MIT License
+
+    Copyright (c) Microsoft Corporation. All rights reserved.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+
+The upstream commit or tag used for a given release is recorded in
+`config.json` (`upstream.ref`) and in the generated extension manifest.
+
+================================================================================
+2. Trademarks
+================================================================================
+
+"Kiro" is a product of Amazon Web Services, Inc. "Visual Studio Code" is a
+product of Microsoft Corporation. This project is an independent, community
+maintained language pack. It is not affiliated with, endorsed by, or sponsored
+by Amazon Web Services, Inc. or Microsoft Corporation. Product names are used
+only to describe compatibility.
+
+Source string identifiers of the Kiro built-in extension (`kiro.kiroAgent`) are
+referenced for the sole purpose of interoperability, as required by the
+Visual Studio Code language pack contribution format. No Kiro source code is
+copied or redistributed by this project.

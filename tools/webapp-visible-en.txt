@@ -1,0 +1,3373 @@
+ by {{authorName}}
+ — failed
+${{amount}} in credits
+(Max size: 2MB)
+(edited)
+(no message)
+(optional)
+(the commands must finish within 5 minutes)
+(you)
++1 415 555 0100
++{{count}} more
+- Character limit exceeded
+.devin-plugin/plugin.json is not valid JSON.
+1 pull request
+1. Startup commands run in the home directory
+12 hours
+1:1 match
+2. They execute in the order listed
+2.5x faster, 2x more expensive, same intelligence
+24 hours
+3. Each command has a 2 minute timeout
+70% off – available until Oct 3
+72 hours
+75% off — available until Oct 8
+99+ repositories
+<devin>Devin</devin> helps pick up tasks in Slack
+<githubLink>Connect GitHub</githubLink> to create PRs in your repos
+<keys />to add a new line
+<prefix>for</prefix><file>{{file}}</file>
+<prefix>in</prefix><repo>{{repo}}</repo>
+A child session is still working. Stopping the session puts the session and all of its child sessions to sleep.
+A child session of this session is still working. Archiving will put this session and all of its child sessions (including nested ones) to sleep. You can access them later from your archived sessions.
+A fix session is already running for this finding.
+A machine is requesting SSH access to session <session>{{session}}</session>. Only approve this if you just ran the SSH command yourself.
+A plugin installed this MCP and owns its connection settings, so they are shown read-only below. You can still enable, disable, connect, or uninstall it.
+A prerequisite criterion did not pass
+A session that meets the plugin again reinstalls it.
+A user
+A voice call is already active for this session
+ACU
+ACU usage
+ACUs
+AI sorted view
+AI sorted view (analysis in progress)
+API
+API_KEY=your-api-key-here # Use this API Key for GitHub
+DATABASE_URL=postgresql://user:pass@localhost:5432/db # RDS on us-west-2
+ENVIRONMENT=production
+About billing tags
+Accept
+Accepting…
+Access level
+Accessed knowledge
+Accessed knowledge ({{count}})
+Accessibility
+Accessibility settings
+Account
+Account skills
+Accountability partner
+Action model: {{model}}
+Action not allowed
+Actionable feedback
+Actions
+Activated skill
+Active
+Active plugins
+Active sessions
+Ada
+Add
+Add Devin
+Add Devin to your phone
+Add Monorepo Subproject
+Add Subproject
+Add a Devin
+Add a PNG, JPEG, GIF, or WebP up to 5 MB.
+Add a description for these commands…
+Add a mention
+Add a new subproject directory that requires its own setup steps.
+Add a subproject path (e.g., ./packages/frontend)…
+Add an MCP
+Add another Devin
+Add another installation
+Add attachment
+Add check
+Add contact
+Add files, repos
+Add files, repos, macros
+Add files, repositories, macros
+Add filters
+Add focus areas or instructions for the {{scanType}} scan (optional)
+Add key
+Add models to run against each other
+Add new secret
+Add repos
+Add repositories
+Add repositories to use Ask Devin
+Add secret
+Add secrets
+Add secrets to share with the current session.
+Add session link
+Add subproject
+Add tab
+Add the Amplitude, Mixpanel or PostHog MCP server
+Add the Datadog, Sentry or Grafana MCP server
+Add the LaunchDarkly, Unleash or PostHog MCP server
+Add the Notion, Atlassian or Mintlify MCP server
+Add the incident.io or Rootly MCP server
+Add to automation
+Add to profile
+Add to profile and automation
+Add to queue
+Add {{count}} secret
+Add {{count}} secrets
+Add {{duration}}
+Add {{name}} to Slack
+Add {{path}}
+Added
+Added to the allowlist
+Added {{count}} repositories
+Added {{repository}}
+Additional Options
+Additional details
+Adjust the crop area to create a square profile picture
+Admin
+Admin panel
+Admin required
+Advanced
+Advanced capabilities
+Advanced setup
+Affected checks
+After {{date}}
+Agent
+Agent Readiness
+Agent sessions
+Agent: {{name}}
+Agents
+All
+All Devins
+All Models
+All changes
+All code scans
+All connections
+All levels met
+All models draw from your Devin ACU balance
+All organizations
+All private
+All repositories
+All sessions
+All types
+All types ({{count}})
+All use permissions plus create, edit, and delete billing tags
+All view permissions plus assign billing tags to sessions
+Allow for this session
+Allow teammates to auto-join account
+Allow this action?
+Allowing…
+Allowlist
+Allowlist {{count}} domain
+Allowlist {{count}} domains
+Allowlisted
+Allows these destinations for every session the shared policy governs.
+Allows this destination for every session the shared policy governs.
+Already added to your team. Use them for PRs, bug fixes, refactors, migrations — whatever you need to ship.
+Alternatively, log in with email code
+An assessment is already running
+An assessment is already running for {{repo}}
+An assessment is running. Results will appear here once it completes.
+An installation named “{{name}}” already exists for this server
+An organization administrator needs to grant this access; Devin can't fix it from a session.
+An update to {{repos}} in Devin's dev environment is in progress and should complete within a few minutes. {{repos}} will not be set up in Devin's workspace until the update is complete.
+Analyse
+Analyse {{count}} session
+Analyse {{count}} sessions
+Analysis required
+Analyze session
+Analyzed
+Analyzing
+Analyzing prompt…
+Android Emulator
+Another check already uses this title
+Answer questions about codebase
+Anthropic's latest model
+Any
+Any profile
+Anyone in {{orgName}} will be able to use these secrets in their Devin sessions.
+Anyone in {{orgName}} will be able to use this secret in their Devin sessions.
+Anyone with the link
+App
+Applied filter
+Apply
+Apply tag
+Approval
+Approval required
+Approve
+Approve Knowledge
+Approve deployment
+Approve session
+Approve workflow
+Approved deployment
+Apps
+Archive
+Archive active session?
+Archive all asks
+Archive all asks?
+Archive all sessions
+Archive all sessions?
+Archive session
+Archive session with active child sessions?
+Archive shared session?
+Archived
+Are you sure you want to archive all asks? You can access them later from your archived asks.
+Are you sure you want to archive all sessions? You can access them later from your archived sessions.
+Are you sure you want to delete the subproject "{{projectPath}}"? This will remove all associated commands and configurations.
+Are you sure you want to delete this project? This will remove all associated commands and configurations.
+Are you sure you want to put Devin to sleep?
+Are you sure you want to skip the remaining setup steps? This will mark all incomplete steps as skipped and proceed with saving the setup configuration.
+Are you sure you want to skip these commands? This will remove all commands for this section.
+Are you sure?
+Arena
+Arguments
+Artifacts
+Ask
+Ask Devin
+Ask Devin about your codebase
+Ask Devin questions about your code
+Ask questions without interrupting main agent
+Ask session
+Ask sessions
+Ask your GitHub Enterprise admin to approve the installation. After approval, come back to Devin Settings > Integrations to complete the installation.
+Ask your GitHub organization admin to approve the installation. After approval, come back to Devin Settings > Integrations to complete the installation.
+Asked DeepWiki
+Asking DeepWiki
+Asleep
+Assessed as part of its parent scope
+Assessed {{date}}
+Assessment running…
+Assessment started
+Assessment started for {{repo}}
+Assessment summary
+Assessments run from any organization's Insights page will appear here.
+Assessments will appear here once someone with permission runs one.
+Assign Jira issues to Devin to get pull requests.
+Assign Linear issues to Devin to get pull requests.
+Assign full seat
+Assign work to <devin>@Devin</devin> from<br/> your favorite productivity apps
+Assign work to <devin>@Devin</devin> in Slack
+Assistants aren't available for your organization yet. Contact Cognition to enable them.
+Attach an image
+Attach as file
+Attach or mention
+Attach prompt as a file?
+Attachment
+Attachments
+Attributed edits for
+Attributing edits for
+Auth
+Authenticate via GitHub CLI on Devin’s machine. Some features, including Devin Review, will not be available.
+Authentication
+Authentication Required
+Authentication failed. Please try again.
+Authored by {{name}}
+Authorization failed. Reconnect over SSH and try again.
+Authorize SSH access
+Authorize this connection
+Authorizing...
+Auto
+Auto-review
+Auto-review all PRs in repos
+Auto-review only PRs opened by me
+Auto-review spend limit reached, so auto-review was turned off. It can be re-enabled to resume automatic reviews.
+Auto-routed to {{agent}}
+Auto-routed to {{agent}} {{trigger}}
+Auto-triage automation created
+Auto-triage demo
+Autofix is enabled.
+Automatic review
+Automatic review mode
+Automatically select mode
+Automation
+Automations
+Available to
+Available to everyone in your organization
+Available until Sep 22
+Avatar updated
+Awaiting approval
+Awake for {{duration}}
+BYOK
+Back
+Back on the primary model
+Back on the primary model.
+Back to Devin
+Back to app
+Back to files
+Background agent
+Backspace
+Bad result
+Basic information about where the repo is cloned
+Battle Groups
+Behavior
+Beta
+Beta features
+Billed at API pricing
+Billing Tags
+Billing tag
+Billing tag permissions
+Billing tags
+Billing tags allow you to group sessions so your organization can track ACU usage by workstream.
+Binary file
+Binary file ({{size}}) — not editable here.
+Blocked
+Blocked by a repo-level failure
+Blocked by an upstream failure in this scope
+Blocker
+Blocking Level {{level}} ({{count}})
+Bot comment from
+Bot comment ignored
+Bot comments from
+Box
+Box FPS
+Brainstorm an idea
+Branch
+Bring an AI teammate into Slack to help your team in the channels where work happens.
+Browse
+Browse existing plugins and install them into your setup.
+Browse for enterprise
+Browse for me
+Browse for organization
+Browser
+Browser-approved one-time codes, plus trusted app access
+Bug fixing
+Building
+Building data pipelines, scripts, and automation workflows for repetitive tasks.
+Building new features, implementing user stories, and adding new functionality to the codebase.
+Bulk add
+By status
+CI failed
+CI failed ({{count}})
+CI/CD & DevOps
+CLI
+Call Devin
+Call connection closed ({{code}})
+Call duration
+Call ended
+Call ended · {{duration}}
+Call started
+Call transcript
+Call {{number}} from your linked phone to talk to your Devin. Your phone number and an 8-digit PIN identify you; the PIN is stored in the contact card you add here.
+Called
+Can edit
+Can edit this connection's repository permissions and disconnect it
+Can edit this connection's repository permissions, manage who has access to it, and disconnect it
+Can manage
+Can see this connection and the repositories it grants access to
+Can view
+Cancel
+Cancel call
+Cancel verification
+Canceled
+Cannot change visibility of sessions created from {{origin}}
+Canonical transcript
+Cap
+Capability
+Capability switching is disabled for {{shortName}} sessions
+Capture (ms)
+Category
+Change language
+Change security profile
+Change theme
+Change {{name}}'s avatar
+Changed files
+Changes
+Changes aren't available in Plan mode
+Channel
+Channels to add {{name}} to
+Chat
+Check
+Check completed
+Check evidence ({{count}})
+Check {{index}}
+Checked commit history
+Checking OAuth setup
+Checking commit history
+Checking for issues…
+Checking setup
+Checking setup for {{repoName}}
+Checking...
+Checkpoint restored
+Checks
+Checks Failed
+Checks for your organization's own tooling and conventions. They are assessed with Cognition's checks in every repository but never change the readiness level.
+Choose a PNG, JPEG, GIF, or WebP under 5 MB
+Choose a channel Devin should monitor, and tell it what to work on
+Choose a file or drag and drop
+Choose a folder
+Choose a folder to run the session in
+Choose a task to open a new work session associated with {{name}}.
+Choose an MCP to connect at the {{scope}} scope. Each connection has its own setup.
+Choose an account
+Choose folder…
+Choose whatever feels natural.
+Choose where the session runs
+Choose which apps {{name}} can use.
+Choose your Devin
+Choose {{name}}
+Citations
+Clear all
+Clear filter
+Clear filters
+Clear search
+Clear selection
+Clears the tag; Devin may suggest one later.
+Click "Save" when all steps are ready
+Click to expand prompt
+Click to unarchive
+Click<chevronIcon />for next question
+Clicked
+Clicked at ({{x}}, {{y}})
+Clicked at {{coordinate}}
+Clicked element on {{url}}
+Clone only
+Close
+Close PR
+Close PRs
+Close all
+Close editor tab
+Close menu
+Close others
+Close pull request
+Close search
+Close tab
+Close to the right
+Close {{title}}
+Closed
+Closed 1 pull request, {{failed}} failed
+Closed {{count}} pull requests, {{failed}} failed
+Closing 1 pull request…
+Closing a lot of tabs?
+Closing {{count}} pull requests…
+Cloud
+Cloud settings
+Code review
+Code review that organizes diffs, detects moved code, and flags potential bugs.
+Code scans
+Codemap
+Codemap sharing
+Coding
+Cognition's latest model
+Collapse
+Collapse all files
+Collapse child sessions
+Collapse children
+Collapse input
+Collapse sidebar
+Command
+Command Changed
+Command copied — paste it in your terminal
+Command palette
+Command {{names}}
+Commands
+Commands and skills
+Commands tested:
+Commands that keep Devin's workspace up to date and in a good Git state (on the right branch, etc.) when working on a new ticket
+Commented on PR
+Commented on PR #{{pullNumber}} in {{repo}}
+Commented on a PR in {{repo}}
+Commit
+Community
+Compact view
+Company announcement
+Complete
+Complete GitHub Enterprise installation
+Complete GitHub Installation
+Completed
+Completed checklist item
+Completed task
+Compliance
+Computer
+Configuration
+Configure auto-triage
+Configure default agent
+Configure how DeepWiki indexes your repository source code for Wiki and Ask Devin.
+Confirm
+Confirm profile change
+Conflicting
+Congrats on starting your first session!
+Connect
+Connect <strong>{{account}}</strong> on <code>{{host}}</code> to <strong>{{enterprise}}</strong>?
+Connect Bitbucket
+Connect Devin to {{name}}. You can uninstall this plugin at any time from settings.
+Connect GitHub
+Connect GitHub organization
+Connect GitHub, GitLab, Bitbucket or Azure DevOps
+Connect GitLab
+Connect Jira
+Connect Jira or Linear
+Connect Linear
+Connect MCP
+Connect MCPs
+Connect MCPs for {{name}}
+Connect Microsoft Teams
+Connect Pylon
+Connect Slack
+Connect Slack or Microsoft Teams
+Connect a GitHub org to your new Devin account
+Connect a new server from the MCP marketplace.
+Connect account
+Connect an integration
+Connect to Git
+Connect to set this MCP up and enter its credentials.
+Connect to set this MCP up — there is nothing to authorize afterwards.
+Connect via CLI
+Connect your Git provider
+Connect your Microsoft Teams workspace
+Connect your account to access your repositories
+Connect your apps
+Connect your codebase to try Devin for free
+Connect your organization's Jira site
+Connect your organization's Pylon account
+Connect your organization's repositories so Devin can start working.
+Connect your organization's workspace
+Connect your repositories to try Devin for free or <upgradeButton>upgrade your plan</upgradeButton>
+Connect your team's workspace
+Connected
+Connected as {{name}}
+Connected for the whole organization. Every Devin can use it; manage it in Settings.
+Connected to {{name}}
+Connecting Bitbucket...
+Connecting GitHub...
+Connecting GitLab...
+Connecting call...
+Connecting from {{ip}}
+Connecting requires a Microsoft Entra ID Global Administrator to approve tenant-wide access, once.
+Connecting to Devin's machine… IDE search will be available once it's online.
+Connecting...
+Connecting…
+Connection authorized
+Connection error
+Connection incomplete
+Connections
+Consider these suggestions to help Devin understand your task more clearly.
+Construct Devin Prompt
+Contact an admin to allow it.
+Contact an admin to allow them.
+Contact card downloaded. Add it to your phone and call Devin once to finish linking.
+Contact sales
+Contact support
+Content
+Context from your editor
+Continue
+Continue in a new session
+Continue with listed subprojects
+Continue with no subprojects
+Continue with your enterprise
+Continue with {{repo}}
+Continue with {{title}}
+Continue without Slack
+Continue without repos
+Copied
+Copied image
+Copied!
+Copy
+Copy Devin ID
+Copy branch name
+Copy content
+Copy context about Devin's work and this PR to handoff to another agent
+Copy enterprise ID
+Copy image
+Copy link
+Copy link to {{title}}
+Copy organization ID
+Copy session link
+Copy table
+Correctly invoked ({{count}})
+Correctly retrieved ({{count}})
+Cost
+Could not connect {{name}}.
+Could not connect {{pluginName}}.
+Could not disconnect members from {{name}}.
+Could not disconnect {{name}}.
+Could not find selected repository.
+Could not load {{name}} from the marketplace.
+Could not reindex plugins
+Could not save the secret
+Could not uninstall {{name}}.
+Could not update {{name}}.
+Couldn't add Devin
+Couldn't apply that setting to the local agent.
+Couldn't load connections
+Couldn't load recent threads
+Couldn't load this version.
+Couldn't load your phone settings.
+Couldn't open the folder picker.
+Couldn't reach Devin's machine
+Couldn't send your message to the local agent.
+Couldn't start a terminal on the remote machine
+Couldn't update avatar
+Couldn't verify
+Coworker
+Crashed
+Create
+Create PR
+Create Playbook
+Create a custom Devin
+Create a new contact card
+Create a playbook
+Create a schedule
+Create account
+Create actionable plans for tasks
+Create automation
+Create automation from session
+Create contact card
+Create my Devin
+Create new account
+Create new folder
+Create organization
+Create organization secret?
+Create playbook from session
+Create playbook from {{count}} session
+Create playbook from {{count}} sessions
+Created
+Created 1 task
+Created by
+Created by Data Analyst agent
+Created by Plan agent
+Created plan
+Created time
+Created {{count}} task
+Created {{count}} tasks
+Created {{filename}}
+Creates a contact card with the PIN filled in. Add it to your phone and call once within 7 days to finish linking.
+Creating
+Creating PR…
+Creating {{filename}}
+Creating…
+Creative partner
+Credentials requested:
+Cron Expression
+Crop & save
+Crop preview
+Crop profile picture
+Current
+Current preference is set to {{mode}}
+Currently connected to <name>{{name}}</name>
+Currently not connected to a Devin account
+Custom
+Custom checks
+Custom checks describe what must be true in a repository for your own tooling, and Devin verifies each one during the readiness assessment. They appear alongside Cognition's checks and never change the readiness level.
+Customizations
+Customize
+Customize your Devin
+Custom…
+Daily usage quota exceeded
+Dark mode
+Data & automation
+Date range
+Deactivated skill
+Debug
+Debug info
+Debugging
+Dec
+Decode (ms)
+Deep
+Deep mode
+Deep mode is unavailable when usage quota is exceeded.
+Deep mode usage is billed. All other usage remains free.
+Deep · {{label}}
+DeepWiki
+Default
+Default branch
+Default capability
+Default capability changed
+Define checks for your own tooling that run alongside Cognition's checks.
+Degraded
+Degraded assessment
+Delete
+Delete "{{label}}"? Devin will no longer use it.
+Delete Subproject
+Delete file
+Delete file {{name}}
+Delete folder
+Delete folder {{name}}
+Delete folder?
+Delete knowledge
+Delete rule
+Delete secret
+Delete skill
+Delete {{name}}?
+Delete {{path}}
+Deleted
+Deleted task
+Deleted {{filename}}
+Deleted {{name}}
+Deliverable
+Deny
+Dependencies and Lint
+Descendant ACU usage
+Descendant usage
+Describe change to command
+Describe the playbook you want to create...
+Describe the task for this scheduled session...
+Describe what you want your Devin to do.
+Describe work for {{name}}
+Describe your knowledge management task...
+Describe your task or ask a question
+Describe your tasks or upload a file
+Description
+Deselect all enterprises on this page
+Deselect all other enterprises on this page
+Deselect all sessions
+Deselect all your enterprises on this page
+Desktop
+Devin
+Devin CLI is available for your organization.
+Devin Cloud
+Devin Coach
+Devin Desktop
+Devin Desktop Insiders
+Devin Desktop and other signed-in apps can connect; no codes or SSH keys
+Devin ID copied to clipboard
+Devin Local
+Devin Review
+Devin Review + {{names}} feedback
+Devin Review feedback
+Devin Review feedback ({{counts}})
+Devin Review findings ignored
+Devin Review found issues. Fix them for this PR, or enable auto-fix for all Devin PRs.
+Devin Review found {{findings}}
+Devin Review onboarding reset
+Devin Tab
+Devin added to Slack
+Devin auto-triages Linear issues when a label is added. Edit the prompt it runs.
+Devin can add plugins for you
+Devin chose to stop working
+Devin coaches your team as they prompt and work. Suggestion outcomes will appear here.
+Devin could not check this provider. Retry before connecting.
+Devin could not verify automatic OAuth setup. Check the provider documentation. If the provider uses an API key, select Authorization header. Use “Bearer ${MCP_API_KEY}” as the value. Then add a write-only secret named “MCP_API_KEY” in the Secrets section. Alternatively, add a pre-registered OAuth client ID under Advanced.
+Devin couldn't join the Slack channel
+Devin couldn't join the channel. <reconnectButton>Reconnect Slack</reconnectButton> to grant permission to join channels.
+Devin crashed. Send a message to attempt recovery.
+Devin has context from your editor
+Devin has its own laptop with a browser and a terminal. Pick the main repos Devin will be working on — you can add more later.
+Devin has stopped and is waiting for your input
+Devin has updated the command or its metadata since you started verification. Please cancel and try again.
+Devin hasn't proposed any machine setup configuration yet.
+Devin hit your per-message usage limit, so it automatically paused to prevent runaway spend. Want it to keep going? Send a message, or <limitButton>raise or remove the limit</limitButton> for this session. Raising the limit in settings only applies to new sessions.
+Devin hit your per-message usage limit, so it automatically paused to prevent runaway spend. Want it to keep going? Send a message, or raise or remove the limit in [usage settings](/settings/usage?tab=limits).
+Devin is actively working on your task and has active child sessions. Stopping the session puts the session and all of its child sessions to sleep.
+Devin is actively working on your task.
+Devin is actively working on your task. Stopping the session puts the session and its children to sleep.
+Devin is asleep
+Devin is asleep — IDE search needs the machine online.
+Devin is asleep. Click anywhere to wake up and see live
+Devin is awaiting approval for actions
+Devin is awaiting your response
+Devin is awaiting your response. Type 'SLEEP' to put Devin to sleep. Devin will auto-sleep after a period of inactivity
+Devin is checking whether this provider can start OAuth safely.
+Devin is currently working on your task and has active child sessions. Archiving will put this session and all of its child sessions (including nested ones) to sleep. You can access them later from your archived sessions.
+Devin is currently working on your task. Archiving will put this session and any child sessions to sleep. You can access this session later from your archived sessions.
+Devin is currently working on your task. Putting Devin to sleep will interrupt this work. You can wake Devin up later by sending a new message.
+Devin is fixing issues from Devin Review
+Devin is investigating the repo and filling out these steps
+Devin is preparing tasks...
+Devin is queued
+Devin is requesting to perform the following actions
+Devin is reverting to a previous checkpoint
+Devin is sleeping because this session exceeded the total session ACU limit. Acknowledge the limit to continue or start a new session.
+Devin is sleeping because your account is on an individual plan but you are not the organization owner. Check your [plans](/settings/plans) for details.
+Devin is sleeping because your account is out of credits. Please check your billing details.
+Devin is sleeping because your organization's Devin contract has ended. Contact your account team to renew.
+Devin is sleeping because your organization's last payment failed. To wake Devin up, please [update your payment details](/settings/plans)
+Devin is sleeping because your per-user ACU limit was exceeded. Ask your account admin to increase your usage limit to continue.
+Devin is sleeping because {{description}}. Check your [usage settings](/settings/usage) for details.
+Devin is sleeping due to inactivity. Wake Devin up by sending a message
+Devin is sleeping due to organization usage settings. An enterprise admin must increase the ACU limit for your organization to continue.
+Devin is sleeping. To wake Devin up, [increase your limit](/settings/plans)
+Devin is sleeping. To wake Devin up, [increase your organization's limit](/organizations/{{orgId}})
+Devin is sleeping. To wake Devin up, [manage your subscription](/settings/plans)
+Devin is sleeping. To wake Devin up, ask your account admin to increase your usage limit
+Devin is sleeping. Wake Devin up by sending a message
+Devin is starting up…
+Devin is the AI software engineer built for teams. Devin autonomously plans, codes, tests, and ships.
+Devin is thinking…
+Devin is up
+Devin is up. Send a message to start working
+Devin is waiting for your input to proceed
+Devin is waking up to address PR feedback.
+Devin is waking up to address lint errors.
+Devin is waking up.
+Devin is working…
+Devin knows you have {{file}} open
+Devin loads this MCP for everyone in this org.
+Devin loads this MCP in your sessions.
+Devin logo
+Devin looked up this note itself while working.
+Devin mode
+Devin name
+Devin needs your attention
+Devin official marketplace plugin
+Devin reviews every PR opened in the repos you choose.
+Devin reviews every PR you open. Doesn't affect teammates.
+Devin rolled back to a previous checkpoint
+Devin session links
+Devin sessions
+Devin started in local mode can only be awaken from CLI.
+Devin started working on <highlight><ticker></ticker> task</highlight>
+Devin started working on <highlight><ticker></ticker> tasks</highlight>
+Devin suggested environment changes for your review
+Devin suggested this tag based on the session's content. Apply it to tag this session, or dismiss the suggestion.
+Devin took over this PR
+Devin uses project commands to make sure projects can run and pass lint, tests, etc. after making changes to the repo.
+Devin uses the name and short description to tell MCP servers apart.
+Devin wants to create an automation
+Devin wants to delete an automation
+Devin wants to run an automation
+Devin wants to update an automation
+Devin went to sleep
+Devin went to sleep because this session exceeded the total session ACU limit. Acknowledge the limit to continue or start a new session.
+Devin went to sleep because your account is on an individual plan but you are not the organization owner
+Devin went to sleep because your organization's Devin contract has ended. Contact your account team to renew.
+Devin went to sleep because your organization's last payment failed, please update your payment details
+Devin went to sleep because {{reason}}
+Devin went to sleep to apply the updated network config
+Devin went to sleep to apply the updated network config.
+Devin will be allowed to run this plugin's rules, hooks, and skills, including access to external data through its MCP servers. Only proceed if you trust this plugin and have verified its source.
+Devin will be allowed to run this plugin's rules, hooks, and skills, including access to external data through its MCP servers. Only proceed if you trust this plugin.
+Devin will be allowed to run this plugin's rules, hooks, and skills. Only proceed if you trust this plugin and have verified its source.
+Devin will be allowed to run this plugin's rules, hooks, and skills. Only proceed if you trust this plugin.
+Devin will join {{channel}}
+Devin will no longer be able to use your {{name}} account. You can connect again later.
+Devin will not load this MCP.
+Devin will see multiple installations of this server
+Devin won't auto-review your PRs. Trigger reviews as needed.
+Devin works best with your whole team. Invite teammates to collaborate.
+Devin's Machine
+Devin's execution plan
+Devin's machine became ready after {{elapsed}}.
+Devin's machine has {{count}} pre-installed repositories
+Devin's machine has {{count}} pre-installed repository
+Devin's machine is coming online — the live desktop will connect once it's ready
+Devin's machine is coming online — the preview will load once it's ready.
+Devin's machine is coming online — the {{displayName}} will load once it's ready.
+Devin's machine is online, but no booted {{emulatorType}} was found. Ask Devin to boot one — this tab will reconnect automatically.
+Devins
+Diagnosing, troubleshooting, and resolving alerts or incidents in a production context.
+Diagnosing, troubleshooting, and resolving defects, errors, test failures, or unexpected behavior.
+Difficult fix
+Digs into questions, compares options, and brings back clear summaries.
+Direction
+Disable ETA debug mode
+Disable Teams sync
+Disable sync to {{label}}
+Disabled
+Disabled by Cognition for this account
+Disabled for your organization
+Disabled tools: {{tools}}
+Disabled until review results are available
+Disabled when Archived group exists
+Disabled when Done group exists
+Discard
+Discard changes?
+Discard edit
+Discard unsaved changes?
+Disconnect all members
+Disconnect all members from {{name}}?
+Disconnect {{name}}?
+Disconnected all members from {{name}}.
+Disconnected {{name}}.
+Dismiss
+Dismiss checklist
+Dismiss checklist?
+Dismiss improvement suggestions
+Dismiss notification
+Dismissed
+Dismissed suggestions
+Dismissed {{count}} suggestion
+Dismissed {{count}} suggestions
+Display
+Display properties
+Diverged from remote
+Document
+Documentation
+Documentation & content
+Don't see your repository? Try
+Don't show again
+Don't use a machine snapshot
+Done
+Don’t include plaintext secrets. Use <docsLink>plugin secret references</docsLink> instead.
+Don’t include secrets.
+Dormant: no commits in the last 90 days
+Double-clicked
+Double-clicked at ({{x}}, {{y}})
+Double-clicked at {{coordinate}}
+Download
+Download apps
+Download update
+Downloaded file
+Downloading update
+Draft
+Drag sessions here
+Drag to reorder
+Dragged from ({{startX}}, {{startY}}) to ({{endX}}, {{endY}})
+Dragged from {{start}} to {{end}}
+Drop files to share with Devin
+Drop your files here
+Each member of your organization will authenticate individually with their own personal access token for {{name}}. Note that other users can still interact with your sessions, so this should not be treated as a security boundary.
+Each request opens a new work session associated with {{name}}.
+Each save adds a version here.
+Earlier activity not shown
+Earn ${{amount}}
+Earn {{count}} ACU
+Earn {{count}} ACUs
+Earn {{credits}} — just by trying Devin
+Earned ${{amount}}
+Earned {{count}} ACU
+Earned {{count}} ACUs
+Edit
+Edit command
+Edit estimate
+Edit files with language intelligence
+Edit message
+Edit rule
+Edit skill
+Edit subscribers
+Edit tags
+Edited
+Edited files
+Edited {{filename}}
+Editing
+Editing files
+Editing is unavailable
+Editing queued message
+Editing {{filename}}
+Editor
+Efficiency
+Effort
+Email address
+Email addresses
+Empty folder
+Enable ETA debug mode
+Enable MCP integration
+Enable Teams sync
+Enable auto-fix
+Enable auto-fix for all PRs
+Enable sync to {{label}}
+Enabled
+Enabling this integration will allow all members of your organization to use <strong>the same MCP server connection, sharing a single authentication state for all actions.</strong> <u>We strongly recommend using a service account</u> when Devin prompts you to visit a URL to connect your {{name}} account.
+Enabling this integration will allow all {{count}} members of your organization to use <strong>the same MCP server connection, sharing a single authentication state for all actions.</strong> <u>We strongly recommend using a service account</u> when Devin prompts you to visit a URL to connect your {{name}} account.
+Enabling...
+Enc
+Encode (ms)
+End call
+End voice call
+Enrolled SSH keys connect directly, plus one-time codes and trusted app access
+Enter a folder path relative to the plugin root. Folders are saved once they contain a file.
+Enter a line number in {{file}} (e.g. 42 or 42:7).
+Enter a non-zero amount
+Enter a path relative to the plugin root. Folders are created as needed.
+Enter at least one email address.
+Enter path relative to repo root (e.g., ./packages/frontend)
+Enter the new path for {{path}} and everything in it, relative to the plugin root.
+Enter the new path for {{path}}, relative to the plugin root.
+Enter this code at the SSH prompt in your terminal:
+Enter your password
+Entered test mode
+Entered test mode —
+Enterprise
+Enterprise ID copied
+Enterprise role
+Enterprise roles
+Enterprise settings
+Enterprise skills
+Environment changes suggested
+Error
+Error generating recommended configuration changes.
+Error loading more. Please refresh the page.
+Error lookup
+Escalate Pylon tickets to Devin to investigate.
+Estimate of how long it would've taken a human to do this work without AI assistance
+Estimate of how long the work took to complete with the help of Devin
+Evaluates how well knowledge retrieval matched this session's needs. This is an internal staging-only feature.
+Evaluates how well skill invocation matched this session's needs. This is an internal staging-only feature.
+Event
+Event payload
+Event renderer
+Every Devin session has the <mcpLink>Devin MCP</mcpLink> built in and authenticated — no setup needed. Any Devin can inspect other sessions, manage <playbooksLink>playbooks</playbooksLink>, and start batch sessions.
+Everyone
+Everyone in this org
+Everyone in your organization shares these {{name}} credentials. Use credentials issued to a service account, not personal ones.
+Everyone in your organization shares this one {{name}} sign-in. Use a dedicated service account, not a personal one, when {{name}} asks you to authorize.
+Evidence
+Evidence ({{count}})
+Example batch prompts
+Example prompts
+Exceeded limit
+Executed
+Executed JavaScript
+Executed JavaScript on {{url}}
+Execution plan
+Exit focus mode
+Exit full screen
+Exit full width
+Exit scan mode
+Expand
+Expand all files
+Expand child sessions
+Expand children
+Expand input
+Expand sidebar
+Experimental research model
+Explore
+Explore advanced capabilities
+Explore each session to see how Devin works.
+Explore new model behaviors and share feedback. Previews aren't optimized for everyday use.
+Explored the repo
+Exploring feasibility, researching solutions, investigating options, designing architecture, writing RFCs, planning, and prototyping.
+Export to CSV
+Extensions
+F
+F1 score
+FPS · last 30s
+Failed
+Failed after {{elapsed}}. Start a new session to try again.
+Failed to add SSH key
+Failed to attach pasted text as a file. Try pasting again.
+Failed to change language
+Failed to close 1 pull request
+Failed to close {{count}} pull requests
+Failed to copy command
+Failed to copy content
+Failed to copy enterprise ID
+Failed to copy image
+Failed to copy link
+Failed to copy organization ID
+Failed to copy session link
+Failed to create auto-triage automation
+Failed to delete folder
+Failed to download attachment
+Failed to generate analysis. Please try again.
+Failed to grant access
+Failed to group files - PR may be too large
+Failed to index repository. Please try again.
+Failed to install
+Failed to load Devins
+Failed to load changes
+Failed to load connected apps
+Failed to load custom checks.
+Failed to load debug info
+Failed to load file
+Failed to load more sessions. Please try again.
+Failed to load more sub-sessions. Please try again.
+Failed to load options
+Failed to load pull requests
+Failed to load readiness assessments.
+Failed to load session events
+Failed to load sessions
+Failed to load snapshots
+Failed to load the level history.
+Failed to load the readiness assessment.
+Failed to load workspace history.
+Failed to remove SSH key
+Failed to remove access
+Failed to rename folder
+Failed to render diagram: {{message}}
+Failed to reset Devin Review onboarding
+Failed to reset onboarding
+Failed to save
+Failed to save custom checks.
+Failed to set up phone calls
+Failed to start SSO login. Please try again.
+Failed to start a fix session.
+Failed to start assessment
+Failed to start sessions. Please try again or skip for now.
+Failed to start the local session. Please try again.
+Failed to start the repository setup session.
+Failed to start your personal Devin. Please try again.
+Failed to turn on DeepWiki. Please try again.
+Failed to undo last action
+Failed to unlink phone
+Failed to unpin sessions
+Failed to update GitHub auto-joining setting
+Failed to update SSH access setting
+Failed to update Slack sync
+Failed to update caffeinate settings
+Failed to update read status
+Failed to update sharing
+Failing
+Fast
+Fast Context
+Fast and good at long-horizon planning
+Fast and tuned for data analytics
+Fast is only available for {{modes}} Mode
+Feature development
+Feature flags
+Feedback from {{username}}
+Fetched events for PR
+Fetched web page content
+Fetched web page content ({{count}} page)
+Fetched web page content ({{count}} pages)
+Fetching events for PR
+Fetching repositories from your git connection failed.
+File
+File is too large to preview
+File not found in this repository
+File path
+Files
+Files Devin creates like markdown
+Files on disk are preserved, but running processes (such as dev servers or background jobs) will be stopped.
+Filter
+Filter events by type
+Filter git providers
+Filter not applied
+Find a repository…
+Find a wiki
+Find your teammates on Devin or choose repositories to start working.
+Finding
+Finding a machine for Devin ... Devin is waiting in the queue. {{queuePosition}}
+Finding files
+Findings
+Findings input
+Finish your installation (while logged into Devin) in Settings > Integrations
+Finished {{time}}
+Fix for this PR
+Fix for this PR only
+Fix the highlighted fields before saving.
+Fix with Devin
+Fixing CI
+Fixing security vulnerabilities, addressing CVEs, and improving application security posture.
+Flat list
+Focus mode
+Folder
+Folder name
+Folder options
+Folder path
+Folder view
+Folders
+Forgot password?
+Fork from here
+Format: minute hour day month weekday ({{zone}})
+Found files
+Foundations
+Free
+Free credits
+Free trial: upgrade plan
+Friend
+From there you can disconnect the app to unlink it from its current Devin account. <learnMoreLink>Learn more</learnMoreLink>
+From {{source}}
+Full Code Execution
+Full control of Devin's machine
+Full screen
+Full seat requested
+Full width
+GPT
+GPT-6 Astra Fast (Internal)
+GPT-6 Astra Fast — internal GPT-6 Astra preview on priority models
+Gap of {{duration}}
+General
+Generate analysis
+Generated code
+Generating plan v0…
+Generating…
+Get ${{amount}} in free credits
+Get more thorough answers with deeper reasoning
+Get started
+Get started with Devin
+Get {{count}} free ACU
+Get {{count}} free ACUs
+GitHub auto-joining disabled
+GitHub auto-joining enabled
+GitHub danger zone showing uninstall option
+GitHub installation requested
+GitHub integration authorized
+GitHub integration grants sufficient repository permissions
+Give feedback
+Give your Devin a name
+Give {{name}} a handle your team can @-mention.
+Go to
+Go to Automations
+Go to Oncall
+Go to Review
+Go to Wiki
+Go to all sessions
+Go to blueprint
+Go to file
+Go to file or folder…
+Go to home
+Go to homepage
+Go to line
+Go to line (e.g. 42 or 42:7)…
+Go to line {{line}} in {{file}}
+Go to line {{line}}, column {{column}} in {{file}}
+Go to line...
+Go to machine
+Go to parent ask
+Go to parent session
+Go to symbol in workspace
+Going to sleep {{reason}}
+Going to sleep..
+Going to sleep…
+Good at instruction following
+Good result
+Google
+Got cursor position
+Grant Devin access to {{name}}. You can disable this integration at any time from settings.
+Grepped
+Grepped {{query}}
+Grepping
+Group
+Group by
+Grouping
+Guide Devin while it works
+Guide Devin while it works, or press <kbdShortcut/> to queue
+Guide Devin while it works, or press {{shortcut}} to queue
+Hand Devin a Playbook
+Harmonic mean of precision and recall
+Has access
+Has child sessions
+Have Devin make skills, install MCP server, or setup third-party plugins.
+Held key
+Held key: {{key}}
+Help
+Help us understand where you found Devin.
+Hi Devin!
+Hi, I’m {{name}}. What should we work on first?
+Hide
+Hide all
+Hide editor context
+Hide file tree
+Hide from team
+Hide group
+Hide hidden hooks
+Hide in sidebar
+Hide property
+Hide raw TOML
+Hide tab
+Hide tabs panel
+Hide terminal
+Hide {{label}} tips
+High
+High contrast off
+High contrast on
+High contrast system
+Higher capability means more powerful models but higher costs
+Hold spacebar to talk
+Hold to talk
+Hold to talk (Spacebar)
+Home
+Hooks
+Hour (0-23)
+How can I help you get more value from Devin?
+How did you hear about us?
+How do you want to use Devin?
+How long each PR would have taken without Devin. Merged PRs only.
+How ready each repository across your enterprise is for agents to work in, assessed criterion by criterion.
+How ready each repository is for agents to work in, assessed criterion by criterion.
+How users may SSH into session machines
+How would you like to improve this playbook?
+How your team responds to Devin's coaching, with suggestion outcomes across your organization in the last {{days}} days
+I disagree
+I understand and want to proceed
+I want a Devin that helps me run my week: it keeps track of what I said I'd do, checks in on Monday mornings, and drafts the updates I owe people so I only have to edit them. It should know my projects well enough to notice when something is slipping, and it should ask before doing anything on my behalf.
+I'll do it later
+IDE search
+IDE search help
+IDE search modes
+If selected, all sessions will use this playbook
+Ignored feedback from PR comments
+Ignored feedback from {{names}}
+Image preview
+Impersonate
+Impersonating…
+Implementation plan
+Implementing
+Import organization secrets
+Import organization secrets?
+Imported Knowledge ({{count}})
+Imported knowledge
+Improve playbook from session
+Improved prompt
+Improvement Opportunities Detected
+Improving code structure, performance, and maintainability without changing external behavior.
+In progress
+In sync with remote
+Inactive
+Inactive sessions
+Incident management
+Include details in the name and short description fields so Devin can tell it apart from these installations:
+Incomplete checklist item
+Incorrectly retrieved ({{count}})
+Increase enterprise organization usage limit
+Increase usage limit
+Increase your per-user usage limit
+Index your codebase to create wikis, run multiple agents, and schedule recurring sessions
+Index your repos for Wiki and Ask Devin
+Indexed
+Indexed repositories can be managed from their wiki.
+Indexing
+Indexing…
+Injected rule
+Injected rules ({{count}})
+Input is currently disabled
+Install CLI
+Install Desktop
+Install a plugin for your enterprise.
+Install a plugin for your organization.
+Install a plugin for yourself or for a scope you manage.
+Install a plugin for yourself.
+Install and enable
+Install from the marketplace
+Install update
+Install {{name}}
+Installation
+Installation already connected
+Installation is scheduled for {{time}}, and its MCP can be connected after that.
+Installation is scheduled, and its MCP can be connected after that.
+Installation lookup failed
+Installation name
+Installation out of date
+Installed
+Installed at {{scope}}
+Installed but blocked
+Installed for me
+Installed in
+Installed in {{repos}}
+Installed with issues
+Installed {{name}}
+Installing update
+Installing...
+Installing…
+Instruction
+Interactive Q&A and planning
+Internal
+Internal agent sidekick preview
+Internal debugging
+Internal error.
+Internal only
+Invalid GitHub Enterprise installation state
+Invalid attachment
+Invalid regular expression
+Invalid state for GitHub installation
+Investigate with Devin
+Invite members
+Invite your team
+Invite {{name}} to one or more channels so your team can use the same Devin.
+Invited {{count}} team member
+Invited {{count}} team members
+Invoked skill
+Issue created
+Issue timeline
+It only reads the channels you add it to, and you can remove it anytime.
+It's too late :(
+Iterating
+Its MCP can be connected once installation finishes.
+Its MCP can be connected once the plugin has been installed.
+Jira
+Jira issue · {{identifier}}
+Jitter
+Jitter (ms)
+Join Devin account
+Jump to this event
+Juno
+Just mark done
+Just unsubscribe
+Keep Devin awake
+Keep editing
+Keep me accountable, help me plan my week, and nudge me when I drift.
+Keep open
+Keeping repositories up to date
+Keeping {{repo}} up to date
+Keeps your plans realistic, notices when you drift, and gives you the right nudge at the right time.
+Key name
+Keys enrolled here can SSH into your Devin sessions directly, without browser approval.
+Kick off these <highlight>{{count}} session</highlight>
+Kick off these <highlight>{{count}} sessions</highlight>
+Knowledge
+Knowledge helps Devin remember relevant facts, tips, and how to perform certain skills. Devin will recall relevant knowledge automatically
+Knowledge insights
+Knowledge search selected this note as relevant to the task.
+Knowledge suggestions
+Knowledge usage
+Language
+Large paste attached as a file
+Last 2 weeks
+Last 30 days
+Last agent turn
+Last assessed
+Last created
+Last indexed
+Last month
+Last run
+Last updated
+Last week
+Last {{days}} days · {{segmented}} of {{sampled}} sessions sampled
+Latency · last 30s
+Latest assessment failed: {{error}}
+Launched subagent
+Learn about models
+Learn more
+Learn more about writing effective prompts
+Learns what matters to you, keeps track of the details, and follows through.
+Legacy
+Legacy automatic review enrollments
+Let Devin know how to handle tasks on the above channel.
+Let this Devin use {{name}}
+Lets Devin DM you in Microsoft Teams
+Lets Devin DM you in Slack
+Lets Devin act as you in Linear
+Lets Devin act as you in Pylon
+Level
+Level over time
+Level {{level}}
+Lifeguard
+Light mode
+Lightning
+Line
+Linear
+Linear issue · {{identifier}}
+Linear monitor
+Link
+Link GitHub Account
+Link Slack account
+Link copied to clipboard
+Link your Linear user
+Link your Slack user
+Link your git user
+Linked
+Linked org secret. Enter a value to override.
+Linked, caller ID verification required
+LinkedIn
+Linux
+List your tasks or describe what sessions to create...
+Listed
+Listed available MCP servers
+Listed knowledge suggestions
+Listed recent commits on {{query}}
+Listed skills
+Listed tools for
+Listed tools on MCP server
+Listed users
+Listed {{path}}
+Listed {{returnedCount}} of {{totalCount}} suggestions{{filterStr}}
+Listening
+Listing
+Lite — Tuned for smaller, well-defined tasks. 60% cheaper
+Live
+Load into editor
+Load more...
+Loaded extensions: 
+Loaded extensions: {{extensions}}
+Loading
+Loading a version replaces the editor contents. Save to keep it as the newest version.
+Loading changes…
+Loading diagram…
+Loading estimates…
+Loading history…
+Loading more…
+Loading orchestrators...
+Loading people…
+Loading profiles...
+Loading prompt...
+Loading repositories
+Loading repositories...
+Loading session events
+Loading tags...
+Loading tags…
+Loading versions...
+Loading...
+Loading…
+Local
+Local commits not pushed (remote is out of date)
+Local mode
+Log in
+Log in on windsurf.com
+Log out
+Logs
+Looked up commit
+Looking up commit
+L{{level}}
+L{{tier}} · {{title}}
+M
+MCP
+MCP auth failed for
+MCP auth successful for
+MCP servers
+MCP servers Devin can call, keyed by name. Saved to {{filePath}} in this scope’s plugin. Reference secrets as <code>${NAME}</code> and members supply them from the server’s details — values written here are stripped.
+MCP status
+MCPs
+Machine provisioning and setup finished (staging)
+Machine setup
+Machine type
+Macro
+Main project
+Make Default
+Make visible to team
+Make your first session
+Manage
+Manage Git settings
+Manage MCP connectors
+Manage MCPs
+Manage access
+Manage accounts
+Manage billing tags
+Manage on GitHub
+Manage profiles
+Manage repositories
+Manage security profiles
+Manage the plugins, skills, MCPs, and hooks Devin can use, for you and your org.
+Manage the plugins, skills, MCPs, and hooks Devin can use.
+Manage this session's child sessions
+Managed by a plugin
+Managed reaction
+Manually select PRs to review
+Mark done
+Mark not done
+Mark read
+Mark unread
+Markdown editor
+Marketplace server
+Matched files {{query}}
+Max
+Maximize
+Maximum {{max}} sessions ({{count}} selected)
+Medium
+Meet your first Devin
+Members are connecting this one at a time, in their own personal scope. It is also in the Devin marketplace, so you can install it once for the organization and connect it here — plugins that declare it will use that connection instead.
+Members of <orgName>{{githubOrgName}}</orgName> will be allowed to join without waiting for your approval.
+Mentioned
+Merge conflict
+Merge conflict on
+Merge conflict on PR #{{number}}
+Merge conflict on PR #{{number}}: {{title}}
+Merged
+Mermaid diagram
+Message flagged
+Message for your admin
+Message history: {{next}}
+Message is empty
+Messages are queued while Devin works
+Messages will be synced to Teams
+Messages won't be synced to Teams
+Metadata
+Microphone access is required to start a voice call
+Microphone level
+Microsoft Teams group chat
+Microsoft Teams message
+Microsoft Teams thread
+Middle-clicked
+Middle-clicked at ({{x}}, {{y}})
+Middle-clicked at {{coordinate}}
+Migrations
+Migrations & upgrades
+Minimize
+Minute (0-59)
+Mira
+Miscellaneous
+Misleading Knowledge ({{count}})
+Missed relevant knowledge ({{count}})
+Missed relevant skills ({{count}})
+Mode
+Model
+Models
+Moderate fix
+Modes
+Modified
+Monorepo setup
+More
+More actions
+More allow options
+More folders
+More reject options
+More send options
+More testing options
+More thorough answers with deeper reasoning
+More thorough investigation
+More tips for first-time users
+Mouse button down
+Mouse button up
+Mouse down
+Mouse up
+Move to folder
+Moved mouse on {{url}}
+Moved mouse to ({{x}}, {{y}})
+Moved mouse to {{coordinate}}
+Must be {{limit}} characters or fewer
+Mute microphone
+Muted
+My Devin should…
+Name
+Name is required
+Name suggestions
+Navigate
+Navigated to
+Navigated to {{url}}
+Navigation
+Need admin approval?
+Needs authorization
+Needs input
+Network · last 30s
+New
+New Ask
+New commits pushed to {{branch}} ({{shortSha}})
+New editor pane down
+New editor pane right
+New editor tab
+New file
+New folder
+New session
+New side chat
+New terminal
+New thread
+New update available
+Newest first
+Next
+Next Devin
+Next event
+Next: Level {{level}}
+Nico
+No ACUs used
+No Devin ID found in current URL
+No Devins yet. An admin can add one.
+No PR
+No PR time estimates yet
+No PTS Codes found
+No QR code found in that image
+No SSH keys enrolled.
+No SSO configuration found for this email domain. Contact your administrator.
+No account found for this email
+No active event
+No active subscription
+No agents found
+No apps connected yet. Add an MCP server to give this Devin more tools.
+No asks
+No assessments in {{org}} yet. Run one from that organization's Insights page.
+No build tooling of its own
+No capabilities are enabled for your organization. Contact your admin to enable one.
+No changes found
+No changes yet
+No cloned path set
+No completed assessment yet
+No credits used
+No custom checks yet
+No default branch set (will use remote's default)
+No description
+No details yet.
+No eligible accounts found
+No enterprise ID found
+No entries
+No events yet
+No failing criteria linked
+No feedback
+No files yet. Add one to get started.
+No filters found
+No grouping
+No issues found
+No knowledge was used in this session
+No local agent access
+No matches found
+No matches found.
+No matching files
+No one has been granted access yet.
+No options found
+No organization ID found
+No organizations found
+No people found
+No plugins match your search.
+No preview available
+No prompt changes were suggested
+No prompt improvements suggested
+No prompt suggestions available
+No public repositories
+No pull requests
+No quota used
+No relevant context found
+No repositories assessed yet
+No repositories available
+No repositories found
+No repositories found. Connect a git organization to set up repos.
+No repositories found. Please check that your
+No repositories indexed yet
+No repositories indexed. Please complete your repository setup first.
+No repositories selected for this task
+No resources loaded
+No results
+No results found
+No results found.
+No saved versions yet
+No scan profiles found
+No screenshot is available at this point in history.
+No secrets added
+No servers installed
+No session found in current URL
+No sessions
+No sessions found
+No skills, MCPs, hooks, rules, or subagent profiles were found in this plugin.
+No snapshots found
+No startup commands
+No subprojects were automatically detected. If using a monorepo, please specify relevant subproject paths below before letting Devin continue.
+No subscribers
+No tags
+No tags found
+No task tracker for this session yet.
+No tasks yet.
+No text changes in this version.
+No usage data available for the last 30 days
+No wikis found
+No {{displayName}} is running
+None
+None enabled
+None selected
+Not a standalone application
+Not a user-facing product surface
+Not applicable in this ecosystem
+Not applicable to this kind of scope
+Not assessed
+Not automation
+Not connected
+Not connected yet
+Not done
+Not evaluated ({{count}})
+Not now
+Not provided
+Not pushed to remote yet
+Not ready
+Not running
+Not set up
+Not started
+Not yet
+Notable repositories
+Note
+Note: make sure to Uninstall, not Suspend
+Now
+Now available in enterprise plugins
+Now available in organization plugins
+Now available in your personal plugins
+OAuth
+OAuth setup check failed
+OAuth setup could not be verified
+OAuth setup required
+OR
+Observability
+Observed active time (idle waiting excluded), estimated from the segmentation of a sample of this repository's recent sessions.
+Off
+Offset
+Okay
+Older
+Older format
+Oldest first
+On
+On-demand usage
+Onboarding progress
+Onboarding reset
+Oncall
+Oncall mode
+One-time code:
+One-time codes
+Only
+Only admins can change this setting.
+Only image files are supported (.png, .jpg, .jpeg, .gif, .webp)
+Only me
+Only one assessment so far — run again to see a trend
+Only open
+Only you can access these secrets
+Open
+Open GitHub
+Open PR
+Open Slack and
+Open a file to go to a line.
+Open a file to start editing.
+Open files
+Open in
+Open in Desktop tab
+Open in Devin Review
+Open in GitHub
+Open in Session tab
+Open in Slack
+Open in Watch Devin Work
+Open in new tab
+Open in sidebar
+Open in {{provider}}
+Open locally
+Open menu
+Open pull request
+Open session links
+Open settings
+Open terminal
+OpenAI's model for professional work
+OpenAI's most capable model
+Opened
+Opened by me
+Opened preview
+Optional
+Opus 4.8 Preview — Good at instruction following
+Orchestrator settings
+Order by
+Org
+Org role · {{orgName}}
+Org roles
+Organization
+Organization ID copied
+Organization settings
+Organization skills
+Organizations
+Original:
+Other
+Other MCP servers: {{count}} enabled
+Other artifacts
+Other findings ({{count}})
+Other tags are freeform. Required PTS Codes are selected above.
+Other tags are freeform. Required tags are selected above.
+Other, e.g. Billboard, Conference, Podcast
+Otto
+Our most powerful and hardest thinking agent, significantly more expensive
+Outpost
+Outpost machine accepted the session, connecting
+Outpost machine connected
+Outpost machine did not connect; waiting for outpost “{{name}}” again
+Outpost machine did not connect; waiting for your outpost again
+Outpost machine died; waiting for outpost “{{name}}” again
+Outpost machine died; waiting for your outpost again
+Outpost machine disconnected
+Outpost machine released the session; waiting for outpost “{{name}}” again
+Outpost machine released the session; waiting for your outpost again
+Outpost queue update
+Output
+Over the per-assessment scope cap
+PAT
+PR
+PR #{{number}}
+PR #{{number}} merged
+PR #{{number}} merged: {{title}}
+PR feedback
+PR is approved
+PR is ready
+PR ready, waiting for CI
+PR time estimates
+PRs
+PTS Code
+Pace
+Pacing (ms)
+Page not found
+Pages
+Pairs frontier intelligence with cost-efficient execution to deliver frontier-level results at lower cost
+Parent session
+Participant
+Password
+Paste secrets
+Paste the code into
+Path
+Pause session
+Paused
+Pending…
+Permission
+Permission request for
+Permissions
+Personal
+Personal Devin
+Personal assistant
+Personal skills
+Phase breakdown of this session
+Pick a Devin to start work.
+Pick a starting point. You can customize it later.
+Pick the integrations to set up — you can add more later.
+Pin
+Pin organization
+Pin session
+Pin to your sidebar
+Pin variant
+Pinned
+Pinned (all)
+Pinned (repo)
+Pinned SHA
+Pinned variant
+Pip
+Plan
+Plan accepted
+Plan information
+Plan my week
+Plan seat assigned to another user
+Plan with {{name}}
+Planning
+Planning the steps needed to set up the environment
+Platform
+Playbook
+Playbooks
+Please select a required PTS Code
+Please select a required tag
+Please sign in to select an organization.
+Please try again from Settings > Integrations.
+Please try again.
+Plugin docs
+Plugin skills
+Plugins
+Plugins marked as blocked by policy, including dependencies from the latest index.
+Posted message
+Powered by Fable 5.1 — preview available until Sept 22
+Powered by GPT-5.5 Preview — OpenAI's most capable model
+Powered by GPT-5.6 Sol — 70% off, available until Oct 3
+Powered by GPT-6 Astra — preview available until Sept 22
+Powered by SWE-1.7 Lightning — SWE-1.7 served on Cerebras
+Powered by SWE-1.7 Preview — Cognition's software engineering model
+Powered by SWE-1.7 Priority — SWE-1.7 with priority capacity
+Powered by SWE-2 Preview — Cognition's next-generation software engineering model
+Pre-approve testing for future sessions
+Pre-install repositories
+Pre-installing repositories lets Devin start off with a dev environment that is already set up for success.
+Precision
+Pressed key
+Pressed key: {{key}}
+Pressed key: {{key}} on {{url}}
+Preview
+Preview URL
+Preview markdown
+Preview of Devin Review, DeepWiki, and automations
+Preview unavailable
+Previews
+Previews available for a limited time
+Previous
+Previous Devin
+Previous event
+Previously, automatic reviews were enrolled on a per-repository and per-user. These legacy rules remain in effect and will soon be automatically migrated to the new rules. The above exclusions apply to these rules too. If a PR matches a legacy enrollment and is excluded by a new exclusion, it will be excluded from reviewed.
+Price changed
+Primary
+Primary model unavailable — Devin switched to a backup model and is still working. Results may be slightly different.
+Priority
+Process exited with signal {{signal}}
+Processing...
+Processing…
+Product analytics
+Production investigation
+Progress
+Project Commands
+Promo
+Promo pricing is active for a limited time
+Promo pricing is active until {{date}}
+Prompt
+Prompt looks good!
+Properties
+Property visibility
+Provide 2FA Secret
+Provide Secret
+Provides the default git identity, personal secrets, and personal plugins.
+Public
+Public key
+Public repositories can't be selected here.
+Pull request
+Pull request closed
+Pull requests
+Pull requests closed
+Pulling latest
+Pulling latest for {{repo}}
+Push to talk
+Pushed branch
+Put Devin to sleep
+Put to sleep
+Pylon
+Pylon issue · #{{issueNumber}}
+Q&A
+Q:
+QR code detected
+Question skipped
+Queue Position: {{position}}
+Queued
+Quick and responsive answers
+Quick review requested
+RTT
+RTT (ms)
+Ran a command in
+Ran command
+Ran hook
+Ran scripted tool
+Ran {{count}} scripted tool event
+Ran {{count}} scripted tool events
+Read
+Read & write
+Read channel history
+Read only
+Read page DOM
+Read resource
+Read subagent results
+Read thread replies
+Read user profile
+Read wiki
+Read wiki {{query}}
+Read {{filename}}
+Readiness level
+Readiness level of each assessed repository.
+Readiness level of each assessed repository. Repositories connected in several organizations appear once, with the newest assessment.
+Readiness — {{repo}}
+Reading
+Reading wiki
+Reading {{filename}}
+Reads and updates issues in your workspace.
+Reads mentions and replies in your channels.
+Ready
+Reboot session
+Reboot session?
+Reboot virtual machine
+Rebooting…
+Recall
+Received feedback from PR comments
+Received feedback from {{names}}
+Recent
+Recent history
+Recently Used
+Recently used tags
+Recommendation
+Reconnect MCP
+Reconnect Slack
+Reconnect Slack in settings to grant Devin permission to join channels.
+Reconnecting call...
+Record voice prompt
+Redirecting to Devin University…
+Ref
+Refactoring & optimization
+Referrals
+Regenerate
+Regenerating…
+Reindexing plugins
+Reject
+Rejected
+Relative cost
+Relevance
+Reliability
+Reloaded skills ({{summary}})
+Reloading Devin’s memories…
+Remote at a different revision
+Remote has newer commits
+Remove
+Remove access
+Remove default
+Remove filter
+Remove from folder
+Remove from queue
+Remove from selection
+Remove from sidebar
+Remove from your sidebar. Archived for everyone if no other subscribers.
+Remove from {{name}}
+Remove quote
+Remove secret
+Remove session from sidebar
+Remove session link
+Remove tag {{tag}}
+Remove {{name}}?
+Remove {{path}} from the plugin? This takes effect when you save.
+Removes every member's authorization; everyone will need to connect again.
+Removes the installation and its configuration.
+Removes your authorization for this MCP. You can connect again later.
+Removes {{name}} for this scope. Its skills, rules, hooks, and MCP servers will no longer apply.
+Remy
+Rename
+Rename file
+Rename file {{name}}
+Rename folder
+Rename folder {{name}}
+Rename {{from}} to {{to}}
+Renamed
+Renamed {{filename}}
+Renderer
+Repeat every
+Repeat on
+Replaces the current link and PIN. Add the new contact card to your phone and call once within 7 days to finish linking.
+Repo readiness progress
+Report
+Reported results back to parent agent
+Repositories
+Repository
+Repository & session
+Repository Commands
+Repository Configuration
+Repository Maintenance
+Repository path
+Request blocked
+Request declined — using a backup model
+Request denied
+Request full seat
+Request permission from admin
+Request resolved
+Request your account administrator for a full seat for {{productName}} access.
+Required
+Required PTS Code
+Required PTS Codes are managed above and can't be added as other tags.
+Required by
+Required tag
+Required tags are managed above and can't be added as other tags.
+Required to review comments, request changes, and approve pull requests.
+Requirements
+Requires a full seat
+Rerun the assessment to see results.
+Research & exploration
+Research Preview — experimental research model
+Research preview
+Researcher
+Researching
+Resend code
+Resend code in {{seconds}}s
+Reset
+Reset Devin Review onboarding
+Reset onboarding
+Reset onboarding (Auto-Triage variant)
+Reset onboarding (default)
+Reset to Latest
+Reset to default
+Reset your password
+Resource details unavailable
+Respond directly to Devin's question or ask something else
+Restart the app to get the latest updates
+Restart to update
+Restarted browser
+Restarted browser to {{url}}
+Restore
+Restore this version
+Restore this version?
+Restored version {{sha}}
+Resume session
+Retrieved
+Retrieved playbook
+Retrieved: {{count}}
+Retry
+Retry fetch available models.
+Retry now
+Retry sync
+Return
+Return to Configuration
+Return to call
+Return to {{productName}}
+Revert to step {{step}}
+Revert to this point
+Review
+Review PR
+Review each setup step in the list below to ensure Devin found the correct way to do each task in this repo.
+Review pull requests and flag bugs
+Review setup
+Reviewing
+Reviewing pull requests, analyzing code quality, and providing feedback on existing code.
+Revise
+Revision {{revision}} · saved {{date}}
+Rewriting…
+Rewrote plan
+Riffs on ideas with you, drafts first versions, and helps you find the angle.
+Right-click any tab for Close All, Close Others, or Close to the Right.
+Right-clicked
+Right-clicked at ({{x}}, {{y}})
+Right-clicked at {{coordinate}}
+Root application
+Rules
+Run
+Run Devin directly from your terminal.
+Run again
+Run an assessment to see criterion-level results for this repository.
+Run assessment
+Run many threads and work with your team
+Running
+Running maintenance
+Running maintenance for {{repo}}
+Running scripted tool
+Running {{count}} scripted tool event
+Running {{count}} scripted tool events
+Running · {{elapsed}}
+Running…
+Runs on a Devin-hosted machine, no local setup
+S
+SECRET_NAME
+SSH
+SSH access
+SSH connections to session machines are rejected
+SSH keys
+SSO login isn't configured for this connection. Please refresh and try again, or use another sign-in method.
+SWE models
+SWE-1.7
+SWE-2
+Save
+Save for
+Save for future Devin sessions.
+Save for future Devin sessions. <manageLink>Manage secrets</manageLink>
+Save for future sessions
+Save secret:
+Save setup
+Save the server first, then add write-only credentials for it here. Reference one in the server's config as ${KEY}.
+Save these secrets to reuse in future sessions
+Save to folder
+Save to secrets manager
+Save up to 10 minutes per session by setting up
+Save<fullText> to environment</fullText>
+Saved
+Saved as revision {{revision}} — applies to the next assessment of each repository
+Saved. Enter a new value to replace.
+Saving…
+Say hello to Devin, your
+ new engineering collaborator
+Scan profile
+Scan this code with your phone's camera to add the Devin contact, or use Add contact to download it. Then call Devin once to finish linking.
+Scanned files
+Scanned {{count}} files
+Scanned {{filesProcessed}} files in {{timeSpent}}
+Scanning...
+Scanning... {{filesProcessed}} files processed in {{timeSpent}}
+Schedule Devin
+Scheduled session
+Schedules
+Score
+Scroll to bottom
+Scrolled down on {{url}}
+Scrolled up on {{url}}
+Scrolled {{direction}}
+Scrolled {{direction}} by {{amount}}
+Search
+Search DeepWiki to add public repositories
+Search Devin modes...
+Search IDE modes...
+Search PRs...
+Search PTS Codes…
+Search accounts
+Search agents
+Search all models
+Search asks...
+Search billing tags…
+Search by Content
+Search files by name (append :42 to jump to a line)…
+Search files...
+Search filters
+Search for a playbook
+Search for a repository
+Search for a session...
+Search for a snapshot
+Search in Editor
+Search in Editor…
+Search in {{label}}…
+Search models
+Search organizations
+Search organizations...
+Search people
+Search plugin marketplace
+Search public repositories...
+Search repositories
+Search repositories...
+Search repositories…
+Search scan types...
+Search sessions
+Search sessions by title or ID...
+Search sessions...
+Search snapshots...
+Search symbols across the workspace (start with : to group by kind)…
+Search symbols...
+Search tags
+Search tags...
+Search tags…
+Search text
+Search text across the workspace…
+Search text...
+Search users or roles to add
+Search...
+Searched
+Searched files
+Searched for skills
+Searched repos
+Searched repos for {{query}}
+Searched web for
+Searched {{location}} for {{query}}
+Searched {{query}}
+Searched {{query}} across repos
+Searching
+Searching {{query}}
+Searching {{query}} across repos
+Searching...
+Secret name
+Secret provided
+Secret saved
+Secret value
+Secrets
+Security
+Security notice
+Security profile
+See Devin's file edits
+See more
+Segmentation
+Select
+Select Organization
+Select a channel
+Select a file to edit.
+Select a playbook
+Select a repository
+Select a repository above and run an assessment to see how ready it is for agents.
+Select a repository…
+Select a required PTS Code
+Select a required tag
+Select a snapshot
+Select a tag
+Select a tag…
+Select all
+Select all enterprises on this page
+Select all other enterprises on this page
+Select all rows
+Select all sessions
+Select all your enterprises on this page
+Select an account
+Select branch
+Select enterprise to view organizations
+Select exactly one required PTS Code for this session
+Select exactly one required tag for this session
+Select first {{max}} sessions
+Select label…
+Select only this option
+Select organization
+Select playbook
+Select repositories
+Select repositories to use Ask Devin
+Select repository
+Select repository…
+Select required PTS Code
+Select required tag
+Select row
+Select schedule unit
+Select tags
+Select team…
+Select {{count}} repositories
+Select {{count}} repository
+Selected
+Selected Setup Level: {{title}}
+Selected Tags
+Selected file to upload: {{path}}
+Selected filter
+Selected option
+Selected option: {{option}}
+Selected range
+Selected team
+Selected text (lines {{from}}–{{to}})
+Send
+Send Session Secrets
+Send a message to Devin in this session
+Send message and start voice call
+Send new secret
+Send now
+Send to the queue, or press <kbdShortcut/> to send immediately
+Send to the queue, or press {{shortcut}} to send immediately
+Send voice message
+Sending code...
+Sending...
+Sending…
+Separate multiple email addresses with commas.
+Service user
+Service users
+Session
+Session actions become available after creation finishes
+Session analysis
+Session archived
+Session expired
+Session folder
+Session has ended
+Session index
+Session info
+Session info: billing tag needed
+Session insights
+Session is too old to be revived
+Session link copied to clipboard
+Session not archived
+Session renamed to “{{title}}”
+Session settings
+Session size
+Session tags are required but no allowed tags are configured for this organization. Contact your administrator.
+Session terminated
+Session terminated by user
+Session terminated by {{username}}
+Session timeline
+Session type
+Session unavailable
+Session usage limits
+Sessions
+Sessions that don’t fit neatly into the categories above.
+Set as default
+Set as your default platform
+Set browser to desktop mode
+Set browser to mobile mode
+Set by your enterprise
+Set by your organization
+Set default
+Set org-wide default
+Set up automations
+Set up for the organization
+Set up per member. Each member connects this MCP from their own personal scope.
+Set up repository
+Set up your repos
+Set up your wiki
+Setting up
+Setting up Devin's machine failed (staging)
+Setting up Devin's machine is taking longer than usual (staging)
+Setting up and maintaining CI/CD pipelines, deployment configurations, and infrastructure-as-code.
+Settings
+Setup
+Setup Instructions
+Setup Progress
+Setup expired. Create a new contact card to try again.
+Setup passed all checks!
+Share session
+Shared across every surface
+Shared connection
+Sharing
+Sharing updated
+Shell
+Shift
+Short description (optional)
+Shortcuts
+Show
+Show all
+Show all ({{count}} more)
+Show editor here
+Show fewer tips
+Show file tree
+Show findings
+Show group
+Show hidden hooks
+Show in sidebar
+Show less
+Show more
+Show more tips
+Show official marketplace plugins
+Show property
+Show raw TOML
+Show session in sidebar & receive updates
+Show tab
+Show tabs panel
+Show {{count}} more
+Show {{count}} more session
+Show {{count}} more sessions
+Show {{label}} tips
+Shown next to the result, like Cognition's checks.
+Side chat
+Side chats
+Sidekick — internal agent sidekick preview
+Sign in
+Sign in to finish installation
+Sign in to {{name}} to finish connecting this MCP server.
+Sign up
+Signed in as {{email}}
+Signing in...
+Signing in…
+Silence Devin
+Since your last message or PR comment
+Single
+Skills
+Skills insights
+Skip
+Skip & Save
+Skip Remaining Steps?
+Skip commands
+Skip for now
+Skip or edit any steps that look wrong.
+Skip remaining
+Skip the rest & save
+Skip to main content
+Slack
+Slack (sync disabled)
+Slack message
+Slack monitor
+Slack sync disabled
+Slack sync enabled
+Slack sync updated
+Slack teammate
+Slack thread
+Slack {{action}}
+Slack, Linear, GitHub, Jira, MCP servers, and more.
+Slash commands
+Sleeping
+Someone is on a call with Devin
+Something went wrong
+Something went wrong starting SSO login. Please try again or use another sign-in method.
+Something went wrong while checking which tools Devin can reach.
+Something went wrong while loading your organization's coach analytics.
+Something went wrong. Please try again.
+Sort
+Sort by
+Source
+Source control
+Speed
+Split down
+Split editor
+Split editor right (Alt+click to split down)
+Split right
+Stack #{{stackNumber}} restacked: {{count}} branch updated
+Stack #{{stackNumber}} restacked: {{count}} branches updated
+Stacked pull requests
+Stacking pull requests
+Stacking pull requests · {{stackName}}
+Start
+Start Devin
+Start a work session
+Start a {{scanType}} scan.
+Start from a machine snapshot instead
+Start in background
+Start new session
+Start new session with this prompt
+Start over
+Start scan
+Start session <secondary>with a prompt…</secondary>
+Start session <secondary>“{{prompt}}”</secondary>
+Start session in background
+Start sessions
+Start voice call
+Start work
+Started a code scan
+Started code report
+Started code report in directory {{directory}}
+Started recording
+Started task
+Started {{time}}
+Starting a free session is currently disabled because of high load. Sorry for the inconvenience.
+Starting a free session is disabled because of high load. Please subscribe.
+Starting fix session…
+Starting sessions...
+Starting work…
+Starting…
+Startup commands
+Status
+Status changed
+Step {{current}}
+Step {{current}} of {{total}}
+Stop Devin
+Stop command
+Stop session
+Stop session & close pull requests
+Stop shared session
+Stop the session for everyone.
+Stop the virtual machine for everyone
+Stopped recording
+Stopping the session puts the session and its children to sleep. Do you want to close the session’s pull request?
+Stopping the session puts the session and its children to sleep. Do you want to close the session’s pull requests?
+Stopping the sessions puts them and their children to sleep. Do you want to close the pull request for these {{sessionCount}} sessions?
+Stopping the sessions puts them and their children to sleep. Do you want to close the pull requests for these {{sessionCount}} sessions?
+Stops offering {{name}} here. Anyone who already installed it keeps it.
+Store organization secret
+Stream, control, and inspect an Android Emulator
+Stream, control, and inspect an iOS Simulator
+Streaming test started
+Structured explanation grounded in code
+Subagent
+Subagents
+Subcategory
+Submission in progress
+Submit
+Subproject Path
+Subscribe
+Subscribe to use Devin
+Subscriber
+Subscribers
+Subscription canceled
+Subscription inactive
+Suggested
+Suggested a new playbook
+Suggested a plan…
+Suggested actions
+Suggested analysis prompts
+Suggested billing tag
+Suggested knowledge
+Suggested knowledge management tasks
+Suggested tasks
+Suggested to update playbook
+Summarize a topic
+Supercharge your workflow with Devin
+Switch account
+Switch mode
+Switch organization
+Switch to the editor window
+Switch to {{lang}}
+Switch to {{version}}
+Switched agent
+Switched to branch
+Switched to branch {{branch}}
+Switched to branch {{branch}} in {{repo}}
+Switched to {{name}}
+Symbol
+Sync session to Slack
+Sync to {{channel}}
+Synced to Teams
+Syncing
+System
+T
+TOTP / 2FA secret
+TOTP secret or QR code
+Tag
+Tag @Devin in any Slack channel
+Tag @Devin in chats and channels
+Tag Devin in any channel to assign work.
+Tag Devin in chats and channels to assign work.
+Tag added
+Tag required
+Tags
+Take down
+Take down public deployments
+Take down public deployments?
+Taking down…
+Task {{index}}/{{total}}: {{title}}
+Tasks
+Team
+Team & Personal
+Teams
+Teams (sync disabled)
+Teams sync disabled
+Teams sync enabled
+Teams sync updated
+Tell Devin how to change the command
+Tell Devin which repositories it should work with in your session
+Temporarily using a backup model
+Terminal
+Terminal output
+Terminal {{number}}
+Terminate session
+Test
+Test plan event (v0 → v1 → user edit → accepted)
+Test streaming message (2000 words, 8s)
+Test the app
+Test tools
+Testing
+Testing approved
+Testing commands...
+Testing…
+Text
+Text around cursor (lines {{from}}–{{to}})
+Thanks for the feedback
+The answer wasn't sent, so the call didn't start
+The app's tool call failed.
+The app's tool call was canceled.
+The bundle must contain .devin-plugin/plugin.json.
+The channel may be private or unavailable. Invite Devin manually or pick another channel.
+The code works once, for this connection only.
+The contact card could not be saved. Create a new one to get a new PIN.
+The contact contains your PIN and is shown only once. Keep it private.
+The default workspace has been modified since this setup session started. We won't be able to safely save the work done in this session back to the default workspace. If there were changes made in this session that you wish to upstream into the default workspace, you can start a new setup session using the default workspace and ask Devin to make the changes you desire.
+The following subprojects will be set up. You can add or remove subprojects as needed. Then confirm for Devin to continue.
+The last installation attempt failed.
+The local data is corrupted. Please refresh the page.
+The marketplace definition has changed since this was installed. Updating syncs the connection settings; saved credentials are kept.
+The note's repository name appeared in Devin's message.
+The note's repository name appeared in the user's prompt.
+The official marketplace is disabled for every org by the enterprise configuration.
+The owner archived this session
+The plugin's contents will be replaced with the files from {{sha}}. Later versions stay in the history.
+The policy already allows these destinations — resolving…
+The policy already allows these destinations, but the request couldn't be resolved.
+The policy already allows this destination — resolving…
+The policy already allows this destination, but the request couldn't be resolved.
+The preview runs on Devin's machine, which is currently suspended. Wake Devin to load it.
+The price of this model changed since you last used it
+The primary model declined this request — Devin switched to a backup model to continue.
+The repository commands encountered an error or failed to complete within the time limit.
+The session couldn't be loaded. Check your internet connection and try again.
+The sessions in "{{folderName}}" won't be deleted, but the folder and its grouping will be removed. This can't be undone.
+The task tracker file could not be parsed.
+The {{displayName}} runs on Devin's machine, which is currently suspended. Wake Devin to load it.
+Theme
+There are no accounts connected to a GitHub organization you have access to
+There was an error loading your GitHub organizations.
+These GitHub organizations are already connected to a Devin account. Disconnect from GitHub before linking them to a new account. <learnMoreLink>Learn more</learnMoreLink>
+These are the accounts connected to a GitHub organization you have access to
+These destinations are blocked by security profiles and the automation's network policy.
+These destinations are blocked by security profiles.
+These destinations are blocked by the automation's network policy.
+These destinations are blocked by the security profile "{{name}}" and the automation's network policy.
+These destinations are blocked by the security profile "{{name}}".
+Think, research, create, and write
+Thinking
+This Devin remote does not support {{displayName}} display streaming.
+This GitHub Enterprise installation belongs to a different Devin enterprise. Switch accounts and try again.
+This MCP is in the Devin marketplace. Install it once for the organization and connect it here, and plugins that declare it will use that connection instead of each member connecting their own.
+This access is inherited from an owner role, which can manage all connections
+This access is inherited from the Manage Git integrations permission, which allows managing all connections
+This access is inherited from the View Git integrations permission, which allows viewing all connections
+This account is on a flex seat. Flex seats only include Devin Cloud, Devin Review, and Devin CLI access. Ask your account administrator for a full seat to use {{productName}}.
+This action cannot be undone.
+This allows these destinations in every session governed by the security profile.
+This allows this destination in every session governed by the security profile.
+This alternate timeline is read-only
+This alternate timeline is read-only. Please switch to the active timeline to interact with Devin.
+This app is not available.
+This app's tool call is not loaded.
+This authorization link is incomplete.
+This authorization link is invalid or has expired. Reconnect over SSH to get a new one.
+This current Devin session is not using the same base machine snapshot as the default workspace. We won't be able to save the work done in this session to the default workspace. You should start a new Devin using the default workspace if you wish to update it.
+This destination is blocked by security profiles and the automation's network policy.
+This destination is blocked by security profiles.
+This destination is blocked by the automation's network policy.
+This destination is blocked by the security profile "{{name}}" and the automation's network policy.
+This destination is blocked by the security profile "{{name}}".
+This domain requires a different sign-in. Please contact your team administrator.
+This email's domain uses enterprise SSO. Please sign in through your enterprise's devinenterprise.com domain.
+This feature uses AI to analyze your Devin session and help you understand what happened, what could be improved, and how to get better results.
+This feedback was ignored.
+This file was deleted in this version.
+This finding changed since the page loaded. Refreshing.
+This installation is already linked to {{enterprise}}.
+This is a beta feature offered at 1/5 the normal cost. Success may vary depending on the complexity of the app.
+This is how you'll call it in Slack. You can change it anytime.
+This machine has no display server, so the {{displayName}} can't be streamed.
+This message was flagged for potentially violating your organization's usage policies.
+This model is currently experiencing some issues.
+This month
+This note is pinned to every session in this organization.
+This note is pinned to the {{repoName}} repository.
+This note is pinned to this session's repository.
+This note was manually invoked with a !macro-name command.
+This page could not be found.
+This permanently removes the {{name}} installation and its configuration.
+This permanently removes your {{name}} installation and its configuration. Other members are not affected.
+This phone will no longer be able to call your Devin, and any call in progress ends. You can set up a new link at any time.
+This plugin isn't available in Customize.
+This plugin was uploaded here, so it has no other copy. Its files are permanently deleted. This cannot be undone.
+This provider cannot create an OAuth client automatically. For API-key authentication, select Authorization header. Use “Bearer ${MCP_API_KEY}” as the value. Then add a write-only secret named “MCP_API_KEY” in the Secrets section. Alternatively, add a pre-registered OAuth client ID under Advanced.
+This removes every member's authorization for {{name}}. Everyone will need to connect again.
+This repository has no readiness assessment.
+This request is no longer open
+This request was blocked as it appears unrelated to professional work. Contact your system administrator if you believe this is an error.
+This request was flagged as it appears unrelated to professional work.
+This section has been changed by Devin since you started editing
+This session
+This session has ended — IDE search is unavailable.
+This session is archived
+This session is linked to Slack
+This session is over, so the {{displayName}} can no longer be streamed.
+This skill's plugin was not activated in this session. Start a new session to use it.
+This tag is reserved for system use and can't be added.
+This task is too long
+This version didn't change any files.
+This week
+This will allow the requested destination for every session the automation's network policy applies to.
+This will allow the requested destination for every session the security profile and the automation's network policy govern.
+This will allow the requested destinations for every session the automation's network policy applies to.
+This will allow the requested destinations for every session the security profile and the automation's network policy govern.
+This will hide the onboarding checklist. You can bring it back from your account settings.
+This will permanently delete all public deployments for this session:
+This will put Devin to sleep and immediately wake Devin back up on a new machine. Use this to recover a session whose machine has entered a bad state (for example, a disconnected shell or a frozen VM).
+Thought
+Thought for {{duration}}
+Thoughts
+Ticket system
+Time
+Time estimates are generated when Devin creates or updates a PR.
+Time with Devin
+Time without Devin
+Times knowledge was accessed as potentially relevant but not necessarily used
+Times knowledge was actually utilized in sessions based on usage analysis
+Times out after {{duration}}
+Title
+To try Devin for free, you'll need to connect GitHub.
+Today
+Toggle compact message history
+Toggle detailed view
+Toggle sidebar
+Too many voice calls were started recently. Wait a few minutes and try again
+Took a screenshot of
+Took screenshot
+Took screenshot of {{url}}
+Took {{duration}}
+Tool access
+Tools
+Tools Devin can reach across this enterprise.
+Tools Devin can reach from this organization.
+Total
+Translate
+Translating
+Transport
+Tree view
+Trend
+Triage the incoming Linear issue…
+Triage the incoming Slack message...
+Triggered by automation
+Triple-clicked
+Triple-clicked at ({{x}}, {{y}})
+Triple-clicked at {{coordinate}}
+Trivial fix
+Trusted apps only
+Try Devin Review
+Try Devin on your codebase
+Try a different search term
+Try again
+Try out Deep mode
+Try out real work on your connected repositories
+Try tagging @Devin in <slackLink>Slack</slackLink> for small bug fixes
+Try tagging @Devin in <slackLink>Slack</slackLink> or <teamsLink>Teams</teamsLink> for small bug fixes
+Tuned for smaller, well-defined tasks. 60% cheaper
+Turn Jira issues into pull requests
+Turn Linear issues into pull requests
+Turn escalations into pull requests
+Turn off
+Twitter
+Type a command or search…
+Type a prompt…
+Type to search
+Type to search text across the workspace…
+Typed in textbox on {{url}}
+Typed text
+Typing is disabled during replay
+UI only
+URL
+UTC
+Ultra — Our most powerful and hardest thinking agent, significantly more expensive
+Unable to check login method. Please try again.
+Unable to get the {{displayName}} display link.
+Unable to load your repositories.
+Unable to verify your account right now. Please try again.
+Unarchive
+Unarchive session
+Unarchived
+Unauthorized
+Unavailable
+Unavailable in compact view
+Uncategorized
+Understand Devin's history and actions
+Undo
+Undo improvement
+Unexpected error indexing repositories.
+Uninstall
+Uninstall {{name}}?
+Unit test generation
+Unknown
+Unknown action
+Unknown event
+Unknown installation
+Unknown plugin
+Unknown user
+Unlink
+Unlink from this MCP (the org secret is not deleted)
+Unlink this phone?
+Unmute microphone
+Unnamed
+Unnecessarily invoked ({{count}})
+Unpin
+Unpin all
+Unpin organization
+Unpin session
+Unpin to change variant
+Unselected filter
+Unselected option
+Unselected team
+Unsilence Devin
+Unsubscribe
+Up to {{amount}}
+Up to {{count}} people can be selected
+Update
+Update files
+Update from marketplace
+Update network config
+Update {{path}}
+Updated
+Updated PR
+Updated PR #{{number}} in {{repo}}
+Updated a PR in {{repo}}
+Updated allowlist.
+Updated task
+Updated the plan
+Updated time
+Updates
+Updating…
+Upgrade
+Upgrade plan
+Upgrading dependencies, migrating frameworks, databases, or APIs to newer versions.
+Upload a .env file or paste KEY=VALUE lines to add multiple secrets at once.
+Upload a QR code
+Upload a playbook
+Upload attachment
+Upload file
+Upload image
+Upload teammate avatar
+Usage quota exceeded
+Use billing tags
+Use edited command
+Use for one-off work that doesn't belong under any billing tag.
+Use the apps and context you connect
+Used
+Used computer
+Used computer - {{action}}
+Used computer - {{count}} actions
+Used playbook:
+Used session introspection tool
+Used {{tool}}
+Used: {{count}}
+User
+User activity
+User avatar
+User interface
+User message
+User messages
+User quotes ({{count}})
+Users
+Uses your API key
+Uses {{multiplier}}x credits
+Using a custom machine snapshot
+Using {{tool}}
+VS Code Remote SSH
+Validate in Devin Review
+Value (write-only)
+Vendored code
+Verification code
+Verify that all other steps run successfully.
+Verify your identity
+Verifying...
+Version history
+Version view
+Video unavailable:
+View
+View Devin's command history
+View Devin's latest task list
+View PR
+View Slack thread
+View a site Devin is running
+View all
+View all asks
+View all reviews
+View all sessions
+View all wikis
+View as flat list
+View as tree
+View billing tags
+View billing tags and their usage (read-only)
+View changes from this step
+View code
+View debug commands
+View files Devin cited from your codebase
+View findings
+View fix session
+View in DeepWiki
+View in Playground
+View in Settings
+View in settings
+View marketplace on GitHub
+View outposts
+View parent session
+View proposed code changes
+View session
+View session insights
+View sessions
+View this scan's findings so far
+View tools available with this MCP
+View users
+View {{count}} more
+View {{name}} details
+Viewed
+Viewed CI job logs for
+Viewed CI job logs for job {{jobId}} in {{repo}}
+Viewed CI job logs in {{repo}}
+Viewed CI status for
+Viewed CI status for PR #{{number}} in {{repo}}
+Viewed PR {{query}}
+Viewed blame for {{filename}}
+Viewed browser at {{url}}
+Viewed browser console
+Viewed commit {{query}}
+Viewed console
+Viewed console on {{url}}
+Viewed knowledge suggestion
+Viewed knowledge suggestion: {{suggestionName}}
+Viewed page
+Viewed pull request
+Viewed pull request #{{number}} in {{repo}}
+Viewer
+Viewer FPS
+Virtual environment
+Virtualization debug
+Visual
+Voice mode is not enabled for your account
+Voice model error
+W
+WDW
+Waited
+Waited for {{seconds}}s
+Waited {{duration}}
+Waited {{duration}} s
+Waited {{duration}}s
+Waited {{elapsed}} so far. Devin will progress as soon as the machine is ready.
+Waiting for CI
+Waiting for Devin to wake up…
+Waiting for other sessions
+Waiting for outpost “{{name}}” to provide a machine
+Waiting for response
+Waiting for the app's tool call to finish.
+Waiting for your first call
+Waiting for your outpost to provide a machine
+Waiting for {{seconds}}s
+Waiting to run
+Waiting {{duration}}
+Wake up Devin
+Wake up Devin to use the IDE
+Waking Devin…
+Waking up Devin's computer…
+Waking up machine
+Watch and control Devin's Computer
+Watch and control Devin's browser
+Waterfall traces
+We could not find this GitHub Enterprise App configuration. Please try again from Settings > Integrations.
+We could not load the installation details. Please try again.
+We dollar-match every dollar you reload — up to {{matchCap}} in grants on your next {{totalUsage}} of usage. You spend {{matchCap}}, you get {{totalUsage}}.
+We encountered an error while loading the session analysis.
+We've sent an email with your code to {{email}}
+Weekly usage quota exceeded
+Welcome to the Devin Startup Program
+Went to sleep
+What Slack channels should {{name}} join?
+What do you need help with?
+What do you want to get done?
+What insights are you looking for today?
+What must be true and how Devin should verify it. You can include commands as guidance.
+What questions do you have?
+What should we call your new Devin?
+What would you like me to set up?
+What would you like to do?
+What would you like to know about your code?
+What would you like to learn from this session?
+Where
+Where session time goes
+Why this matters
+Wiki
+Windows
+Windsurf enterprise (legacy)
+Work on your own machine
+Worked for
+Worked for {{time}}
+Workflow
+Workflows
+Working
+Working (~{{duration}} left)
+Working for
+Working for {{duration}}
+Workspace
+Workspace history is unavailable.
+Would you like to connect this GitHub installation to <strong>{{orgName}}</strong> organization?
+Wren
+Write your own in settings
+Write your playbook here…
+Write-only credentials for this server, stored encrypted and never shown after saving.
+Write-only credentials for this server, stored encrypted and never shown after saving. Reference one in the server's config as ${KEY}.
+Write-only credentials for this server, stored encrypted and never shown after saving. They are set as environment variables of the server process; the config can also reference one as ${KEY}.
+Writing or updating documentation, READMEs, changelogs, API docs, wikis, translations, localization (i18n/l10n), and content creation.
+Writing unit tests, integration tests, and improving test coverage across the codebase.
+Wrong Devin account
+Yes, Skip
+You
+You and Devin are on a call in another window
+You are viewing another organization's search query in read-only mode.
+You can change this anytime.
+You can set up more repositories later
+You can view custom checks but need the manage agent readiness permission to change them.
+You can't remove your own access to manage this connection
+You cannot use the Android Emulator in Plan mode
+You cannot use the IDE in Plan mode
+You cannot use the browser in Plan mode
+You cannot use the shell in Plan mode
+You do not have permission to do this in this session. Ask the session owner for access.
+You don't have access to view this file
+You don't have permission to access this session.
+You don't have permission to use {{productName}}
+You have unsaved changes to your repository selection. Are you sure you want to discard them?
+You must link your GitHub account to search your repositories.
+You need enterprise MCP admin access to connect this
+You need org MCP admin access to connect this
+You need org admin access to change this
+You said
+You're about to give Devin significant access to {{name}}, allowing it to interact with external data. Only proceed if you trust this integration and have verified its source.
+You've installed the GitHub App on your GitHub Enterprise instance. Sign in to Devin to link it to your enterprise.
+YouTube
+Your ACU usage limit has been reached. Please contact your enterprise admin.
+Your Devin can
+Your Devin contract has ended. Contact your account team to renew.
+Your Devin subscription can be used from {{productName}}.
+Your Devins
+Your account is on an individual plan
+Your always-on Devin
+Your browser does not support the video tag.
+Your check
+Your checks
+Your conversation will appear here as you speak.
+Your edits in the file editor haven't been saved and will be lost.
+Your email domain requires enterprise setup. Please contact your IT administrator to configure Devin access for your organization.
+Your modified files:
+Your organization's Devin contract has ended
+Your organization's SSH access level doesn't allow SSH keys right now; existing keys stay listed here so you can remove them.
+Your personal plugins load in cloud sessions, the Devin CLI, and Devin Desktop. Plugins you install with <code>devin plugins install</code> show up here too.
+Your phone number
+Your plugins load in cloud sessions, the Devin CLI, and Devin Desktop.
+Your prompt is too long to send directly. Would you like to attach it as a file instead?
+Your recent terminal commands:
+Your repos
+Your request has been denied due to violating our safe use policy. Please contact your system administrator.
+Your startup offer is active on this team.
+You’ll be taken to GitHub to manage the Devin app installation for this organization.
+Zoom in
+Zoom out
+Zoomed region
+[Default]
+a PR
+a bit
+a file
+across <value>{{value}}</value>
+advanced
+after compaction
+after user follow-up
+alex@example.com, sam@example.com
+all repos
+at <value>{{value}}</value>
+because you're out of credits
+because your organization's ACU limit was exceeded. <orgLink>Increase the ACU limit</orgLink> for your organization to continue.
+because your organization's ACU limit was exceeded. An enterprise admin must increase the ACU limit for your organization to continue.
+because your organization's usage limit was exceeded. The limit has since been raised.
+because your per-user ACU limit was exceeded.
+because your per-user ACU limit was exceeded. <requestAction></requestAction> to continue.
+because your per-user ACU limit was exceeded. <requestButton>Request more ACUs</requestButton> to continue.
+because your per-user ACU limit was exceeded. Ask your account admin to increase your usage limit to continue.
+because your per-user ACU limit was exceeded. {{guidance}}.
+because your per-user usage limit was exceeded. The limit has since been raised.
+branch
+by {{sender}}: handing over ownership until next user message
+clicked element
+codebase
+contains
+contains any of
+day
+days
+deleted
+detected on
+done
+due to inactivity. Devin can be woken anytime
+e.g. Billboard, Conference, Podcast, etc.
+e.g. Work laptop
+e.g., {{name}} (EU)
+e.g., {{name}} for the EU production account
+enterprise
+file
+from
+from MCP server
+great for most tasks
+hour
+hours
+iOS Simulator
+ignored
+ignored ({{count}})
+in
+in <value>{{value}}</value>
+in Devin credits
+in channel
+in matching grants
+in team
+in {{cwd}}
+in {{repoName}}
+in {{repo}}
+in {{seconds}}s
+is
+is any of
+labeled
+line {{from}}
+lines {{from}}–{{to}}
+macOS
+major
+many repos
+moved the mouse
+no changes
+now
+older version accepted
+on
+on MCP server
+on mode switch
+on startup
+only
+or
+org
+owner/repo
+pressed {{key}}
+ran JavaScript
+scrolled down
+scrolled up
+selected file {{file}}
+selected option {{option}}
+selections
+starter
+stream
+takes longer & needs secrets
+to
+to apply the updated network config
+truncated
+typed
+unknown
+unsaved edits
+updating your Git connections
+version {{version}}
+viewed the console
+v{{version}} accepted
+week
+weeks
+worse performance
+you
+your Devin enterprise
+your usage quota has been exceeded and you are out of on-demand usage
+your {{window}} usage quota has been exceeded and you are out of on-demand usage
+your {{window}} usage quota has been exceeded and you are out of on-demand usage. Your {{window}} quota resets {{resetsIn}}
+{{accountName}} ({{connectionName}})
+{{amount}} ACUs
+{{branch}} was force-pushed ({{shortSha}})
+{{clause}}. Check your usage settings for details.
+{{completed}} / {{total}} tasks
+{{completed}} of {{total}} steps complete
+{{countLabel}} selected
+{{count}} ACU limit request pending
+{{count}} ACU limit requests pending
+{{count}} Devin
+{{count}} Devin · {{threads}}
+{{count}} Devins
+{{count}} Devins · {{threads}}
+{{count}} MCP server
+{{count}} MCP servers
+{{count}} Remaining Setup Step
+{{count}} Remaining Setup Steps
+{{count}} action
+{{count}} actions
+{{count}} active thread
+{{count}} active threads
+{{count}} agent
+{{count}} agents
+{{count}} ask excluded — only sessions can be analysed
+{{count}} asks excluded — only sessions can be analysed
+{{count}} available
+{{count}} available skills
+{{count}} backend app
+{{count}} backend apps
+{{count}} bug
+{{count}} bugs
+{{count}} context
+{{count}} earlier action
+{{count}} earlier actions
+{{count}} failing criteria implicated
+{{count}} failing criterion implicated
+{{count}} file
+{{count}} file with uncommitted changes
+{{count}} files
+{{count}} files with uncommitted changes
+{{count}} finding
+{{count}} findings
+{{count}} flag
+{{count}} flags
+{{count}} frontend site
+{{count}} frontend sites
+{{count}} hook
+{{count}} hooks
+{{count}} invoked
+{{count}} line selected
+{{count}} lines selected
+{{count}} member
+{{count}} member reached their ACU limit
+{{count}} members
+{{count}} members reached ACU limits
+{{count}} message
+{{count}} message queued
+{{count}} messages
+{{count}} messages queued
+{{count}} more member near their limit
+{{count}} more members near limits
+{{count}} note
+{{count}} notes
+{{count}} of {{max}} checks
+{{count}} of {{total}}
+{{count}} other people are subscribed to this session. Archiving stops the session for everyone; they will still see it in their sidebar.
+{{count}} other people are subscribed to this session. Stopping the session stops it for everyone; they will still see it in their sidebar.
+{{count}} other person is subscribed to this session. Archiving stops the session for everyone; they will still see it in their sidebar.
+{{count}} other person is subscribed to this session. Stopping the session stops it for everyone; they will still see it in their sidebar.
+{{count}} page
+{{count}} pages
+{{count}} pending change
+{{count}} pending changes
+{{count}} people are typing
+{{count}} person is typing
+{{count}} private
+{{count}} profile
+{{count}} profiles
+{{count}} public repositories
+{{count}} pull request
+{{count}} pull requests
+{{count}} questions skipped
+{{count}} relevant
+{{count}} repo
+{{count}} repo selected
+{{count}} repo selected for indexing
+{{count}} repos
+{{count}} repos selected
+{{count}} repos selected for indexing
+{{count}} repositories
+{{count}} repositories selected for this task
+{{count}} repository
+{{count}} repository selected for this task
+{{count}} result
+{{count}} results
+{{count}} retrieved
+{{count}} roots
+{{count}} rule
+{{count}} rules
+{{count}} scope assessed
+{{count}} scope excluded
+{{count}} scopes assessed
+{{count}} scopes excluded
+{{count}} security finding
+{{count}} security findings
+{{count}} selected
+{{count}} server enabled
+{{count}} servers enabled
+{{count}} skill
+{{count}} skills
+{{count}} tag selected
+{{count}} tags
+{{count}} tags selected
+{{count}} total knowledge items
+{{count}} type
+{{count}} types
+{{count}} vulnerabilities
+{{count}} vulnerability
+{{count}} with access
+{{count}}s
+{{count}}s ago
+{{current}} / {{limit}} characters
+{{displayName}} is unavailable for this session.
+{{displayName}} not available on this machine
+{{displayName}} streaming is unavailable for this session.
+{{email}} is not a valid email address.
+{{enabled}} of {{count}} server enabled
+{{enabled}} of {{count}} servers enabled
+{{hours}} h
+{{index}}/{{total}}
+{{invoked}} of {{evaluated}} evaluated invoked skills were relevant
+{{invoked}} of {{total}} relevant skills were invoked
+{{label}} ({{mapped}} of {{count}} organization)
+{{label}} ({{mapped}} of {{count}} organizations)
+{{label}} until {{date}}
+{{language}} Translation:
+{{message}} ({{seconds}}s)
+{{minutes}} min
+{{model}} via {{modelProvider}}
+{{name}} (disabled)
+{{name}} and Devin are on a call
+{{name}} avatar
+{{name}} hasn't been indexed yet — its MCP can be connected once indexing finishes.
+{{name}} hasn't finished installing.
+{{name}} icon
+{{name}} is connected.
+{{name}} is not listed in this view.
+{{name}} is not one of this window's agents.
+{{name}} is not running. Start it to continue this session.
+{{name}} is ready
+{{name}} is starting…
+{{name}} is typing
+{{name}} needs a credential before it can connect — enter it in its settings.
+{{name}} needs authorization but no sign-in URL was returned.
+{{name}} plugin
+{{name}} updated.
+{{name}} was uninstalled, but deleting its files failed.
+{{name}} will be ready to help your team in Slack.
+{{name}} · Tool access
+{{passed}} of {{applicable}} checks
+{{passed}} of {{applicable}} passing
+{{passed}}/{{applicable}} criteria passed
+{{passed}}/{{applicable}} passed
+{{percent}}% weighted pass rate, {{thresholdPercent}}% clears the level
+{{phases}} make up the remaining {{percent}}%.
+{{pluginName}} is ready — nothing to connect.
+{{pluginName}} is set up — connect it to grant access.
+{{pluginName}} needs a credential before it can connect — enter it in its MCP's settings.
+{{productName}} access not enabled for this account
+{{productName}} only
+{{retrieved}} of {{evaluated}} evaluated retrieved items were relevant
+{{retrieved}} of {{total}} relevant items were retrieved
+{{scanType}} scan
+{{scope}} +{{more}} more
+{{section}} accounts
+{{shortMessage}} This may take up to 90 seconds.
+{{start}} – {{end}}
+{{title}} complete
+{{title}} {{passed}}/{{applicable}}
+{{title}} {{percent}}%
+{{title}} — approved
+{{title}} — denied
+{{value}} ACUs
+••••••••
+← Back to options
