@@ -6,6 +6,8 @@
 - 已适配版本：Devin Desktop **3.10.48**（2026-09-29 构建，VS Code 内核 1.126.0）
 - 覆盖：Agent 面板、会话界面控件、评审、自动化、安全、Devin 设置全分区（计划信息/用量/扩展/Agents/编辑器/快捷键等）、模型选择器、命令面板等
 
+> 💡 也试试 **[Devin Orb](https://github.com/murasakikaoru/devin-orb)** —— Windows 悬浮球小组件，一眼查看 Devin 用量（[中文文档](https://github.com/murasakikaoru/devin-orb/blob/main/README.zh-CN.md)）
+
 ## 快速开始
 
 ### 环境要求
@@ -102,10 +104,6 @@ devin-desktop-zh-cn/
 - 本项目不修改 Devin 安装目录下任何文件，不含遥测，不联网上传任何数据
 - 注入器仅连接本机 `127.0.0.1` 调试端口（端口仅在 bat 带参启动时开放）
 - 词库内容全部来自 Devin 界面文案的提取与翻译
-
-## 相关项目
-
-- [Devin Orb](https://github.com/murasakikaoru/devin-orb) — Windows 悬浮球小组件，一眼查看 Devin 用量（[中文文档](https://github.com/murasakikaoru/devin-orb/blob/main/README.zh-CN.md)）
 
 ## 许可
 
