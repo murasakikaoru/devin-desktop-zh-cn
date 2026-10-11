@@ -66,6 +66,4 @@ python build_dict.py   # 重新生成 ../dict.json
 
 ## 测试
 
-`test/` 下是独立 HTML 测试页，用 `test-chrome.ps1` 起带调试端口的 Chrome 后，inject.py 会注入并验证：
-- `test-page.html`：静态文案 + 排除区域
-- `test-tick.html`：模拟 React nodeValue 周期更新（回归 v0.1.3 的突变丢失 bug）+ v0.1.5 新正则样例
+测试 HTML 页（`test-page.html`/`test-tick.html`/`test-chrome.ps1`）仅在本地维护，不入库：用 `test-chrome.ps1` 起带调试端口的 Chrome 后 inject.py 会注入，可验证静态文案、排除区域与 React 动态更新重翻译（v0.1.3 突变丢失回归、v0.1.5 新正则样例）。

@@ -89,7 +89,6 @@ devin-desktop-zh-cn/
 │   └── webapp-visible-en.txt                #   可见字符串清单
 ├── docs/
 │   └── TECH.md                              # 技术细节与维护指南
-└── test/                                    # 端到端测试页
 ```
 
 ## 补翻译 / 维护

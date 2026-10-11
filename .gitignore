@@ -24,3 +24,6 @@ devin_zh_cn_*/
 nul
 Thumbs.db
 .DS_Store
+
+# 测试页本地保留、不上传
+test/
